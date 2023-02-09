@@ -27,7 +27,7 @@
 
 
     .custom-cart-box {
-        background-color: transparent !important;
+        background-color: rgb(27, 30, 55) !important;
     }
 
     .saleCategories {
@@ -166,13 +166,19 @@
     }
 
     .btn_minus {
-        background-color: rgb(27, 31, 50);
+        background-color: rgb(49, 55, 84);
         border: 1px transparent;
+    }
+
+    .btn_minus:hover {
+        background-color: rgb(27, 31, 50);
     }
 
     .btn_qty {
         background-color: rgb(74, 145, 72);
         border: 1px transparent;
+        font-size: 1rem;
+        font-weight: 900;
 
     }
 
@@ -233,7 +239,7 @@
 
     .cart-footer-buttons {
         display: grid;
-        grid-template-columns: 3fr 6fr 1fr;
+        grid-template-columns: 2fr 5fr 1.1fr;
         width: 100%;
 
 
@@ -273,8 +279,26 @@
         border-radius: 0px;
         padding: 4px 20px;
         font-weight: 600;
-        font-size: 1.5rem;
+        font-size: 1.7rem;
     }
+
+    .dropdown-menu {
+        background: rgb(49, 44, 84);
+        border-radius: 0;
+        --bs-dropdown-min-width: 11rem;
+    }
+
+    .dropdown-menu>.dropdown-item {
+        font-size: 1.2rem;
+        color: #ffffff;
+        padding: 6px auto;
+    }
+
+    .dropdown-item:hover {
+        background-color: rgb(70, 48, 131);
+    }
+
+
 
     .cart-total-parent {
         background: rgb(70, 48, 131);
@@ -285,11 +309,6 @@
         font-weight: 600;
     }
 
-    .cart-total-parent p {}
-
-    .cart-total-parent p strong {}
-
-    .cart-total-parent p small {}
 
 
     .cart-note {}
@@ -297,7 +316,6 @@
     .button-note {
         font-size: 1.5rem;
         border: 0;
-        padding: 8px;
     }
 
     .cart-note button {
@@ -317,17 +335,18 @@
         bottom: 0; */
         display: grid;
         grid-template-columns: repeat(7, 1fr);
-        column-gap: 1px;
+        column-gap: 3px;
     }
 
     .saleItemActions>div {
         width: 100%;
+        border-radius: 10px;
     }
 
     .saleItemActions a {
         font-size: 0.9rem;
         font-weight: 600;
-        padding: 20px 1.2rem;
+        padding: 14px 1.15rem;
         color: white;
         /* width: 100%; */
     }
