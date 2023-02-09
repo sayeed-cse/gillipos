@@ -1,0 +1,7 @@
+/*design for smartphones*/
+@media(max-width: 450px){
+
+    .saleItemsParent{
+        grid-template-columns : repeat(3,1fr);
+    }
+}

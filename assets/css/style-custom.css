@@ -41,13 +41,12 @@
         border-radius: 14px;
         background-color: rgb(27, 31, 50);
         color: #fff;
-        padding: 55px 5px;
+        padding: 29px 5px;
         text-align: center;
         width: 100%;
-        height: 16%;
+        /* height: 16%; */
         font-size: 1.3rem;
         font-weight: 450;
-
     }
 
     .saleCategoryActive {
@@ -70,8 +69,7 @@
         display: grid;
         grid-template-columns: repeat(8, 1fr);
         row-gap: 0px;
-        height: 68%;
-        /* bottom: 300px; */
+        height: 720px;
     }
 
 
@@ -194,6 +192,7 @@
 
     .cart-actions button {
         display: inline-block !important;
+        margin-left: 6px;
     }
 
     .cart-collapse-btn {
@@ -239,7 +238,7 @@
 
     .cart-footer-buttons {
         display: grid;
-        grid-template-columns: 2fr 5fr 1.1fr;
+        grid-template-columns: 2fr 5fr 1.2fr;
         width: 100%;
 
 
@@ -285,13 +284,18 @@
     .dropdown-menu {
         background: rgb(49, 44, 84);
         border-radius: 0;
-        --bs-dropdown-min-width: 11rem;
+        --bs-dropdown-min-width: 7.12rem;
     }
 
     .dropdown-menu>.dropdown-item {
-        font-size: 1.2rem;
+        font-size: 0.7rem;
         color: #ffffff;
-        padding: 6px auto;
+        padding: 14px 0!important;
+        text-align: center;
+    }
+
+    .dropdown-item:last-child{
+        background-color: rgb(70, 48, 131);
     }
 
     .dropdown-item:hover {
@@ -312,6 +316,10 @@
 
 
     .cart-note {}
+    .cart-note button {}
+    .cart-note button img {
+        transform: scale(0.6);
+    }
 
     .button-note {
         font-size: 1.5rem;

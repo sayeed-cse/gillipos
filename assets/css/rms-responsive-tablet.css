@@ -1,0 +1,6 @@
+
+@media only screen and (min-width: 451px) and (max-width: 768px) {
+    .saleItemsParent{
+        grid-template-columns : repeat(6,1fr);
+    }
+}
