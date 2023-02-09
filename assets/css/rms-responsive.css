@@ -4,7 +4,7 @@
     .cart-item-name{
         width: 35%;
     }
-    
+
     .cart-footer-buttons {
         display: grid;
         grid-template-columns: 2fr 4fr 1.2fr;
@@ -27,5 +27,12 @@
 
     .saleItemActions a{
         padding : 14px 0px;
+    }
+
+    /* Sale Categories Section */
+    .saleCategories {
+        height: 552px;
+        overflow-x: hidden;
+        overflow-y: scroll;
     }
   }
