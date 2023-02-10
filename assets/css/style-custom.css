@@ -1,5 +1,10 @@
     body {
-        background-color: rgba(0, 0, 0, 0.85);
+        background-color: rgb(19, 20, 38);
+    }
+
+    .content-left {
+        background-color: rgb(27, 31, 50);
+        border-radius: 8px 8px 0px 0px;
     }
 
     /* width */
@@ -62,7 +67,8 @@
     /* Sale Item Parents */
 
 
-    .saleItemsParent {
+    .saleItemsParent,
+    .orderBoxParent {
         overflow-y: scroll;
         padding: 5px;
         overflow-x: hidden;
@@ -163,7 +169,8 @@
 
     }
 
-    .btn_minus {
+    .btn_minus,
+    .btn_amount {
         background-color: rgb(49, 55, 84);
         border: 1px transparent;
     }
@@ -290,11 +297,11 @@
     .dropdown-menu>.dropdown-item {
         font-size: 0.7rem;
         color: #ffffff;
-        padding: 14px 0!important;
+        padding: 14px 0 !important;
         text-align: center;
     }
 
-    .dropdown-item:last-child{
+    .dropdown-item:last-child {
         background-color: rgb(70, 48, 131);
     }
 
@@ -316,7 +323,9 @@
 
 
     .cart-note {}
+
     .cart-note button {}
+
     .cart-note button img {
         transform: scale(0.6);
     }
@@ -364,18 +373,14 @@
         width: 1.5rem;
     }
 
-    .btn_select_table {
+    .btn_select_table,
+    .btn_order {
         background-color: rgb(59, 120, 122) !important;
         border: 1px transparent;
     }
 
     .btn_waiter {
         background-color: rgb(201, 152, 2) !important;
-        border: 1px transparent;
-    }
-
-    .btn_order {
-        background-color: rgb(59, 120, 122) !important;
         border: 1px transparent;
     }
 
@@ -397,4 +402,67 @@
     .btn_print_order {
         background-color: rgb(48, 125, 246) !important;
         border: 1px transparent;
+    }
+
+    .btn_success {
+        background-color: rgb(0, 123, 33);
+    }
+
+    .btn_paid {
+        background-color: rgb(135, 104, 207);
+    }
+
+    /*---------------------------------------
+    ----------  Style Save Order ------------
+    -----------------------------------------*/
+    .orderBoxParent,
+    .employeeSection {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        color: white;
+        gap: .5rem .7rem;
+    }
+
+    .orderBoxItem,
+    .employeeInfoCard {
+        background-color: rgb(27, 31, 50);
+        padding: 30px 15px;
+        border-radius: 25px;
+
+    }
+
+    .order-state,
+    .employeeInfo {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 5px;
+    }
+
+    .order-state-title,
+    .order-state-bill,
+    .employee-name,
+    .employee-desig {
+        border-radius: 15px;
+        text-align: center;
+        padding: 3px 5px;
+        font-size: .8rem;
+
+    }
+
+    .order-state-title,
+    .employee-name {
+        width: 60%;
+    }
+
+    .order-state-bill,
+    .employee-desig {
+        width: 35%;
+    }
+
+    .order-details>p,
+    .login-details>p {
+        display: flex;
+        flex-direction: column;
+        font-size: .8rem;
     }
