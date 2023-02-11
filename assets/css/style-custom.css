@@ -2,6 +2,13 @@
         background-color: rgb(19, 20, 38);
     }
 
+    .content-body {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+    }
+
     .content-left {
         background-color: rgb(27, 31, 50);
         border-radius: 8px 8px 0px 0px;
@@ -36,9 +43,11 @@
     }
 
     .saleCategories {
-        height: 100%;
+        height: 100vh;
         overflow-x: hidden;
         overflow-y: scroll;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .saleCategories a {
@@ -133,6 +142,7 @@
         padding: 10px 15px;
         overflow: hidden;
         background-color: rgb(49, 55, 84);
+        margin-bottom: 1px !important;
     }
 
     .cart-item-header {}
@@ -170,12 +180,14 @@
     }
 
     .btn_minus,
-    .btn_amount {
+    .btn_amount,
+    .pay-bg {
         background-color: rgb(49, 55, 84);
         border: 1px transparent;
     }
 
-    .btn_minus:hover {
+    .btn_minus:hover,
+    .btn-digit {
         background-color: rgb(27, 31, 50);
     }
 
@@ -187,7 +199,8 @@
 
     }
 
-    .btn_plus {
+    .btn_plus,
+    .btn-lg-pay {
         background-color: rgb(97, 68, 177);
         border: 1px transparent;
     }
@@ -485,12 +498,12 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        border-radius: 15px;
+        border-radius: 5px;
         /* width:8vw; */
         height: 7vw;
     }
 
-    .table-num{
+    .table-num {
         font-weight: 400;
         font-size: 1.2rem;
     }
@@ -498,4 +511,60 @@
     .customer-num {
         font-size: 1rem;
     }
-    
+
+    /* payment section */
+
+    /* payment calc section */
+
+    .button-basic {
+        padding: 0;
+    }
+
+    .button-basic input {
+        width: calc(100% - 2px);
+        font-size: 2.8rem;
+        font-weight: 700;
+        text-align: center;
+        border-radius: 8px;
+        border: none;
+    }
+    .calc-text-box{
+        margin-bottom: 5px;
+    }
+    .btn-digit{
+        width: 10vh;
+        height: 10vh;
+    }
+    .button-calc-right {
+        height: 9.8vh;
+    }
+
+    .button-basic input[type="text"]:focus {
+        color: #ffffff;
+    }
+
+    .btn-bottom {
+        height: 9vh !important;
+    }
+
+    .calc-text-field {
+        height: 9vh !important;
+        font-size: 2rem !important;
+    }
+
+
+
+    .btn-card {
+        background-color: rgb(52, 37, 115);
+    }
+
+    .btn-cash {
+        background-color: rgb(97, 68, 177);
+    }
+
+    .txt-sm {
+        font-size: 1.8rem !important;
+    }
+
+    /* 
+     */
