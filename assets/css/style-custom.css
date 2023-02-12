@@ -621,6 +621,11 @@
         font-size: 1.8rem !important;
     }
 
+    .saleItemActions>.payment-note {
+        width: fit-content;
+
+    }
+
     #saleItemActions-payment {
         grid-template-columns: repeat(8, 1fr);
         justify-items: flex-end;
