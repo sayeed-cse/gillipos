@@ -63,8 +63,10 @@
         font-weight: 450;
     }
 
-    .saleCategoryActive {
+    .saleCategoryActive,
+    .payment-note {
         background-color: rgb(49, 55, 84) !important;
+        border: 1px transparent;
     }
 
     .saleCategories a:hover {
@@ -344,10 +346,7 @@
         transform: scale(0.6);
     }
 
-    .button-note {
-        font-size: 1.5rem;
-        border: 0;
-    }
+
 
     .cart-note button {
         background-color: rgb(49, 55, 84);
@@ -386,6 +385,7 @@
         height: 1.5rem;
         width: 1.5rem;
     }
+
 
     .btn_select_table,
     .btn_order {
@@ -530,8 +530,8 @@
         padding: 0px;
     }
 
-    .payment-display-section .col-4{
-        
+    .payment-display-section .col-4 {
+
         padding: 0;
     }
 
@@ -559,9 +559,10 @@
         font-size: 3rem;
         color: rgb(211, 152, 0);
     }
-        .bottom-pay-card .display-6{
-            font-size: 2.5rem;
-        }
+
+    .bottom-pay-card .display-6 {
+        font-size: 2.5rem;
+    }
 
     /* payment calc section */
 
@@ -618,4 +619,15 @@
 
     .txt-sm {
         font-size: 1.8rem !important;
+    }
+
+    #saleItemActions-payment {
+        grid-template-columns: repeat(8, 1fr);
+        justify-items: flex-end;
+    }
+
+
+    .note-icon-payment {
+        height: 2rem;
+        width: 2rem;
     }
