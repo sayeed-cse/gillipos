@@ -82,6 +82,7 @@
     .orderBoxParent {
         overflow-y: scroll;
         padding: 5px;
+        padding-right: 3px;
         overflow-x: hidden;
         display: grid;
         grid-template-columns: repeat(8, 1fr);
@@ -365,7 +366,8 @@
         bottom: 0; */
         display: grid;
         grid-template-columns: repeat(7, 1fr);
-        column-gap: 3px;
+        column-gap: 2px;
+        margin-left: .4rem;
     }
 
     .saleItemActions>div {
@@ -386,7 +388,9 @@
         width: 1.5rem;
     }
 
-
+    .button-note{
+        border: 1px transparent;
+    }
     .btn_select_table,
     .btn_order {
         background-color: rgb(59, 120, 122) !important;
@@ -436,14 +440,14 @@
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: repeat(5, 1fr);
         color: white;
-        gap: .5rem .7rem;
+        gap: .5rem .5rem;
     }
 
     .orderBoxItem,
     .employeeInfoCard {
         background-color: rgb(27, 31, 50);
         padding: 30px 15px;
-        border-radius: 25px;
+        border-radius: 10px;
 
     }
 
@@ -636,3 +640,10 @@
         height: 2rem;
         width: 2rem;
     }
+
+
+    /*------------------------------ 
+    ------------Responsive---------
+    ---------------------------------------- */
+
+    
