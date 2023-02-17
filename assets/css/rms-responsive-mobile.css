@@ -1,0 +1,194 @@
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    
+    /* Header Logo */
+    .header-logo {
+        display: none;
+    }
+
+    .header-right {
+        /* display: none; */
+    }
+
+    .content-body{
+        padding-top: 0px!important;
+    }
+
+    .custom-cart-container-fluid{
+        margin-top: 32px;
+    }
+
+    .custom-cart-box {
+        height: 360px;
+        margin-top: 29px;
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+    
+    .cart-main-card{
+        padding: 5px 5px;
+    }
+
+    .btn_minus {
+        font-size: 0.9rem;
+        padding: 3.5px 12px;
+    }
+
+    .btn_qty {
+        font-size: 0.9rem;
+        padding: 3.5px 12px;
+    }
+
+    .btn_plus {
+        font-size: 0.9rem;
+        padding: 3.5px 12px;
+    }
+
+    .cart-collapse-btn{
+        padding:2px 8px;
+    }
+
+    .position-fixed{
+
+    }
+
+    /* 
+    ################################
+    # Cart Footer START
+    ################################
+    */
+    .cart-footer-container-fluid{
+
+    }
+
+    .cart-footer-row{
+        position: unset;
+        bottom: auto;
+    }
+
+    .cart-delivery-option div button{
+        font-size: 1.5rem;
+    }
+
+    .button-inside{
+
+    }
+
+    .cart-total-parent{
+        padding-left: 0;
+        padding-right: 0;
+        padding-top:9px;
+    }
+
+    .cart-total-strong {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .cart-3{
+        margin-bottom:0px;
+    }
+    /* 
+    ################################
+    # Cart Footer END
+    ################################
+    */
+
+
+    /* 
+    ################################
+    # Sale Items Responsive Start  #
+    ################################
+    */
+
+    .sale-items-8{
+        padding: 0;
+    }
+    .sale-item-container-fluid{
+        display: none;
+    }
+
+    .saleItemsParent{
+     
+    }
+
+    /* 
+    ################################
+    #  Sale Items Responsive End   #
+    ################################
+    */
+
+    /* 
+    ##############################
+    # Sale Item Categories Start #
+    ##############################
+   */
+    .saleCategories {
+        display: none;
+    }
+    /* 
+    ##############################
+    #   Sale Item Categories 
+    ##############################
+   */
+
+    /* Sale Item Actions */
+
+    .sale-items-row{
+        display: none;
+    }
+
+
+    /* Sale Item Actions Start */
+    .sale-actions-row{
+        position: unset;
+        bottom: auto;
+    }
+
+    .sale-actions-container-fluid{
+        height:152px;
+    }
+    
+    .saleItemActions{
+        display: inline-block;
+        /* display: none; */
+    }
+
+    .saleItemActions a{
+        display: inline-block;
+        padding:unset;
+        text-align: center;
+    }
+
+    /* #Buttons */
+    .btn_order, .btn_clear_cart {
+        width: 48.9%;
+        float: left;
+        margin-bottom: 2px;
+        padding: 12px 0!important;
+    }
+
+
+    .btn_select_table, .btn_cart, .btn_order_menu {
+        width: 33.333333%;
+        float: left;
+        margin-bottom: 2px;
+        font-size: 0.7rem!important;
+        padding-left: 0!important;
+        padding-right: 0!important;
+        text-align: center;
+        padding: 10px 0!important;
+    }
+
+
+    .btn_waiter, .btn_active_order, .btn_invoice_order, .btn_print_order {
+        width: 25%;
+        float: left;
+        /* margin-bottom: 2px; */
+        font-size: 0.6rem!important;
+        padding-left: 0!important;
+        padding-right: 0!important;
+        text-align: center;
+        padding: 15px 0!important;
+    }
+    
+}
