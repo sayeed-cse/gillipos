@@ -10,7 +10,8 @@
     }
 
     .content-body{
-        padding-top: 0px!important;
+        padding-top: 0px !important;
+        /* padding: 0px !important; */
     }
 
     .custom-cart-container-fluid{
@@ -18,7 +19,7 @@
     }
 
     .custom-cart-box {
-        height: 360px;
+        /* height: 100vh; */
         margin-top: 29px;
         overflow-x: hidden;
         overflow-y: scroll;
@@ -61,8 +62,9 @@
     }
 
     .cart-footer-row{
-        position: unset;
-        bottom: auto;
+        position: absolute;
+        bottom: 0;
+        overflow: ;
     }
 
     .cart-delivery-option div button{
@@ -84,9 +86,12 @@
         font-weight: bold;
     }
 
+
     .cart-3{
-        margin-bottom:0px;
+        position: relative;
+        height: 80vh;
     }
+   
     /* 
     ################################
     # Cart Footer END
@@ -101,15 +106,17 @@
     */
 
     .sale-items-8{
-        padding: 0;
+       
+        height: 100vh;
     }
-    .sale-item-container-fluid{
-        display: none;
+    .sale-item-container{
+        height: 500px;
     }
 
     .saleItemsParent{
-     
+        grid-template-columns: repeat(3,1fr);
     }
+    
 
     /* 
     ################################
@@ -134,28 +141,31 @@
     /* Sale Item Actions */
 
     .sale-items-row{
-        display: none;
+        /* display: none; */
     }
 
 
     /* Sale Item Actions Start */
     .sale-actions-row{
-        position: unset;
-        bottom: auto;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
     }
 
-    .sale-actions-container-fluid{
+    /* .sale-actions-container-fluid{
         height:152px;
-    }
+    } */
     
     .saleItemActions{
-        display: inline-block;
-        /* display: none; */
+
+       display: inline-block;
+       padding: 0px;
     }
 
     .saleItemActions a{
         display: inline-block;
-        padding:unset;
+        grid-auto-columns: auto;
         text-align: center;
     }
 
