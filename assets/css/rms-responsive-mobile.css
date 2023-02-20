@@ -190,5 +190,84 @@
         text-align: center;
         padding: 15px 0!important;
     }
+
+
+    /* 
+    ######################################################
+    ############ Payment Page Responsive Start ###########
+    ######################################################
+    */
+    .calculator-main-row {
+        margin-top: 61px;
+    }
+
+    .payment-col7{
+
+    }
+    
+    .payment-display-section {
+        padding: 5px 10px;
+        margin: 0;
+    }
+
+    .top-pay-card-left{
+
+    }
+
+    .calculator-main-row{
+        justify-content : center;
+    }
+
+    .payment-col7{
+
+    }
+
+    .card-total{
+        background-color: rgb(97,68,177);
+    }
+
+    .card-paid{
+        background-color: #54b254;
+    }
+
+    .card-payable{
+        background-color: rgb(214, 13, 13);
+    }
+
+    .display-total-amount{}
+    .display-paid-amount{}
+    .display-payable-amount{}
+
+
+    .display-card-amount{}
+    .display-cash-amount{}
+    .discount-percentage-amount{}
+
+    .display-card-amount, .display-cash-amount, .display-percentage-amount {
+        margin-bottom: 0px;
+        font-size: 1.4rem;
+        font-weight: bold;
+        background-color: rgb(27, 31, 50);
+    }
+
+
+    .bottom-pay-card{}
+
+    .display-amount{}
+
+    .display-4{
+
+    }
+
+    .p-display-text{
+
+    }
+
+    .p-display-text span{}
+    /* 
+    ######################################################
+    ############  Payment Page Responsive  END ###########
+    ######################################################
+    */
     
 }

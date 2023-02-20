@@ -553,6 +553,50 @@
     ---------payment section---------
     --------------------------------- */
 
+    .calculator-main-row{
+        justify-content : center;
+    }
+
+    .payment-col7{
+
+    }
+
+    .card-total{
+        background-color: rgb(97,68,177);
+    }
+
+    .card-paid{
+        background-color: rgb(70,48,131);
+    }
+
+    .card-payable{
+        background-color: rgb(52,37,115);
+    }
+
+    .display-total-amount{}
+    .display-paid-amount{}
+    .display-payable-amount{}
+
+    .display-total-amount, .display-paid-amount, .display-payable-amount {
+        margin-bottom: 0px;
+        font-size: 1.4rem;
+        font-weight: bold;
+    }
+
+    .display-card-amount{}
+    .display-cash-amount{}
+    .discount-percentage-amount{}
+
+    .card-card,.card-cash,.card-percentage{
+        background: black;
+    }
+
+    .display-card-amount, .display-cash-amount, .discount-percentage-amount {
+        margin-bottom: 0px;
+        font-size: 1.4rem;
+        font-weight: bold;
+    }
+
     .payment-display-section {
         text-align: center;
         color: #ffffff;
@@ -577,13 +621,12 @@
     .p-display-text {
         display: flex;
         flex-direction: column;
-        padding-top: 1.4rem;
-        padding-bottom: 1.2rem;
-
+        /* padding-top: 1.4rem;
+        padding-bottom: 1.2rem; */
     }
 
     .display-amount {
-        padding-bottom: 1rem;
+        /* padding-bottom: 1rem; */
     }
 
     .p-display-text>span {
@@ -598,6 +641,8 @@
     .bottom-pay-card .display-6 {
         font-size: 2.5rem;
     }
+
+    
 
     /* payment calc section */
 
@@ -641,11 +686,28 @@
     }
 
 
-
     .btn-card,
     .top-pay-card-left {
         background-color: rgb(52, 37, 115);
     }
+
+    
+    .top-pay-card-left {
+        padding: 9px 0;
+        text-align: center;
+        border-radius: 5px;
+        margin: 1.5px;
+    }
+
+    .top-pay-card-left p {
+        line-height: 19px;
+    }
+
+    .top-pay-card-left > .card-body{
+        padding: 0!important;
+    }
+
+
 
     .btn-cash,
     .top-pay-card-middle {
