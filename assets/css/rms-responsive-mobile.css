@@ -286,14 +286,24 @@
 
     .p-display-text span{}
 
+    
+    .cal-button-basic {
+        display: inline-block;
+        float: left;
+        width: 20%;
+    }
+
     .cal-button-basic input{
         font-size: 1rem;
     }
 
     .pay_btn{
         margin-bottom:10px;
-        font-size: 1.5rem!important;
+        width: 100%!important;
+    }
 
+    .pay_btn input{
+        font-size: 1.5rem!important;
     }
 
     .btn-bottom{
