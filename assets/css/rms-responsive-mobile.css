@@ -218,13 +218,10 @@
     }
     
     .payment-display-section {
-        padding: 5px 10px;
+        padding: 5px 0px;
         margin: 0;
     }
 
-    .top-pay-card-left{
-
-    }
 
     .calculator-main-row{
         justify-content : center;
@@ -237,16 +234,24 @@
     .card-card, .card-cash, .card-percentage {
         background-color: rgb(27, 31, 50);
         line-height: 19px;
-        padding: 5px 0;
+        padding: .8rem 0;
         margin: 2px;
         border-radius: 5px;
     }
+       
 
-    .display-card-amount, .display-cash-amount, .display-percentage-amount {
+    .display-card-amount, .display-cash-amount, .display-percentage-amount{
+        font-size: 1.2rem;
+    }
+    
+    .payment-type {
         margin-bottom: 0px;
-        font-size: 0.9rem;
+        font-size: 100%;
         font-weight: bold;
-        color: goldenrod;
+        /* color: goldenrod; */
+    }
+    .top-pay-bottom .payment-type{
+        margin-top: 1rem;
     }
 
     .card-total{
@@ -261,9 +266,17 @@
         background-color: rgb(214, 13, 13);
     }
 
-    .display-total-amount{}
-    .display-paid-amount{}
-    .display-payable-amount{}
+    .display-total-amount,
+    .display-paid-amount,
+    .display-payable-amount{
+        font-size: 1.5rem;
+    }
+.top-pay-card-left{
+    padding: 1rem;
+}
+    .top-pay-card-left p {
+    line-height: .1rem;
+}
 
 
     .display-card-amount{}
@@ -324,7 +337,7 @@
 
     
     .top-pay-bottom p{
-        line-height: 21px;
+        line-height: .5rem;
     }
 
     .calc-text-field{

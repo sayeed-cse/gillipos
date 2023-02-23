@@ -227,16 +227,16 @@
         border: transparent;
     }
 
-    .cart-footer-container-fluid{
+    .cart-footer-container-fluid {
         padding-left: 3px;
     }
 
-    .cart-footer-row{
+    .cart-footer-row {
         position: fixed;
         bottom: 0px;
     }
 
-    .cart-3{
+    .cart-3 {
         margin-bottom: 30px;
         padding: 0;
     }
@@ -376,11 +376,12 @@
 
 
     /* Sale Saving Actions */
-    
-    .sale-actions-row{
-        position:fixed;
+
+    .sale-actions-row {
+        position: fixed;
         bottom: 0;
     }
+
     .saleItemActions {
         /* position: absolute;
         bottom: 0; */
@@ -408,23 +409,24 @@
         width: 1.5rem;
     }
 
-    .button-note{
+    .button-note {
         border: 1px transparent;
     }
+
     .btn_select_table,
     .btn_order {
         background-color: rgb(59, 120, 122) !important;
         border: 1px transparent;
     }
 
-    .btn_cart{
+    .btn_cart {
         background-color: rgb(192, 64, 215) !important;
         border: 1px transparent;
     }
 
-    .btn_order_menu{
+    .btn_order_menu {
         background-color: rgb(29, 121, 235) !important;
-        border: 1px transparent; 
+        border: 1px transparent;
     }
 
 
@@ -553,65 +555,82 @@
     ---------payment section---------
     --------------------------------- */
 
-    .calculator-main-row{
-        justify-content : center;
+    .calculator-main-row {
+        justify-content: center;
     }
 
-    .payment-col7{
+    .payment-col7 {}
 
-    }
-
-    .card-total{
+    .card-total {
         background-color: rgb(97, 68, 177);
     }
 
-    .btn-card{
-        
+    .btn-card {
+
         background-color: rgb(97, 68, 177);
     }
 
 
-    .card-paid{
-        background-color: rgb(70,48,131);
+    .card-paid {
+        background-color: rgb(70, 48, 131);
     }
 
-    .card-payable{
-        background-color: rgb(52,37,115);
+    .card-payable {
+        background-color: rgb(52, 37, 115);
     }
 
-    .display-total-amount{}
-    .display-paid-amount{}
-    .display-payable-amount{}
+    .display-total-amount {}
 
-    .display-total-amount, .display-paid-amount, .display-payable-amount {
+    .display-paid-amount {}
+
+    .display-payable-amount {}
+
+    .display-total-amount,
+    .display-paid-amount,
+    .display-payable-amount {
         margin-bottom: 0px;
-        font-size: 1.4rem;
+        font-size: 4rem;
         font-weight: bold;
     }
 
-    .display-card-amount{}
-    .display-cash-amount{}
-    .discount-percentage-amount{}
+    .payment-type {
+        font-size: 2.5rem;
+        margin-top: 2rem;
+        font-weight: 700;
+    }
 
-    .card-card,.card-cash,.card-percentage{
+    .display-card-amount {}
+
+    .display-cash-amount {}
+
+    .discount-percentage-amount {}
+
+    .card-card,
+    .card-cash,
+    .card-percentage {
         background-color: rgb(27, 31, 50);
         margin: 3px;
         border-radius: 3px;
         padding: 10px 0;
     }
 
-    .display-card-amount, .display-cash-amount, .discount-percentage-amount {
+    .display-card-amount,
+    .display-cash-amount,
+    .display-percentage-amount {
         margin-bottom: 0px;
-        font-size: 1.4rem;
+        font-size: 3.5rem;
         font-weight: bold;
+        color: rgb(201, 152, 2);
     }
 
     .display-percentage-amount {
         margin: 0;
         line-height: 20px;
     }
-    
-    .display-card-amount, .display-cash-amount, .discount-percentage-amount p {
+
+    .display-card-amount,
+    .display-cash-amount,
+    .discount-percentage-amount p {
         line-height: 20px;
         margin: 0;
     }
@@ -654,16 +673,13 @@
         font-weight: 650;
     }
 
-    .bottom-pay-card .display-4 {
-        font-size: 3rem;
-        color: rgb(211, 152, 0);
-    }
+
 
     .bottom-pay-card .display-6 {
         font-size: 2.5rem;
     }
 
-    
+
 
     /* payment calc section */
 
@@ -679,9 +695,11 @@
         border-radius: 8px;
         border: none;
     }
-    .cal-button-basic{
+
+    .cal-button-basic {
         padding: 0;
     }
+
     .cal-button-basic input {
         width: calc(100% - 2px);
         font-size: 1.8rem;
@@ -691,10 +709,10 @@
         border: none;
     }
 
-    .pay-bg{
+    .pay-bg {
         height: 100%;
     }
-    
+
     .calc-text-box {
         margin-bottom: 5px;
     }
@@ -713,40 +731,43 @@
     }
 
     .btn-bottom {
-        height: 9vh ;
+        height: 9vh;
     }
 
     .calc-text-field {
-        height: 9vh ;
+        height: 9vh;
         font-size: 2rem;
     }
 
 
     .btn-card,
-    .top-pay-card-left {
-    }
+    .top-pay-card-left {}
 
     .top-pay-card-left {
-        padding: 9px 0;
+
+        padding: 3rem 0;
         text-align: center;
         border-radius: 5px;
         margin: 1.5px;
     }
 
     .top-pay-card-left p {
-        line-height: 35px;
+        line-height: 5rem;
     }
 
-    .top-pay-card-left > .card-body{
-        padding: 0!important;
+    .top-pay-card-left>.card-body {
+        padding: 0 !important;
     }
 
+    .top-pay-bottom {
+        padding: 2.5rem;
+    }
 
-    .btn-cash{
-        background-color: rgb(70,48,131);
+    .btn-cash {
+        background-color: rgb(70, 48, 131);
 
     }
-    
+
     .top-pay-card-middle {
         background-color: rgb(97, 68, 177);
     }
@@ -775,5 +796,3 @@
     /*------------------------------ 
     ------------Responsive---------
     ---------------------------------------- */
-
-    
