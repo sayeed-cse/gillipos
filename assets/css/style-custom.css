@@ -687,12 +687,12 @@
     }
 
     .btn-bottom {
-        height: 9vh !important;
+        height: 9vh ;
     }
 
     .calc-text-field {
-        height: 9vh !important;
-        font-size: 2rem !important;
+        height: 9vh ;
+        font-size: 2rem;
     }
 
 
