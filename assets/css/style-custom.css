@@ -562,8 +562,14 @@
     }
 
     .card-total{
-        background-color: rgb(97,68,177);
+        background-color: rgb(97, 68, 177);
     }
+
+    .btn-card{
+        
+        background-color: rgb(97, 68, 177);
+    }
+
 
     .card-paid{
         background-color: rgb(70,48,131);
@@ -588,7 +594,10 @@
     .discount-percentage-amount{}
 
     .card-card,.card-cash,.card-percentage{
-        background: black;
+        background-color: rgb(27, 31, 50);
+        margin: 3px;
+        border-radius: 3px;
+        padding: 10px 0;
     }
 
     .display-card-amount, .display-cash-amount, .discount-percentage-amount {
@@ -596,6 +605,18 @@
         font-size: 1.4rem;
         font-weight: bold;
     }
+
+    .display-percentage-amount {
+        margin: 0;
+        line-height: 20px;
+    }
+    
+    .display-card-amount, .display-cash-amount, .discount-percentage-amount p {
+        line-height: 20px;
+        margin: 0;
+    }
+
+
 
     .payment-display-section {
         text-align: center;
@@ -703,10 +724,8 @@
 
     .btn-card,
     .top-pay-card-left {
-        background-color: rgb(52, 37, 115);
     }
 
-    
     .top-pay-card-left {
         padding: 9px 0;
         text-align: center;
@@ -715,7 +734,7 @@
     }
 
     .top-pay-card-left p {
-        line-height: 19px;
+        line-height: 35px;
     }
 
     .top-pay-card-left > .card-body{
@@ -723,8 +742,11 @@
     }
 
 
+    .btn-cash{
+        background-color: rgb(70,48,131);
 
-    .btn-cash,
+    }
+    
     .top-pay-card-middle {
         background-color: rgb(97, 68, 177);
     }
