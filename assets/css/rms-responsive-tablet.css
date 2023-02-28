@@ -1,8 +1,8 @@
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
-    .saleItemsParent{
-        grid-template-columns : repeat(6,1fr);
-    }
-
+    
+:root{
+    font-size: 35%;
+}
     
 }

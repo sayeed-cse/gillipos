@@ -1,34 +1,120 @@
+    :root {
+        --rms-dark1: rgb(19, 20, 38);
+        --rms-dark2: rgb(27, 31, 50);
+        --rms-dark3: rgb(49, 55, 84);
+        --rms-violet1: rgb(52, 37, 115);
+        --rms-violet2: rgb(70, 48, 131);
+        --rms-violet3: rgb(97, 68, 177);
+        --rms-violet4: rgb(135, 104, 207);
+        --rms-pink: rgb(192, 64, 215);
+        --rms-success: rgb(74, 145, 72);
+        --rms-success2: rgb(0, 123, 33);
+        --rms-info: rgb(48, 125, 246);
+        --rms-danger: rgb(166, 53, 58);
+        --rms-warn: rgb(201, 152, 2);
+        --rms-elf-green1: rgb(59, 120, 122);
+        --rms-elf-green2: rgb(22, 130, 108);
+        /* font-size: 100%; */
+    }
+
+    /* common class start */
+    .button-note {
+        border: 0.063rem transparent;
+    }
+
+    .btn_select_table,
+    .btn_order {
+        background-color: var(--rms-elf-green1);
+        border: 0.063rem transparent;
+    }
+
+    .btn_cart {
+        background-color: var(--rms-pink);
+        border: 0.063rem transparent;
+    }
+
+    .btn_order_menu {
+        background-color: var(--rms-info);
+        border: 0.063rem transparent;
+    }
+
+
+    .btn_waiter {
+        background-color: var(--rms-warn);
+        border: 0.063rem transparent;
+    }
+
+    .btn_clear_cart {
+        background-color: var(--rms-danger);
+        border: 0.063rem transparent;
+    }
+
+    .btn_active_order {
+        background-color: var(--rms-success);
+        border: 0.063rem transparent;
+    }
+
+    .btn_invoice_order {
+        background-color: var(--rms-elf-green2);
+        border: 0.063rem transparent;
+    }
+
+    .btn_print_order {
+        background-color: var(--rms-elf-green2);
+        border: 0.063rem transparent;
+    }
+
+    .btn_success {
+        background-color: var(--rms-elf-green2);
+    }
+
+    .btn_paid,
+    .top-pay-card-right {
+        background-color: var(--rms-violet4);
+    }
+
+    /* common class end */
     body {
-        background-color: rgb(19, 20, 38);
+        max-height: 100vh;
+        background-color: var(--rms-dark1);
     }
 
     .content-body {
+        padding-top: .5rem;
         position: fixed;
         top: 0;
         right: 0;
         left: 0;
+        height: 100%;
     }
 
     .content-left {
-        background-color: rgb(27, 31, 50);
-        border-radius: 8px 8px 0px 0px;
+        background-color: var(--rms-dark2);
+        border-radius: .5rem .5rem;
     }
+
+    .mid-content {
+        position: relative;
+        height: 90vh;
+
+    }
+
 
     /* width */
     ::-webkit-scrollbar {
-        width: 2px;
+        width: .125rem;
     }
 
     /* Track */
     ::-webkit-scrollbar-track {
-        box-shadow: inset 0 0 5px transparent;
-        border-radius: 10px;
+        box-shadow: inset 0 0 .313rem transparent;
+        border-radius: .625rem;
     }
 
     /* Handle */
     ::-webkit-scrollbar-thumb {
         background: transparent;
-        border-radius: 10px;
+        border-radius: .625rem;
     }
 
     /* Handle on hover */
@@ -39,7 +125,10 @@
 
 
     .custom-cart-box {
-        background-color: rgb(27, 30, 55) !important;
+        background-color: rgb(27, 30, 55);
+        padding: 0;
+        margin: 0 .75rem;
+
     }
 
     .saleCategories {
@@ -51,22 +140,25 @@
     }
 
     .saleCategories a {
-        margin-bottom: 2px;
-        border-radius: 14px;
-        background-color: rgb(27, 31, 50);
+        margin-right: .125rem;
+        margin-bottom: .125rem;
+        border-radius: .5rem;
+        background-color: var(--rms-dark2);
         color: #fff;
-        padding: 29px 5px;
-        text-align: center;
-        width: 100%;
-        /* height: 16%; */
-        font-size: 1.3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 9.7rem;
+        height: 8.5rem;
+        font-size: 1.5rem;
         font-weight: 450;
     }
 
     .saleCategoryActive,
     .payment-note {
         background-color: rgb(49, 55, 84) !important;
-        border: 1px transparent;
+        border: 0.063rem transparent;
     }
 
     .saleCategories a:hover {
@@ -81,94 +173,105 @@
     .saleItemsParent,
     .orderBoxParent {
         overflow-y: scroll;
-        padding: 5px;
-        padding-right: 3px;
+        /* padding: .313rem; */
+        padding-right: .188rem;
+        padding-left: .188rem;
+        padding-top: 0;
         overflow-x: hidden;
         display: grid;
         grid-template-columns: repeat(8, 1fr);
-        row-gap: 0px;
-        height: 720px;
+        row-gap: 0;
+        /* height: 45rem; */
+        height: 85vh;
     }
 
 
     /* .saleItem {
             display: inline-block;
             background-color: #4b109f;
-            margin: 1px;
+            margin: 0.063rem;
             width: 12%;
-            border-radius: 6px;
-            padding: 10px 4px;
+            border-radius: .375rem;
+            padding: .625rem .25rem;
             cursor: pointer;
         } */
 
     .saleItem {
         background-color: rgb(52, 37, 115);
-        margin: 1px;
-        border-radius: 6px;
-        padding: 10px 4px;
+        margin: 0.063rem;
+        height: 9.63rem;
+        width: 9.63rem;
+        border-radius: .375rem;
+        padding: .625rem .25rem;
         cursor: pointer;
     }
 
     .saleItem p {
+        font-size: 1.1rem;
         text-align: center;
         color: #fff;
     }
 
     .itemClearFix {
         display: block;
-        height: 18px;
+        height: 1.125rem;
         width: 100%;
     }
 
     .categoryPrice {
         width: 100%;
-        padding: 0 9px;
+        display: flex;
+        justify-content: space-around;
+        /* align-items:end; */
+        padding-top: 1.5rem;
+        
     }
 
     .categoryPrice strong {
         color: #ffffffcf;
         font-weight: normal;
+        font-size: 1rem;
     }
 
-    .itemCategory {}
-
-    .itemPrice {
-        float: right;
-    }
 
     .itemPrice small {
-        font-size: 0.65rem;
+        font-size: .9rem;
     }
 
     /* Cart Item Left */
+    .accordion .card{
+        margin-bottom: 0;
+        border-bottom: 1px transparent;
+    }
     .cart-main-card {
-        padding: 10px 15px;
+        padding: .625rem 1.313rem;
         overflow: hidden;
-        background-color: rgb(49, 55, 84);
-        margin-bottom: 1px !important;
+        background-color: var(--rms-dark3);
+        margin-bottom: 0.063rem ;
     }
 
     .cart-item-header {}
 
     .cart-item-header h3 {
-        padding: 10px 5px;
+        padding: .625rem .313rem;
         font-size: 1rem
     }
 
     .cart-item-header h3 button {
-        display: inline-block !important;
+        display: inline-block ;
     }
 
     .cart-item-name {
         width: 41%;
         overflow: hidden;
         float: left;
-        padding-top: 12px;
+        padding-top: 1.125rem;
     }
 
     .cart-item-name p {
         text-align: left;
         margin: 0;
+        font-size: 1rem;
         color: white;
     }
 
@@ -176,9 +279,11 @@
 
     .cart-actions {
         overflow: hidden;
-        padding: 5px;
-        display: inline-block !important;
-        float: right;
+        padding: .313rem;
+        /* display: inline-block !important;
+        float: right; */
+        display: flex;
+        justify-content: flex-end;
 
     }
 
@@ -186,18 +291,18 @@
     .btn_amount,
     .pay-bg {
         background-color: rgb(49, 55, 84);
-        border: 1px transparent;
+        border: 0.063rem transparent;
     }
 
     .btn_minus:hover,
     .btn-digit,
     .bottom-pay-card {
-        background-color: rgb(27, 31, 50);
+        background-color: var(--rms-dark2);
     }
 
     .btn_qty {
         background-color: rgb(74, 145, 72);
-        border: 1px transparent;
+        border: 0.063rem transparent;
         font-size: 1rem;
         font-weight: 900;
 
@@ -206,7 +311,7 @@
     .btn_plus,
     .btn-lg-pay {
         background-color: rgb(97, 68, 177);
-        border: 1px transparent;
+        border: 0.063rem transparent;
     }
 
     .btn_plus:hover {
@@ -215,29 +320,32 @@
     }
 
     .cart-actions button {
-        display: inline-block !important;
-        margin-left: 6px;
+        margin-left: .375rem;
     }
 
     .cart-collapse-btn {
         background-color: rgba(48, 125, 246) !important;
         color: #fff;
-        border-radius: 10px;
-        margin-right: 12px;
+        border-radius: .625rem;
+        margin-right: 1.125rem;
         border: transparent;
     }
+        /* .cart-collapse-btn:not(.collapsed)  {
+        background-color: var(--rms-success) !important;
+    } */
 
-    .cart-footer-container-fluid {
-        padding-left: 3px;
-    }
 
-    .cart-footer-row {
+    /* .cart-footer-container-fluid {
+        padding-left: .188rem;
+    } */
+
+    /* .cart-footer-row {
         position: fixed;
-        bottom: 0px;
-    }
+        bottom: 0;
+    } */
 
     .cart-3 {
-        margin-bottom: 30px;
+        margin-bottom: 1.875rem;
         padding: 0;
     }
 
@@ -245,91 +353,101 @@
 
     .cart-inside-group {
         overflow: hidden;
-        padding-left: 9px;
+        padding-left: .563rem;
     }
 
-    .cart-inside-group h4 {}
+    .cart-inside-group h4 {
+        font-size: 1.3rem;
+        font-weight: 500;
+        color: var(--rms-success);
+    }
 
     .cart-group-products {
-        line-height: 27px;
-        display: block;
-        margin-bottom: 20px;
+        line-height: 1.5rem;
+        display: flex;
+        margin-top: 1rem;
+        margin-bottom: 1.25rem;
     }
 
     .cart-group-products label {
-        font-size: 0.88rem
+        font-size: 1rem;
+        margin-left: .5rem;
+        color: white;
     }
 
-    .cart-inside-group div label input {
+        .cart-group-products input {
         -ms-transform: scale(2);
         -moz-transform: scale(2);
         -webkit-transform: scale(2);
         -o-transform: scale(2);
         transform: scale(2);
-        padding: 10px;
-        margin-right: 11px;
-        margin-left: 5px;
+        padding: .625rem;
+        margin-right: .563rem;
+        margin-left: .513rem;
+        color: var(--rms-elf-green2);
     }
 
 
 
     /* Cart Footer */
-
-    .cart-footer-buttons {
-        display: grid;
-        grid-template-columns: 2fr 5fr 1.2fr;
-        width: 100%;
-
-
+    .cart-area {
+        display: flex;
+        /* flex-direction: column; */
+        flex-flow: column wrap;
+        position: relative;
+        height: 90vh;
+        background-color: var(--rms-dark2);
     }
 
-    /* .cart-bottom-actions {
-        position: fixed;
-        bottom: 0;
-        grid-template-columns: 152px 295px 50px;
+    .inside-area {
+        position: absolute;
+        bottom: 1.5rem;
+        display: flex;
+        flex-grow: 1;
+        /* padding: 0 12px; */
+        margin: 0;
+    }
+
+    /* .cart-footer-buttons {
+        display: flex;
     } */
 
-    .cart-footer {
+
+    /* .cart-footer {
+        padding: 0;
         margin-top: 0;
-        font-size: 24px;
+        font-size: 2.25rem;
+    } */
+
+    .cart-delivery-option {
+        width: 35%;
+        /* flex-basis: 10rem; */
     }
 
-    .cart-delivery-option {}
 
-    .cart-delivery-option div {
-        width: 100%;
-    }
-
-    .cart-delivery-option div button {
-        margin: 0;
-        padding: 9px 18px;
-        width: 100%;
-    }
-
-    .cart-delivery-option select {}
-
-    .cart-delivery-option select option {}
 
     .button-inside {
         background-color: rgb(135, 104, 207);
         color: #ffffff;
         border: none;
-        border-radius: 0px;
-        padding: 4px 20px;
-        font-weight: 600;
-        font-size: 1.7rem;
+        border-radius: 0;
+        width: 100%;
+        font-weight: 700;
+        font-size: 1.9rem;
+        height: 100%;
+        
     }
 
     .dropdown-menu {
         background: rgb(49, 44, 84);
         border-radius: 0;
-        --bs-dropdown-min-width: 7.12rem;
+        /* --bs-dropdown-min-width: 7.12rem; */
     }
 
     .dropdown-menu>.dropdown-item {
-        font-size: 0.7rem;
+        font-size: 1rem;
         color: #ffffff;
-        padding: 14px 0 !important;
+        padding: 1rem 1.5rem;
         text-align: center;
     }
 
@@ -343,126 +461,70 @@
 
 
 
-    .cart-total-parent {
+    .cart-total {
         background: rgb(70, 48, 131);
-        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         color: #fff;
-        padding: 4px 20px;
-        font-size: 1.7rem;
+        padding: 0;
+        font-size: 1.8rem;
         font-weight: 600;
+        margin: 0;
+        width: 50%;
     }
 
 
 
-    .cart-note {}
-
-    .cart-note button {}
-
-    .cart-note button img {
-        transform: scale(0.6);
-    }
-
-
-
-    .cart-note button {
+    .cart-note {
         background-color: rgb(49, 55, 84);
+        width: 15%;
+        
+    }
+
+
+    .cart-note img {
+        padding-left: .1rem;
+        transform: scale(0.6);
         height: 100%;
         width: 100%;
     }
 
-    .cart-note button {}
-
-    .cart-note button i {}
-
 
     /* Sale Saving Actions */
 
-    .sale-actions-row {
-        position: fixed;
-        bottom: 0;
-    }
-
     .saleItemActions {
-        /* position: absolute;
-        bottom: 0; */
+        background-color: var(--rms-dark1);
+        position: absolute;
+        bottom: 1.5rem;
         display: grid;
         grid-template-columns: repeat(7, 1fr);
-        column-gap: 2px;
+        column-gap: .125rem;
         margin-left: .4rem;
     }
 
-    .saleItemActions>div {
+    .button-actions {
         width: 100%;
-        border-radius: 10px;
+        border-radius: .625rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
-    .saleItemActions a {
-        font-size: 0.9rem;
-        font-weight: 600;
-        padding: 14px 1.15rem;
+    .button-actions a {
+        font-size: 1.05rem;
+        font-weight: 550;
+        padding: 1rem 1.1rem;
         color: white;
         /* width: 100%; */
     }
 
     .pos-icon {
-        height: 1.5rem;
-        width: 1.5rem;
-    }
-
-    .button-note {
-        border: 1px transparent;
-    }
-
-    .btn_select_table,
-    .btn_order {
-        background-color: rgb(59, 120, 122) !important;
-        border: 1px transparent;
-    }
-
-    .btn_cart {
-        background-color: rgb(192, 64, 215) !important;
-        border: 1px transparent;
-    }
-
-    .btn_order_menu {
-        background-color: rgb(29, 121, 235) !important;
-        border: 1px transparent;
+        height: 2.2rem;
+        width: 2.2rem;
     }
 
 
-    .btn_waiter {
-        background-color: rgb(201, 152, 2) !important;
-        border: 1px transparent;
-    }
-
-    .btn_clear_cart {
-        background-color: rgb(166, 53, 58) !important;
-        border: 1px transparent;
-    }
-
-    .btn_active_order {
-        background-color: rgb(74, 145, 72) !important;
-        border: 1px transparent;
-    }
-
-    .btn_invoice_order {
-        background-color: rgb(22, 130, 108) !important;
-        border: 1px transparent;
-    }
-
-    .btn_print_order {
-        background-color: rgb(48, 125, 246) !important;
-        border: 1px transparent;
-    }
-
-    .btn_success {
-        background-color: rgb(0, 123, 33);
-    }
-
-    .btn_paid,
-    .top-pay-card-right {
-        background-color: rgb(135, 104, 207);
-    }
 
     /*---------------------------------------
     ----------  Style Save Order ------------
@@ -478,9 +540,9 @@
 
     .orderBoxItem,
     .employeeInfoCard {
-        background-color: rgb(27, 31, 50);
-        padding: 30px 15px;
-        border-radius: 10px;
+        background-color: var(--rms-dark2);
+        padding: 1.875rem 1.313rem;
+        border-radius: .625rem;
 
     }
 
@@ -488,16 +550,16 @@
     .employeeInfo {
         display: flex;
         justify-content: space-between;
-        margin-bottom: 5px;
+        margin-bottom: .313rem;
     }
 
     .order-state-title,
     .order-state-bill,
     .employee-name,
     .employee-desig {
-        border-radius: 15px;
+        border-radius: 1.313rem;
         text-align: center;
-        padding: 3px 5px;
+        padding: .188rem .313rem;
         font-size: .8rem;
 
     }
@@ -526,9 +588,9 @@
         display: grid;
         grid-template-columns: repeat(7, 1fr);
         grid-template-rows: repeat(4, 1fr);
-        background-color: rgb(27, 31, 50);
+        background-color: var(--rms-dark2);
         gap: .2rem;
-        border-radius: 30px;
+        border-radius: 1.875rem;
     }
 
     .tables {
@@ -537,7 +599,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        border-radius: 5px;
+        border-radius: .313rem;
         /* width:8vw; */
         height: 7vw;
     }
@@ -588,7 +650,7 @@
     .display-total-amount,
     .display-paid-amount,
     .display-payable-amount {
-        margin-bottom: 0px;
+        margin-bottom: 0;
         font-size: 4rem;
         font-weight: bold;
     }
@@ -608,30 +670,30 @@
     .card-card,
     .card-cash,
     .card-percentage {
-        background-color: rgb(27, 31, 50);
-        margin: 3px;
-        border-radius: 3px;
-        padding: 10px 0;
+        background-color: var(--rms-dark2);
+        margin: .188rem;
+        border-radius: .188rem;
+        padding: .625rem 0;
     }
 
     .display-card-amount,
     .display-cash-amount,
     .display-percentage-amount {
-        margin-bottom: 0px;
+        margin-bottom: 0;
         font-size: 3.5rem;
         font-weight: bold;
-        color: rgb(201, 152, 2);
+        color: var(--rms-warn);
     }
 
     .display-percentage-amount {
         margin: 0;
-        line-height: 20px;
+        line-height: 1.25rem;
     }
 
     .display-card-amount,
     .display-cash-amount,
     .discount-percentage-amount p {
-        line-height: 20px;
+        line-height: 1.25rem;
         margin: 0;
     }
 
@@ -640,13 +702,13 @@
     .payment-display-section {
         text-align: center;
         color: #ffffff;
-        margin-right: 4px;
+        margin-right: .25rem;
         padding: 0;
 
     }
 
     .payment-display-section {
-        padding: 0px;
+        padding: 0;
     }
 
     .payment-display-section .col-4 {
@@ -655,7 +717,7 @@
     }
 
     .payment-display-section .col-4 .card {
-        margin: 1px;
+        margin: 0.063rem;
     }
 
     .p-display-text {
@@ -688,11 +750,11 @@
     }
 
     .button-basic input {
-        width: calc(100% - 2px);
+        width: calc(100% - .125rem);
         font-size: 2.8rem;
         font-weight: 700;
         text-align: center;
-        border-radius: 8px;
+        border-radius: .5rem;
         border: none;
     }
 
@@ -701,11 +763,11 @@
     }
 
     .cal-button-basic input {
-        width: calc(100% - 2px);
+        width: calc(100% - .125rem);
         font-size: 1.8rem;
         font-weight: 700;
         text-align: center;
-        border-radius: 8px;
+        border-radius: .5rem;
         border: none;
     }
 
@@ -714,7 +776,7 @@
     }
 
     .calc-text-box {
-        margin-bottom: 5px;
+        margin-bottom: .313rem;
     }
 
     .btn-digit {
@@ -747,8 +809,8 @@
 
         padding: 3rem 0;
         text-align: center;
-        border-radius: 5px;
-        margin: 1.5px;
+        border-radius: .313rem;
+        margin: 1..313rem;
     }
 
     .top-pay-card-left p {

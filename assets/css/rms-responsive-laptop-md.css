@@ -1,5 +1,6 @@
 /*design for smartphones*/
-@media only screen and (min-width: 1025px) and (max-width: 1200px) {
-
-  
+@media only screen and (min-width: 1025px) and (max-width :1200px) {
+    :root{
+        font-size: 53.385%;
+    }
 }

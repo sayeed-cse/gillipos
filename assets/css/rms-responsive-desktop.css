@@ -1,1 +1,27 @@
-@media only screen and (width >=1201px) {}
+@media only screen and (min-width :1201px) and (max-width:1365px) {
+    :root {
+        font-size: 62.5%;
+    }
+
+}
+
+@media only screen and (min-width :1366px) and (max-width:1599px) {
+    :root {
+        font-size: 71%;
+    }
+
+}
+
+@media only screen and (min-width :1600px) and (max-width :1750px) {
+    :root {
+        font-size: 89.334%;
+    }
+
+}
+
+@media only screen and (min-width :1751px) and (max-width:1920px) {
+    :root {
+        font-size: 100%;
+    }
+
+}
