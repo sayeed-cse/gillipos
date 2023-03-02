@@ -79,15 +79,15 @@
         background-color: var(--rms-dark1);
     }
 
-    .content-body {
+    .rms-content-body {
         padding: 1.9rem;
         padding-top: .5rem;
         position: fixed;
-        top: 0;
+        top: 7rem;
         right: 0;
         left: 0;
         height: 100%;
-        margin: auto;
+        
     }
 
     .content-left {
@@ -866,6 +866,7 @@
 
     .cal-button-basic {
         height: 6rem;
+        
     }
 
 
