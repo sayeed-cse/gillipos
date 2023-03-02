@@ -82,12 +82,12 @@
     .content-body {
         padding: 1.9rem;
         padding-top: .5rem;
-
         position: fixed;
         top: 0;
         right: 0;
         left: 0;
         height: 100%;
+        margin: auto;
     }
 
     .content-left {
@@ -528,7 +528,7 @@
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: repeat(5, 1fr);
         color: white;
-        gap: .5rem .5rem;
+        grid-gap: .5rem;
     }
 
     .orderBoxItem,
@@ -573,6 +573,57 @@
         display: flex;
         flex-direction: column;
         font-size: .75rem;
+    }
+
+    /* waiter style section */
+    .employeeSection {
+        margin: 2rem;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        color: white;
+        grid-gap: 1rem;
+    }
+
+    .employeeInfoCard {
+        background-color: var(--rms-dark2);
+        padding: 1.875rem 1.313rem;
+        border-radius: .7rem;
+        height: 9.5rem;
+        width: 14rem;
+
+    }
+
+    .employeeInfo {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: .313rem;
+    }
+
+    .employee-name,
+    .employee-desig {
+        border-radius: 1.313rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: .288rem .313rem;
+        font-size: .9rem;
+        height: 1.6rem;
+
+    }
+
+    .employee-name {
+        width: 50%;
+    }
+
+    .employee-desig {
+        width: 45%;
+    }
+
+    .login-details>p {
+        display: flex;
+        flex-direction: column;
+        font-size: .8rem;
     }
 
     /*------------------------
@@ -886,6 +937,26 @@
         width: 2rem;
     }
 
+    /* product page style */
+    .sale-items-8 {
+        display: flex;
+        justify-content: center;
+        margin-right: 1rem;
+    }
+
+    .productItemsParent {
+        overflow-y: scroll;
+        /* padding: .313rem; */
+        padding-right: .188rem;
+        padding-left: .188rem;
+        padding-top: 0;
+        overflow-x: hidden;
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        grid-gap: .3rem;
+        /* height: 45rem; */
+        height: 90vh;
+    }
 
     /*------------------------------ 
     ------------Responsive---------

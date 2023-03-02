@@ -12,7 +12,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
 
     <!-- CSS
-    ============================================ -->
+	============================================ -->
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
@@ -34,1062 +34,1087 @@
 
     <!-- Custom Style CSS Only For Demo Purpose -->
     <link id="cus-style" rel="stylesheet" href="assets/css/style-primary.css">
+
+    <!-- rms custom style -->
     <link rel="stylesheet" href="assets/css/style-custom.css">
 
+     <!-- smartphone Stylesheet -->
+    <link rel="stylesheet" media-only-screen="(min-width:320px) and (max-width:480px)"
+        href="assets/css/rms-responsive-mobile.css">
      <!-- tablet stylesheet -->
      
-    <!-- <link rel="stylesheet" media="(max-width:800px) and (min-width:451px)" href="assets/css/rms-responsive-tablet.css"> -->
-
-     <!-- smartphone stylesheet -->
-    <!--  <link rel="stylesheet" media="(max-width:450px)" href="assets/css/rms-responsive-smartphone.css"> -->
-
-     <!-- Mobile Stylesheet -->
+    <link rel="stylesheet" media-only-screen="(min-width:481px) and (max-width:768px)"
+        href="assets/css/rms-responsive-tablet.css">
+     <!-- laptop sm stylesheet -->
      
-    <link rel="stylesheet" media="(min-width: 320px) and (max-width: 480px)" href="assets/css/rms-responsive-mobile.css">
-    <link rel="stylesheet" media="(min-width: 1366px) and (max-width: 1599px)" href="assets/css/rms-responsive.css">
+    <link rel="stylesheet" media-only-screen="(min-width:769px) and (max-width:1024)"
+        href="assets/css/rms-responsive-laptop-sm.css">
+     <!-- laptop md stylesheet -->
+     
+    <link rel="stylesheet" media-only-screen="(min-width:1025px) and (max-width:1200)"
+        href="assets/css/rms-responsive-laptop-md.css">
+    <!-- desktop stylesheet -->
+     
+    <link rel="stylesheet" media-only-screen="(min-width: 1201px) and (max-width:1920px)"
+        href="assets/css/rms-responsive-desktop.css">
+
 
 </head>
 
 <body>
 
-    <div class="main-wrapper">
-        <!-- Header Section Start -->
-        <div class="header-section">
-            <div class="container-fluid">
-                <div class="row justify-content-between align-items-center">
+    <div class="container-fluid">
+        <header>
+            <!-- Header Section Start -->
+            <div class="header-section">
+                <div class="container-fluid">
+                    <div class="row justify-content-between align-items-center">
 
-                    <!-- Header Logo (Header Left) Start -->
-                    <div class="header-logo col-auto">
-                        <a href="index.html">
-                            <img src="assets/images/logo/logo.png" alt="">
-                            <img src="assets/images/logo/logo-light.png" class="logo-light" alt="">
-                        </a>
-                    </div>
-                    <!-- Header Logo (Header Left) End -->
+                        <!-- Header Logo (Header Left) Start -->
+                        <div class="header-logo col-auto">
+                            <a href="index.html">
+                                <img src="assets/images/logo/logo.png" alt="">
+                                <img src="assets/images/logo/logo-light.png" class="logo-light" alt="">
+                            </a>
+                        </div><!-- Header Logo (Header Left) End -->
 
-                    <!-- Header Right Start -->
-                    <div class="header-right flex-grow-1 col-auto">
-                        <div class="row justify-content-between align-items-center">
+                        <!-- Header Right Start -->
+                        <div class="header-right flex-grow-1 col-auto">
+                            <div class="row justify-content-between align-items-center">
 
-                            <!-- Side Header Toggle & Search Start -->
-                            <div class="col-auto">
-                                <div class="row align-items-center">
+                                <!-- Side Header Toggle & Search Start -->
+                                <div class="col-auto">
+                                    <div class="row align-items-center">
 
-                                    <!--Side Header Toggle-->
-                                    <div class="col-auto"><button class="side-header-toggle"><i
-                                                class="zmdi zmdi-menu"></i></button></div>
+                                        <!--Side Header Toggle-->
+                                        <div class="col-auto"><button class="side-header-toggle"><i
+                                                    class="zmdi zmdi-menu"></i></button></div>
 
-                                    <!--Header Search-->
-                                    <div class="col-auto">
+                                        <!--Header Search-->
+                                        <div class="col-auto">
 
-                                        <div class="header-search">
+                                            <div class="header-search">
 
-                                            <button class="header-search-open d-block d-xl-none"><i
-                                                    class="zmdi zmdi-search"></i></button>
+                                                <button class="header-search-open d-block d-xl-none"><i
+                                                        class="zmdi zmdi-search"></i></button>
 
-                                            <div class="header-search-form">
-                                                <form action="#">
-                                                    <input type="text" placeholder="Search Here">
-                                                    <button><i class="zmdi zmdi-search"></i></button>
-                                                </form>
-                                                <button class="header-search-close d-block d-xl-none"><i
-                                                        class="zmdi zmdi-close"></i></button>
+                                                <div class="header-search-form">
+                                                    <form action="#">
+                                                        <input type="text" placeholder="Search Here">
+                                                        <button><i class="zmdi zmdi-search"></i></button>
+                                                    </form>
+                                                    <button class="header-search-close d-block d-xl-none"><i
+                                                            class="zmdi zmdi-close"></i></button>
+                                                </div>
+
                                             </div>
-
                                         </div>
+
                                     </div>
+                                </div><!-- Side Header Toggle & Search End -->
 
-                                </div>
-                            </div><!-- Side Header Toggle & Search End -->
+                                <!-- Header Notifications Area Start -->
+                                <div class="col-auto">
 
-                            <!-- Header Notifications Area Start -->
-                            <div class="col-auto">
+                                    <ul class="header-notification-area">
 
-                                <ul class="header-notification-area">
+                                        <!--Language-->
+                                        <li class="adomx-dropdown position-relative col-auto">
+                                            <a class="toggle" href="#"><img class="lang-flag"
+                                                    src="assets/images/flags/flag-1.jpg" alt=""><i
+                                                    class="zmdi zmdi-caret-down drop-arrow"></i></a>
 
-                                    <!--Language-->
-                                    <li class="adomx-dropdown position-relative col-auto">
-                                        <a class="toggle" href="#"><img class="lang-flag"
-                                                src="assets/images/flags/flag-1.jpg" alt=""><i
-                                                class="zmdi zmdi-caret-down drop-arrow"></i></a>
+                                            <!-- Dropdown -->
+                                            <ul class="adomx-dropdown-menu dropdown-menu-language">
+                                                <li><a href="#"><img src="assets/images/flags/flag-1.jpg" alt="">
+                                                        English</a></li>
+                                                <li><a href="#"><img src="assets/images/flags/flag-2.jpg" alt="">
+                                                        Japanese</a></li>
+                                                <li><a href="#"><img src="assets/images/flags/flag-3.jpg" alt="">
+                                                        Spanish
+                                                    </a></li>
+                                                <li><a href="#"><img src="assets/images/flags/flag-4.jpg" alt="">
+                                                        Germany</a></li>
+                                            </ul>
 
-                                        <!-- Dropdown -->
-                                        <ul class="adomx-dropdown-menu dropdown-menu-language">
-                                            <li><a href="#"><img src="assets/images/flags/flag-1.jpg" alt="">
-                                                    English</a></li>
-                                            <li><a href="#"><img src="assets/images/flags/flag-2.jpg" alt="">
-                                                    Japanese</a></li>
-                                            <li><a href="#"><img src="assets/images/flags/flag-3.jpg" alt=""> Spanish
-                                                </a></li>
-                                            <li><a href="#"><img src="assets/images/flags/flag-4.jpg" alt="">
-                                                    Germany</a></li>
-                                        </ul>
+                                        </li>
 
-                                    </li>
+                                        <!--Mail-->
+                                        <li class="adomx-dropdown col-auto">
+                                            <a class="toggle" href="#"><i class="zmdi zmdi-email-open"></i><span
+                                                    class="badge"></span></a>
 
-                                    <!--Mail-->
-                                    <li class="adomx-dropdown col-auto">
-                                        <a class="toggle" href="#"><i class="zmdi zmdi-email-open"></i><span
-                                                class="badge"></span></a>
-
-                                        <!-- Dropdown -->
-                                        <div class="adomx-dropdown-menu dropdown-menu-mail">
-                                            <div class="head">
-                                                <h4 class="title">You have 3 new mail.</h4>
+                                            <!-- Dropdown -->
+                                            <div class="adomx-dropdown-menu dropdown-menu-mail">
+                                                <div class="head">
+                                                    <h4 class="title">You have 3 new mail.</h4>
+                                                </div>
+                                                <div class="body custom-scroll">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="image"><img
+                                                                        src="assets/images/avatar/avatar-2.jpg" alt="">
+                                                                </div>
+                                                                <div class="content">
+                                                                    <h6>Sub: New Account</h6>
+                                                                    <p>There are many variations of passages of Lorem
+                                                                        Ipsum
+                                                                        available. </p>
+                                                                </div>
+                                                                <span class="reply"><i
+                                                                        class="zmdi zmdi-mail-reply"></i></span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="image"><img
+                                                                        src="assets/images/avatar/avatar-1.jpg" alt="">
+                                                                </div>
+                                                                <div class="content">
+                                                                    <h6>Sub: Mail Support</h6>
+                                                                    <p>There are many variations of passages of Lorem
+                                                                        Ipsum
+                                                                        available. </p>
+                                                                </div>
+                                                                <span class="reply"><i
+                                                                        class="zmdi zmdi-mail-reply"></i></span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="image"><img
+                                                                        src="assets/images/avatar/avatar-2.jpg" alt="">
+                                                                </div>
+                                                                <div class="content">
+                                                                    <h6>Sub: Product inquiry</h6>
+                                                                    <p>There are many variations of passages of Lorem
+                                                                        Ipsum
+                                                                        available. </p>
+                                                                </div>
+                                                                <span class="reply"><i
+                                                                        class="zmdi zmdi-mail-reply"></i></span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <div class="image"><img
+                                                                        src="assets/images/avatar/avatar-1.jpg" alt="">
+                                                                </div>
+                                                                <div class="content">
+                                                                    <h6>Sub: Mail Support</h6>
+                                                                    <p>There are many variations of passages of Lorem
+                                                                        Ipsum
+                                                                        available. </p>
+                                                                </div>
+                                                                <span class="reply"><i
+                                                                        class="zmdi zmdi-mail-reply"></i></span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
                                             </div>
-                                            <div class="body custom-scroll">
-                                                <ul>
-                                                    <li>
-                                                        <a href="#">
-                                                            <div class="image"><img
-                                                                    src="assets/images/avatar/avatar-2.jpg" alt="">
-                                                            </div>
-                                                            <div class="content">
-                                                                <h6>Sub: New Account</h6>
-                                                                <p>There are many variations of passages of Lorem Ipsum
-                                                                    available. </p>
-                                                            </div>
-                                                            <span class="reply"><i
-                                                                    class="zmdi zmdi-mail-reply"></i></span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">
-                                                            <div class="image"><img
-                                                                    src="assets/images/avatar/avatar-1.jpg" alt="">
-                                                            </div>
-                                                            <div class="content">
-                                                                <h6>Sub: Mail Support</h6>
-                                                                <p>There are many variations of passages of Lorem Ipsum
-                                                                    available. </p>
-                                                            </div>
-                                                            <span class="reply"><i
-                                                                    class="zmdi zmdi-mail-reply"></i></span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">
-                                                            <div class="image"><img
-                                                                    src="assets/images/avatar/avatar-2.jpg" alt="">
-                                                            </div>
-                                                            <div class="content">
-                                                                <h6>Sub: Product inquiry</h6>
-                                                                <p>There are many variations of passages of Lorem Ipsum
-                                                                    available. </p>
-                                                            </div>
-                                                            <span class="reply"><i
-                                                                    class="zmdi zmdi-mail-reply"></i></span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">
-                                                            <div class="image"><img
-                                                                    src="assets/images/avatar/avatar-1.jpg" alt="">
-                                                            </div>
-                                                            <div class="content">
-                                                                <h6>Sub: Mail Support</h6>
-                                                                <p>There are many variations of passages of Lorem Ipsum
-                                                                    available. </p>
-                                                            </div>
-                                                            <span class="reply"><i
-                                                                    class="zmdi zmdi-mail-reply"></i></span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
+
+                                        </li>
+
+                                        <!--Notification-->
+                                        <li class="adomx-dropdown col-auto">
+                                            <a class="toggle" href="#"><i class="zmdi zmdi-notifications"></i><span
+                                                    class="badge"></span></a>
+
+                                            <!-- Dropdown -->
+                                            <div class="adomx-dropdown-menu dropdown-menu-notifications">
+                                                <div class="head">
+                                                    <h5 class="title">You have 4 new notification.</h5>
+                                                </div>
+                                                <div class="body custom-scroll">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="zmdi zmdi-notifications-none"></i>
+                                                                <p>There are many variations of pages available.</p>
+                                                                <span>11.00 am Today</span>
+                                                            </a>
+                                                            <button class="delete"><i
+                                                                    class="zmdi zmdi-close-circle-o"></i></button>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="zmdi zmdi-block"></i>
+                                                                <p>There are many variations of pages available.</p>
+                                                                <span>11.00 am Today</span>
+                                                            </a>
+                                                            <button class="delete"><i
+                                                                    class="zmdi zmdi-close-circle-o"></i></button>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="zmdi zmdi-info-outline"></i>
+                                                                <p>There are many variations of pages available.</p>
+                                                                <span>11.00 am Today</span>
+                                                            </a>
+                                                            <button class="delete"><i
+                                                                    class="zmdi zmdi-close-circle-o"></i></button>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="zmdi zmdi-shield-security"></i>
+                                                                <p>There are many variations of pages available.</p>
+                                                                <span>11.00 am Today</span>
+                                                            </a>
+                                                            <button class="delete"><i
+                                                                    class="zmdi zmdi-close-circle-o"></i></button>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="zmdi zmdi-notifications-none"></i>
+                                                                <p>There are many variations of pages available.</p>
+                                                                <span>11.00 am Today</span>
+                                                            </a>
+                                                            <button class="delete"><i
+                                                                    class="zmdi zmdi-close-circle-o"></i></button>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="zmdi zmdi-block"></i>
+                                                                <p>There are many variations of pages available.</p>
+                                                                <span>11.00 am Today</span>
+                                                            </a>
+                                                            <button class="delete"><i
+                                                                    class="zmdi zmdi-close-circle-o"></i></button>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="zmdi zmdi-info-outline"></i>
+                                                                <p>There are many variations of pages available.</p>
+                                                                <span>11.00 am Today</span>
+                                                            </a>
+                                                            <button class="delete"><i
+                                                                    class="zmdi zmdi-close-circle-o"></i></button>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <i class="zmdi zmdi-shield-security"></i>
+                                                                <p>There are many variations of pages available.</p>
+                                                                <span>11.00 am Today</span>
+                                                            </a>
+                                                            <button class="delete"><i
+                                                                    class="zmdi zmdi-close-circle-o"></i></button>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="footer">
+                                                    <a href="#" class="view-all">view all</a>
+                                                </div>
                                             </div>
-                                        </div>
 
-                                    </li>
+                                        </li>
 
-                                    <!--Notification-->
-                                    <li class="adomx-dropdown col-auto">
-                                        <a class="toggle" href="#"><i class="zmdi zmdi-notifications"></i><span
-                                                class="badge"></span></a>
-
-                                        <!-- Dropdown -->
-                                        <div class="adomx-dropdown-menu dropdown-menu-notifications">
-                                            <div class="head">
-                                                <h5 class="title">You have 4 new notification.</h5>
-                                            </div>
-                                            <div class="body custom-scroll">
-                                                <ul>
-                                                    <li>
-                                                        <a href="#">
-                                                            <i class="zmdi zmdi-notifications-none"></i>
-                                                            <p>There are many variations of pages available.</p>
-                                                            <span>11.00 am Today</span>
-                                                        </a>
-                                                        <button class="delete"><i
-                                                                class="zmdi zmdi-close-circle-o"></i></button>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">
-                                                            <i class="zmdi zmdi-block"></i>
-                                                            <p>There are many variations of pages available.</p>
-                                                            <span>11.00 am Today</span>
-                                                        </a>
-                                                        <button class="delete"><i
-                                                                class="zmdi zmdi-close-circle-o"></i></button>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">
-                                                            <i class="zmdi zmdi-info-outline"></i>
-                                                            <p>There are many variations of pages available.</p>
-                                                            <span>11.00 am Today</span>
-                                                        </a>
-                                                        <button class="delete"><i
-                                                                class="zmdi zmdi-close-circle-o"></i></button>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">
-                                                            <i class="zmdi zmdi-shield-security"></i>
-                                                            <p>There are many variations of pages available.</p>
-                                                            <span>11.00 am Today</span>
-                                                        </a>
-                                                        <button class="delete"><i
-                                                                class="zmdi zmdi-close-circle-o"></i></button>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">
-                                                            <i class="zmdi zmdi-notifications-none"></i>
-                                                            <p>There are many variations of pages available.</p>
-                                                            <span>11.00 am Today</span>
-                                                        </a>
-                                                        <button class="delete"><i
-                                                                class="zmdi zmdi-close-circle-o"></i></button>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">
-                                                            <i class="zmdi zmdi-block"></i>
-                                                            <p>There are many variations of pages available.</p>
-                                                            <span>11.00 am Today</span>
-                                                        </a>
-                                                        <button class="delete"><i
-                                                                class="zmdi zmdi-close-circle-o"></i></button>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">
-                                                            <i class="zmdi zmdi-info-outline"></i>
-                                                            <p>There are many variations of pages available.</p>
-                                                            <span>11.00 am Today</span>
-                                                        </a>
-                                                        <button class="delete"><i
-                                                                class="zmdi zmdi-close-circle-o"></i></button>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">
-                                                            <i class="zmdi zmdi-shield-security"></i>
-                                                            <p>There are many variations of pages available.</p>
-                                                            <span>11.00 am Today</span>
-                                                        </a>
-                                                        <button class="delete"><i
-                                                                class="zmdi zmdi-close-circle-o"></i></button>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="footer">
-                                                <a href="#" class="view-all">view all</a>
-                                            </div>
-                                        </div>
-
-                                    </li>
-
-                                    <!--User-->
-                                    <li class="adomx-dropdown col-auto">
-                                        <a class="toggle" href="#">
-                                            <span class="user">
-                                                <span class="avatar">
-                                                    <img src="assets/images/avatar/avatar-1.jpg" alt="">
-                                                    <span class="status"></span>
+                                        <!--User-->
+                                        <li class="adomx-dropdown col-auto">
+                                            <a class="toggle" href="#">
+                                                <span class="user">
+                                                    <span class="avatar">
+                                                        <img src="assets/images/avatar/avatar-1.jpg" alt="">
+                                                        <span class="status"></span>
+                                                    </span>
+                                                    <span class="name">Madison Howard</span>
                                                 </span>
-                                                <span class="name">Madison Howard</span>
-                                            </span>
-                                        </a>
+                                            </a>
 
-                                        <!-- Dropdown -->
-                                        <div class="adomx-dropdown-menu dropdown-menu-user">
-                                            <div class="head">
-                                                <h5 class="name"><a href="#">Madison Howard</a></h5>
-                                                <a class="mail" href="#">mailnam@mail.com</a>
+                                            <!-- Dropdown -->
+                                            <div class="adomx-dropdown-menu dropdown-menu-user">
+                                                <div class="head">
+                                                    <h5 class="name"><a href="#">Madison Howard</a></h5>
+                                                    <a class="mail" href="#">mailnam@mail.com</a>
+                                                </div>
+                                                <div class="body">
+                                                    <ul>
+                                                        <li><a href="#"><i class="zmdi zmdi-account"></i>Profile</a>
+                                                        </li>
+                                                        <li><a href="#"><i class="zmdi zmdi-email-open"></i>Inbox</a>
+                                                        </li>
+                                                        <li><a href="#"><i class="zmdi zmdi-wallpaper"></i>Activity</a>
+                                                        </li>
+                                                    </ul>
+                                                    <ul>
+                                                        <li><a href="#"><i class="zmdi zmdi-settings"></i>Setting</a>
+                                                        </li>
+                                                        <li><a href="#"><i class="zmdi zmdi-lock-open"></i>Sing out</a>
+                                                        </li>
+                                                    </ul>
+                                                    <ul>
+                                                        <li><a href="#"><i class="zmdi zmdi-paypal"></i>Payment</a></li>
+                                                        <li><a href="#"><i
+                                                                    class="zmdi zmdi-google-pages"></i>Invoice</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
                                             </div>
-                                            <div class="body">
-                                                <ul>
-                                                    <li><a href="#"><i class="zmdi zmdi-account"></i>Profile</a></li>
-                                                    <li><a href="#"><i class="zmdi zmdi-email-open"></i>Inbox</a></li>
-                                                    <li><a href="#"><i class="zmdi zmdi-wallpaper"></i>Activity</a></li>
-                                                </ul>
-                                                <ul>
-                                                    <li><a href="#"><i class="zmdi zmdi-settings"></i>Setting</a></li>
-                                                    <li><a href="#"><i class="zmdi zmdi-lock-open"></i>Sing out</a></li>
-                                                </ul>
-                                                <ul>
-                                                    <li><a href="#"><i class="zmdi zmdi-paypal"></i>Payment</a></li>
-                                                    <li><a href="#"><i class="zmdi zmdi-google-pages"></i>Invoice</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
 
-                                    </li>
+                                        </li>
 
+                                    </ul>
+
+                                </div><!-- Header Notifications Area End -->
+
+                            </div>
+                        </div><!-- Header Right End -->
+
+                    </div>
+                </div>
+            </div><!-- Header Section End -->
+            <!-- Side Header Start -->
+            <div class="side-header">
+                <button class="side-header-close"><i class="zmdi zmdi-close"></i></button>
+                <!-- Side Header Inner Start -->
+                <div class="side-header-inner custom-scroll">
+
+                    <nav class="side-header-menu" id="side-header-menu">
+                        <ul>
+                            <li class="has-sub-menu"><a href="#"><i class="ti-home"></i> <span>Dashboard</span></a>
+                                <ul class="side-header-sub-menu">
+                                    <li><a href="index.html"><span>E-commerce (Default)</span></a></li>
+                                    <li><a href="index-crypto.html"><span>Cryptocurrency</span></a></li>
+                                </ul>
+                            </li>
+                            <li><a href="widgets.html"><i class="ti-palette"></i> <span>Widgets</span></a></li>
+                            <li class="has-sub-menu"><a href="#"><i class="ti-package"></i> <span>Basic
+                                        Elements</span></a>
+                                <ul class="side-header-sub-menu">
+                                    <li><a href="elements-alerts.html"><span>Alerts</span></a></li>
+                                    <li><a href="elements-accordions.html"><span>Accordions</span></a></li>
+                                    <li><a href="elements-avatar.html"><span>Avatar</span></a></li>
+                                    <li><a href="elements-badge.html"><span>Badge</span></a></li>
+                                    <li><a href="elements-buttons.html"><span>Buttons</span></a></li>
+                                    <li><a href="elements-carousel.html"><span>Carousel</span></a></li>
+                                    <li><a href="elements-dropdown.html"><span>Dropdown</span></a></li>
+                                    <li><a href="elements-list-group.html"><span>List Group</span></a></li>
+                                    <li><a href="elements-media.html"><span>Media</span></a></li>
+                                    <li><a href="elements-modal.html"><span>Modal</span></a></li>
+                                    <li><a href="elements-pagination.html"><span>Pagination</span></a></li>
+                                    <li><a href="elements-progress.html"><span>Progress Bar</span></a></li>
+                                    <li><a href="elements-spinners.html"><span>Spinners</span></a></li>
+                                    <li><a href="elements-tabs.html"><span>Tabs</span></a></li>
+                                    <li><a href="elements-tooltip.html"><span>Tooltip</span></a></li>
+                                    <li><a href="elements-typography.html"><span>Typography</span></a></li>
                                 </ul>
 
-                            </div><!-- Header Notifications Area End -->
+                            <li class="has-sub-menu"><a href="#"><i class="ti-layers"></i> <span>Pages</span></a>
+                                <ul class="side-header-sub-menu">
+                                    <li><a href="blank.html"><span>Blank</span></a></li>
+                                    <li><a href="timeline.html"><span>Timeline</span></a></li>
+                                    <li><a href="pricing.html"><span>Pricing</span></a></li>
+                                    <li><a href="error-1.html"><span>error-1</span></a></li>
+                                    <li><a href="error-2.html"><span>error-2</span></a></li>
+                                </ul>
+                            </li>
 
-                        </div>
-                    </div><!-- Header Right End -->
+                        </ul>
+                    </nav>
 
-                </div>
-            </div>
-        </div><!-- Header Section End -->
-        <!-- Side Header Start -->
-        <div class="side-header">
-            <button class="side-header-close"><i class="zmdi zmdi-close"></i></button>
-            <!-- Side Header Inner Start -->
-            <div class="side-header-inner custom-scroll">
-
-                <nav class="side-header-menu" id="side-header-menu">
-                    <ul>
-                        <li class="has-sub-menu"><a href="#"><i class="ti-home"></i> <span>Dashboard</span></a>
-                            <ul class="side-header-sub-menu">
-                                <li><a href="index.html"><span>E-commerce (Default)</span></a></li>
-                                <li><a href="index-crypto.html"><span>Cryptocurrency</span></a></li>
-                            </ul>
-                        </li>
-                        <li><a href="widgets.html"><i class="ti-palette"></i> <span>Widgets</span></a></li>
-                        <li class="has-sub-menu"><a href="#"><i class="ti-package"></i> <span>Basic Elements</span></a>
-                            <ul class="side-header-sub-menu">
-                                <li><a href="elements-alerts.html"><span>Alerts</span></a></li>
-                                <li><a href="elements-accordions.html"><span>Accordions</span></a></li>
-                                <li><a href="elements-avatar.html"><span>Avatar</span></a></li>
-                                <li><a href="elements-badge.html"><span>Badge</span></a></li>
-                                <li><a href="elements-buttons.html"><span>Buttons</span></a></li>
-                                <li><a href="elements-carousel.html"><span>Carousel</span></a></li>
-                                <li><a href="elements-dropdown.html"><span>Dropdown</span></a></li>
-                                <li><a href="elements-list-group.html"><span>List Group</span></a></li>
-                                <li><a href="elements-media.html"><span>Media</span></a></li>
-                                <li><a href="elements-modal.html"><span>Modal</span></a></li>
-                                <li><a href="elements-pagination.html"><span>Pagination</span></a></li>
-                                <li><a href="elements-progress.html"><span>Progress Bar</span></a></li>
-                                <li><a href="elements-spinners.html"><span>Spinners</span></a></li>
-                                <li><a href="elements-tabs.html"><span>Tabs</span></a></li>
-                                <li><a href="elements-tooltip.html"><span>Tooltip</span></a></li>
-                                <li><a href="elements-typography.html"><span>Typography</span></a></li>
-                            </ul>
-
-                        <li class="has-sub-menu"><a href="#"><i class="ti-layers"></i> <span>Pages</span></a>
-                            <ul class="side-header-sub-menu">
-                                <li><a href="blank.html"><span>Blank</span></a></li>
-                                <li><a href="timeline.html"><span>Timeline</span></a></li>
-                                <li><a href="pricing.html"><span>Pricing</span></a></li>
-                                <li><a href="error-1.html"><span>error-1</span></a></li>
-                                <li><a href="error-2.html"><span>error-2</span></a></li>
-                            </ul>
-                        </li>
-
-                    </ul>
-                </nav>
-
-            </div><!-- Side Header Inner End -->
-        </div><!-- Side Header End -->
-
+                </div><!-- Side Header Inner End -->
+            </div><!-- Side Header End -->
+        </header>
         <!-- Content Body Start -->
-        <div class="content-body">
+        <main>
+            <!-- Content Body Start -->
+            <div class="content-body">
+                <div class="sale-items-8">
+                    <div class="row sale-items-row">
+                        <div class="productItemsParent">
+                            <div class="saleItem">
+                                <p>Chicken Curry</p>
+                                <div class="itemClearFix"></div>
+                                <div class="categoryPrice">
+                                    <strong class="itemCategory">V1</strong>
+                                    <strong class="itemPrice">30 <small>PLN</small> </strong>
+                                </div>
+                            </div>
+
+                            <div class="saleItem">
+                                <p>Chicken Curry</p>
+                                <div class="itemClearFix"></div>
+                                <div class="categoryPrice">
+                                    <strong class="itemCategory">V1</strong>
+                                    <strong class="itemPrice">30 <small>PLN</small> </strong>
+                                </div>
+                            </div>
+
+                            <div class="saleItem">
+                                <p>Chicken Curry</p>
+                                <div class="itemClearFix"></div>
+                                <div class="categoryPrice">
+                                    <strong class="itemCategory">V1</strong>
+                                    <strong class="itemPrice">30 <small>PLN</small> </strong>
+                                </div>
+                            </div>
+
+                            <div class="saleItem">
+                                <p>Chicken Curry</p>
+                                <div class="itemClearFix"></div>
+                                <div class="categoryPrice">
+                                    <strong class="itemCategory">V1</strong>
+                                    <strong class="itemPrice">30 <small>PLN</small> </strong>
+                                </div>
+                            </div>
+
+                            <div class="saleItem">
+                                <p>Chicken Curry</p>
+                                <div class="itemClearFix"></div>
+                                <div class="categoryPrice">
+                                    <strong class="itemCategory">V1</strong>
+                                    <strong class="itemPrice">30 <small>PLN</small> </strong>
+                                </div>
+                            </div>
+                            <div class="saleItem">
+                                <p>Chicken Curry</p>
+                                <div class="itemClearFix"></div>
+                                <div class="categoryPrice">
+                                    <strong class="itemCategory">V1</strong>
+                                    <strong class="itemPrice">30 <small>PLN</small> </strong>
+                                </div>
+                            </div>
+
+                            <div class="saleItem">
+                                <p>Chicken Curry</p>
+                                <div class="itemClearFix"></div>
+                                <div class="categoryPrice">
+                                    <strong class="itemCategory">V1</strong>
+                                    <strong class="itemPrice">30 <small>PLN</small> </strong>
+                                </div>
+                            </div>
+
+                            <div class="saleItem">
+                                <p>Chicken Curry</p>
+                                <div class="itemClearFix"></div>
+                                <div class="categoryPrice">
+                                    <strong class="itemCategory">V1</strong>
+                                    <strong class="itemPrice">30 <small>PLN</small> </strong>
+                                </div>
+                            </div>
+
+                            <div class="saleItem">
+                                <p>Chicken Curry</p>
+                                <div class="itemClearFix"></div>
+                                <div class="categoryPrice">
+                                    <strong class="itemCategory">V1</strong>
+                                    <strong class="itemPrice">30 <small>PLN</small> </strong>
+                                </div>
+                            </div>
+
+                            <div class="saleItem">
+                                <p>Chicken Curry</p>
+                                <div class="itemClearFix"></div>
+                                <div class="categoryPrice">
+                                    <strong class="itemCategory">V1</strong>
+                                    <strong class="itemPrice">30 <small>PLN</small> </strong>
+                                </div>
+                            </div>
+
+                            <div class="saleItem">
+                                <p>Chicken Curry</p>
+                                <div class="itemClearFix"></div>
+                                <div class="categoryPrice">
+                                    <strong class="itemCategory">V1</strong>
+                                    <strong class="itemPrice">30 <small>PLN</small> </strong>
+                                </div>
+                            </div>
+
+                            <div class="saleItem">
+                                <p>Chicken Curry</p>
+                                <div class="itemClearFix"></div>
+                                <div class="categoryPrice">
+                                    <strong class="itemCategory">V1</strong>
+                                    <strong class="itemPrice">30 <small>PLN</small> </strong>
+                                </div>
+                            </div>
+
+                            <div class="saleItem">
+                                <p>Chicken Curry</p>
+                                <div class="itemClearFix"></div>
+                                <div class="categoryPrice">
+                                    <strong class="itemCategory">V1</strong>
+                                    <strong class="itemPrice">30 <small>PLN</small> </strong>
+                                </div>
+                            </div>
+                            <div class="saleItem">
+                                <p>Chicken Curry</p>
+                                <div class="itemClearFix"></div>
+                                <div class="categoryPrice">
+                                    <strong class="itemCategory">V1</strong>
+                                    <strong class="itemPrice">30 <small>PLN</small> </strong>
+                                </div>
+                            </div>
+
+                            <div class="saleItem">
+                                <p>Chicken Curry</p>
+                                <div class="itemClearFix"></div>
+                                <div class="categoryPrice">
+                                    <strong class="itemCategory">V1</strong>
+                                    <strong class="itemPrice">30 <small>PLN</small> </strong>
+                                </div>
+                            </div>
+
+                            <div class="saleItem">
+                                <p>Chicken Curry</p>
+                                <div class="itemClearFix"></div>
+                                <div class="categoryPrice">
+                                    <strong class="itemCategory">V1</strong>
+                                    <strong class="itemPrice">30 <small>PLN</small> </strong>
+                                </div>
+                            </div>
+                            <div class="saleItem">
+                                <p>Chicken Curry</p>
+                                <div class="itemClearFix"></div>
+                                <div class="categoryPrice">
+                                    <strong class="itemCategory">V1</strong>
+                                    <strong class="itemPrice">30 <small>PLN</small> </strong>
+                                </div>
+                            </div>
+
+                            <div class="saleItem">
+                                <p>Chicken Curry</p>
+                                <div class="itemClearFix"></div>
+                                <div class="categoryPrice">
+                                    <strong class="itemCategory">V1</strong>
+                                    <strong class="itemPrice">30 <small>PLN</small> </strong>
+                                </div>
+                            </div>
+
+                            <div class="saleItem">
+                                <p>Chicken Curry</p>
+                                <div class="itemClearFix"></div>
+                                <div class="categoryPrice">
+                                    <strong class="itemCategory">V1</strong>
+                                    <strong class="itemPrice">30 <small>PLN</small> </strong>
+                                </div>
+                            </div>
+
+                            <div class="saleItem">
+                                <p>Chicken Curry</p>
+                                <div class="itemClearFix"></div>
+                                <div class="categoryPrice">
+                                    <strong class="itemCategory">V1</strong>
+                                    <strong class="itemPrice">30 <small>PLN</small> </strong>
+                                </div>
+                            </div>
+
+                            <div class="saleItem">
+                                <p>Chicken Curry</p>
+                                <div class="itemClearFix"></div>
+                                <div class="categoryPrice">
+                                    <strong class="itemCategory">V1</strong>
+                                    <strong class="itemPrice">30 <small>PLN</small> </strong>
+                                </div>
+                            </div>
+                            <div class="saleItem">
+                                <p>Chicken Curry</p>
+                                <div class="itemClearFix"></div>
+                                <div class="categoryPrice">
+                                    <strong class="itemCategory">V1</strong>
+                                    <strong class="itemPrice">30 <small>PLN</small> </strong>
+                                </div>
+                            </div>
+
+                            <div class="saleItem">
+                                <p>Chicken Curry</p>
+                                <div class="itemClearFix"></div>
+                                <div class="categoryPrice">
+                                    <strong class="itemCategory">V1</strong>
+                                    <strong class="itemPrice">30 <small>PLN</small> </strong>
+                                </div>
+                            </div>
+
+                            <div class="saleItem">
+                                <p>Chicken Curry</p>
+                                <div class="itemClearFix"></div>
+                                <div class="categoryPrice">
+                                    <strong class="itemCategory">V1</strong>
+                                    <strong class="itemPrice">30 <small>PLN</small> </strong>
+                                </div>
+                            </div>
+                            <div class="saleItem">
+                                <p>Chicken Curry</p>
+                                <div class="itemClearFix"></div>
+                                <div class="categoryPrice">
+                                    <strong class="itemCategory">V1</strong>
+                                    <strong class="itemPrice">30 <small>PLN</small> </strong>
+                                </div>
+                            </div>
+
+                            <div class="saleItem">
+                                <p>Chicken Curry</p>
+                                <div class="itemClearFix"></div>
+                                <div class="categoryPrice">
+                                    <strong class="itemCategory">V1</strong>
+                                    <strong class="itemPrice">30 <small>PLN</small> </strong>
+                                </div>
+                            </div>
+
+                            <div class="saleItem">
+                                <p>Chicken Curry</p>
+                                <div class="itemClearFix"></div>
+                                <div class="categoryPrice">
+                                    <strong class="itemCategory">V1</strong>
+                                    <strong class="itemPrice">30 <small>PLN</small> </strong>
+                                </div>
+                            </div>
+
+                            <div class="saleItem">
+                                <p>Chicken Curry</p>
+                                <div class="itemClearFix"></div>
+                                <div class="categoryPrice">
+                                    <strong class="itemCategory">V1</strong>
+                                    <strong class="itemPrice">30 <small>PLN</small> </strong>
+                                </div>
+                            </div>
+
+                            <div class="saleItem">
+                                <p>Chicken Curry</p>
+                                <div class="itemClearFix"></div>
+                                <div class="categoryPrice">
+                                    <strong class="itemCategory">V1</strong>
+                                    <strong class="itemPrice">30 <small>PLN</small> </strong>
+                                </div>
+                            </div>
+                            <div class="saleItem">
+                                <p>Chicken Curry</p>
+                                <div class="itemClearFix"></div>
+                                <div class="categoryPrice">
+                                    <strong class="itemCategory">V1</strong>
+                                    <strong class="itemPrice">30 <small>PLN</small> </strong>
+                                </div>
+                            </div>
+
+                            <div class="saleItem">
+                                <p>Chicken Curry</p>
+                                <div class="itemClearFix"></div>
+                                <div class="categoryPrice">
+                                    <strong class="itemCategory">V1</strong>
+                                    <strong class="itemPrice">30 <small>PLN</small> </strong>
+                                </div>
+                            </div>
+
+                            <div class="saleItem">
+                                <p>Chicken Curry</p>
+                                <div class="itemClearFix"></div>
+                                <div class="categoryPrice">
+                                    <strong class="itemCategory">V1</strong>
+                                    <strong class="itemPrice">30 <small>PLN</small> </strong>
+                                </div>
+                            </div>
+                            <div class="saleItem">
+                                <p>Chicken Curry</p>
+                                <div class="itemClearFix"></div>
+                                <div class="categoryPrice">
+                                    <strong class="itemCategory">V1</strong>
+                                    <strong class="itemPrice">30 <small>PLN</small> </strong>
+                                </div>
+                            </div>
+
+                            <div class="saleItem">
+                                <p>Chicken Curry</p>
+                                <div class="itemClearFix"></div>
+                                <div class="categoryPrice">
+                                    <strong class="itemCategory">V1</strong>
+                                    <strong class="itemPrice">30 <small>PLN</small> </strong>
+                                </div>
+                            </div>
+
+                            <div class="saleItem">
+                                <p>Chicken Curry</p>
+                                <div class="itemClearFix"></div>
+                                <div class="categoryPrice">
+                                    <strong class="itemCategory">V1</strong>
+                                    <strong class="itemPrice">30 <small>PLN</small> </strong>
+                                </div>
+                            </div>
+
+                            <div class="saleItem">
+                                <p>Chicken Curry</p>
+                                <div class="itemClearFix"></div>
+                                <div class="categoryPrice">
+                                    <strong class="itemCategory">V1</strong>
+                                    <strong class="itemPrice">30 <small>PLN</small> </strong>
+                                </div>
+                            </div>
+
+                            <div class="saleItem">
+                                <p>Chicken Curry</p>
+                                <div class="itemClearFix"></div>
+                                <div class="categoryPrice">
+                                    <strong class="itemCategory">V1</strong>
+                                    <strong class="itemPrice">30 <small>PLN</small> </strong>
+                                </div>
+                            </div>
+                            <div class="saleItem">
+                                <p>Chicken Curry</p>
+                                <div class="itemClearFix"></div>
+                                <div class="categoryPrice">
+                                    <strong class="itemCategory">V1</strong>
+                                    <strong class="itemPrice">30 <small>PLN</small> </strong>
+                                </div>
+                            </div>
+
+                            <div class="saleItem">
+                                <p>Chicken Curry</p>
+                                <div class="itemClearFix"></div>
+                                <div class="categoryPrice">
+                                    <strong class="itemCategory">V1</strong>
+                                    <strong class="itemPrice">30 <small>PLN</small> </strong>
+                                </div>
+                            </div>
+
+                            <div class="saleItem">
+                                <p>Chicken Curry</p>
+                                <div class="itemClearFix"></div>
+                                <div class="categoryPrice">
+                                    <strong class="itemCategory">V1</strong>
+                                    <strong class="itemPrice">30 <small>PLN</small> </strong>
+                                </div>
+                            </div>
+
+                            <div class="saleItem">
+                                <p>Chicken Curry</p>
+                                <div class="itemClearFix"></div>
+                                <div class="categoryPrice">
+                                    <strong class="itemCategory">V1</strong>
+                                    <strong class="itemPrice">30 <small>PLN</small> </strong>
+                                </div>
+                            </div>
+
+                            <div class="saleItem">
+                                <p>Chicken Curry</p>
+                                <div class="itemClearFix"></div>
+                                <div class="categoryPrice">
+                                    <strong class="itemCategory">V1</strong>
+                                    <strong class="itemPrice">30 <small>PLN</small> </strong>
+                                </div>
+                            </div>
+                            <div class="saleItem">
+                                <p>Chicken Curry</p>
+                                <div class="itemClearFix"></div>
+                                <div class="categoryPrice">
+                                    <strong class="itemCategory">V1</strong>
+                                    <strong class="itemPrice">30 <small>PLN</small> </strong>
+                                </div>
+                            </div>
+
+                            <div class="saleItem">
+                                <p>Chicken Curry</p>
+                                <div class="itemClearFix"></div>
+                                <div class="categoryPrice">
+                                    <strong class="itemCategory">V1</strong>
+                                    <strong class="itemPrice">30 <small>PLN</small> </strong>
+                                </div>
+                            </div>
+
+                            <div class="saleItem">
+                                <p>Chicken Curry</p>
+                                <div class="itemClearFix"></div>
+                                <div class="categoryPrice">
+                                    <strong class="itemCategory">V1</strong>
+                                    <strong class="itemPrice">30 <small>PLN</small> </strong>
+                                </div>
+                            </div>
+
+                            <div class="saleItem">
+                                <p>Chicken Curry</p>
+                                <div class="itemClearFix"></div>
+                                <div class="categoryPrice">
+                                    <strong class="itemCategory">V1</strong>
+                                    <strong class="itemPrice">30 <small>PLN</small> </strong>
+                                </div>
+                            </div>
+
+                            <div class="saleItem">
+                                <p>Chicken Curry</p>
+                                <div class="itemClearFix"></div>
+                                <div class="categoryPrice">
+                                    <strong class="itemCategory">V1</strong>
+                                    <strong class="itemPrice">30 <small>PLN</small> </strong>
+                                </div>
+                            </div>
+                            <div class="saleItem">
+                                <p>Chicken Curry</p>
+                                <div class="itemClearFix"></div>
+                                <div class="categoryPrice">
+                                    <strong class="itemCategory">V1</strong>
+                                    <strong class="itemPrice">30 <small>PLN</small> </strong>
+                                </div>
+                            </div>
+
+                            <div class="saleItem">
+                                <p>Chicken Curry</p>
+                                <div class="itemClearFix"></div>
+                                <div class="categoryPrice">
+                                    <strong class="itemCategory">V1</strong>
+                                    <strong class="itemPrice">30 <small>PLN</small> </strong>
+                                </div>
+                            </div>
+
+                            <div class="saleItem">
+                                <p>Chicken Curry</p>
+                                <div class="itemClearFix"></div>
+                                <div class="categoryPrice">
+                                    <strong class="itemCategory">V1</strong>
+                                    <strong class="itemPrice">30 <small>PLN</small> </strong>
+                                </div>
+                            </div>
+
+                            <div class="saleItem">
+                                <p>Chicken Curry</p>
+                                <div class="itemClearFix"></div>
+                                <div class="categoryPrice">
+                                    <strong class="itemCategory">V1</strong>
+                                    <strong class="itemPrice">30 <small>PLN</small> </strong>
+                                </div>
+                            </div>
+
+                            <div class="saleItem">
+                                <p>Chicken Curry</p>
+                                <div class="itemClearFix"></div>
+                                <div class="categoryPrice">
+                                    <strong class="itemCategory">V1</strong>
+                                    <strong class="itemPrice">30 <small>PLN</small> </strong>
+                                </div>
+                            </div>
+                            <div class="saleItem">
+                                <p>Chicken Curry</p>
+                                <div class="itemClearFix"></div>
+                                <div class="categoryPrice">
+                                    <strong class="itemCategory">V1</strong>
+                                    <strong class="itemPrice">30 <small>PLN</small> </strong>
+                                </div>
+                            </div>
+
+                            <div class="saleItem">
+                                <p>Chicken Curry</p>
+                                <div class="itemClearFix"></div>
+                                <div class="categoryPrice">
+                                    <strong class="itemCategory">V1</strong>
+                                    <strong class="itemPrice">30 <small>PLN</small> </strong>
+                                </div>
+                            </div>
+
+                            <div class="saleItem">
+                                <p>Chicken Curry</p>
+                                <div class="itemClearFix"></div>
+                                <div class="categoryPrice">
+                                    <strong class="itemCategory">V1</strong>
+                                    <strong class="itemPrice">30 <small>PLN</small> </strong>
+                                </div>
+                            </div>
+
+                            <div class="saleItem">
+                                <p>Chicken Curry</p>
+                                <div class="itemClearFix"></div>
+                                <div class="categoryPrice">
+                                    <strong class="itemCategory">V1</strong>
+                                    <strong class="itemPrice">30 <small>PLN</small> </strong>
+                                </div>
+                            </div>
+
+                            <div class="saleItem">
+                                <p>Chicken Curry</p>
+                                <div class="itemClearFix"></div>
+                                <div class="categoryPrice">
+                                    <strong class="itemCategory">V1</strong>
+                                    <strong class="itemPrice">30 <small>PLN</small> </strong>
+                                </div>
+                            </div>
+                            <div class="saleItem">
+                                <p>Chicken Curry</p>
+                                <div class="itemClearFix"></div>
+                                <div class="categoryPrice">
+                                    <strong class="itemCategory">V1</strong>
+                                    <strong class="itemPrice">30 <small>PLN</small> </strong>
+                                </div>
+                            </div>
+
+                            <div class="saleItem">
+                                <p>Chicken Curry</p>
+                                <div class="itemClearFix"></div>
+                                <div class="categoryPrice">
+                                    <strong class="itemCategory">V1</strong>
+                                    <strong class="itemPrice">30 <small>PLN</small> </strong>
+                                </div>
+                            </div>
+
+                            <div class="saleItem">
+                                <p>Chicken Curry</p>
+                                <div class="itemClearFix"></div>
+                                <div class="categoryPrice">
+                                    <strong class="itemCategory">V1</strong>
+                                    <strong class="itemPrice">30 <small>PLN</small> </strong>
+                                </div>
+                            </div>
+
+                            <div class="saleItem">
+                                <p>Chicken Curry</p>
+                                <div class="itemClearFix"></div>
+                                <div class="categoryPrice">
+                                    <strong class="itemCategory">V1</strong>
+                                    <strong class="itemPrice">30 <small>PLN</small> </strong>
+                                </div>
+                            </div>
+
+                            <div class="saleItem">
+                                <p>Chicken Curry</p>
+                                <div class="itemClearFix"></div>
+                                <div class="categoryPrice">
+                                    <strong class="itemCategory">V1</strong>
+                                    <strong class="itemPrice">30 <small>PLN</small> </strong>
+                                </div>
+                            </div>
+                            <div class="saleItem">
+                                <p>Chicken Curry</p>
+                                <div class="itemClearFix"></div>
+                                <div class="categoryPrice">
+                                    <strong class="itemCategory">V1</strong>
+                                    <strong class="itemPrice">30 <small>PLN</small> </strong>
+                                </div>
+                            </div>
+
+                            <div class="saleItem">
+                                <p>Chicken Curry</p>
+                                <div class="itemClearFix"></div>
+                                <div class="categoryPrice">
+                                    <strong class="itemCategory">V1</strong>
+                                    <strong class="itemPrice">30 <small>PLN</small> </strong>
+                                </div>
+                            </div>
+
+                            <div class="saleItem">
+                                <p>Chicken Curry</p>
+                                <div class="itemClearFix"></div>
+                                <div class="categoryPrice">
+                                    <strong class="itemCategory">V1</strong>
+                                    <strong class="itemPrice">30 <small>PLN</small> </strong>
+                                </div>
+                            </div>
+
+                            <div class="saleItem">
+                                <p>Chicken Curry</p>
+                                <div class="itemClearFix"></div>
+                                <div class="categoryPrice">
+                                    <strong class="itemCategory">V1</strong>
+                                    <strong class="itemPrice">30 <small>PLN</small> </strong>
+                                </div>
+                            </div>
+
+                            <div class="saleItem">
+                                <p>Chicken Curry</p>
+                                <div class="itemClearFix"></div>
+                                <div class="categoryPrice">
+                                    <strong class="itemCategory">V1</strong>
+                                    <strong class="itemPrice">30 <small>PLN</small> </strong>
+                                </div>
+                            </div>
+                            <div class="saleItem">
+                                <p>Chicken Curry</p>
+                                <div class="itemClearFix"></div>
+                                <div class="categoryPrice">
+                                    <strong class="itemCategory">V1</strong>
+                                    <strong class="itemPrice">30 <small>PLN</small> </strong>
+                                </div>
+                            </div>
+
+                            <div class="saleItem">
+                                <p>Chicken Curry</p>
+                                <div class="itemClearFix"></div>
+                                <div class="categoryPrice">
+                                    <strong class="itemCategory">V1</strong>
+                                    <strong class="itemPrice">30 <small>PLN</small> </strong>
+                                </div>
+                            </div>
+
+                            <div class="saleItem">
+                                <p>Chicken Curry</p>
+                                <div class="itemClearFix"></div>
+                                <div class="categoryPrice">
+                                    <strong class="itemCategory">V1</strong>
+                                    <strong class="itemPrice">30 <small>PLN</small> </strong>
+                                </div>
+                            </div>
+
+                            <div class="saleItem">
+                                <p>Chicken Curry</p>
+                                <div class="itemClearFix"></div>
+                                <div class="categoryPrice">
+                                    <strong class="itemCategory">V1</strong>
+                                    <strong class="itemPrice">30 <small>PLN</small> </strong>
+                                </div>
+                            </div>
+
+                            <div class="saleItem">
+                                <p>Chicken Curry</p>
+                                <div class="itemClearFix"></div>
+                                <div class="categoryPrice">
+                                    <strong class="itemCategory">V1</strong>
+                                    <strong class="itemPrice">30 <small>PLN</small> </strong>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row sale-actions-row ">
+                        <div class="saleItemActions">
+                            <a href="#" class="btn_order">
+                                <img class="pos-icon" src="assets/images/pos-icon/Save order.svg" alt="">
+                                Save Order
+                            </a>
+
+                            <a href="#" class="btn_clear_cart"> <img class="pos-icon"
+                                    src="assets/images/pos-icon/Cancle order.svg" alt=""> Clear Cart
+                            </a>
+
+                            <a href="#" class="btn_select_table">
+                                <img class="pos-icon" src="assets/images/pos-icon/Select Table.svg" alt="" />
+                                Select Table
+                            </a>
+
+                            <a href="#" class="btn_cart">
+                                <img class="pos-icon" src="assets/images/pos-icon/Select Table.svg" alt="" />
+                                Cart
+                            </a>
+
+                            <a href="#" class="btn_order_menu">
+                                <img class="pos-icon" src="assets/images/pos-icon/Select Table.svg" alt="" />
+                                Order Menu
+                            </a>
+
+                            <a href="#" class="btn_waiter"> <img class="pos-icon"
+                                    src="assets/images/pos-icon/waiter.svg" alt="">
+                                Waiter </a>
 
 
-            <div class="sale-items-8">
-                <div class="row sale-items-row">
-                    <div class="saleItemsParent">
-                        <div class="saleItem">
-                            <p>Chicken Curry</p>
-                            <div class="itemClearFix"></div>
-                            <div class="categoryPrice">
-                                <strong class="itemCategory">V1</strong>
-                                <strong class="itemPrice">30 <small>PLN</small> </strong>
-                            </div>
-                        </div>
 
-                        <div class="saleItem">
-                            <p>Chicken Curry</p>
-                            <div class="itemClearFix"></div>
-                            <div class="categoryPrice">
-                                <strong class="itemCategory">V1</strong>
-                                <strong class="itemPrice">30 <small>PLN</small> </strong>
-                            </div>
-                        </div>
 
-                        <div class="saleItem">
-                            <p>Chicken Curry</p>
-                            <div class="itemClearFix"></div>
-                            <div class="categoryPrice">
-                                <strong class="itemCategory">V1</strong>
-                                <strong class="itemPrice">30 <small>PLN</small> </strong>
-                            </div>
-                        </div>
+                            <a href="#" class="btn_active_order"> <img class="pos-icon"
+                                    src="assets/images/pos-icon/active order.svg" alt=""> Active Order
+                            </a>
 
-                        <div class="saleItem">
-                            <p>Chicken Curry</p>
-                            <div class="itemClearFix"></div>
-                            <div class="categoryPrice">
-                                <strong class="itemCategory">V1</strong>
-                                <strong class="itemPrice">30 <small>PLN</small> </strong>
-                            </div>
-                        </div>
+                            <a href="#" class="btn_print_order">
+                                <img class="pos-icon" src="assets/images/pos-icon/Print order.svg" alt="">
+                                Print Order
+                            </a>
 
-                        <div class="saleItem">
-                            <p>Chicken Curry</p>
-                            <div class="itemClearFix"></div>
-                            <div class="categoryPrice">
-                                <strong class="itemCategory">V1</strong>
-                                <strong class="itemPrice">30 <small>PLN</small> </strong>
-                            </div>
-                        </div>
-                        <div class="saleItem">
-                            <p>Chicken Curry</p>
-                            <div class="itemClearFix"></div>
-                            <div class="categoryPrice">
-                                <strong class="itemCategory">V1</strong>
-                                <strong class="itemPrice">30 <small>PLN</small> </strong>
-                            </div>
-                        </div>
-
-                        <div class="saleItem">
-                            <p>Chicken Curry</p>
-                            <div class="itemClearFix"></div>
-                            <div class="categoryPrice">
-                                <strong class="itemCategory">V1</strong>
-                                <strong class="itemPrice">30 <small>PLN</small> </strong>
-                            </div>
-                        </div>
-
-                        <div class="saleItem">
-                            <p>Chicken Curry</p>
-                            <div class="itemClearFix"></div>
-                            <div class="categoryPrice">
-                                <strong class="itemCategory">V1</strong>
-                                <strong class="itemPrice">30 <small>PLN</small> </strong>
-                            </div>
-                        </div>
-
-                        <div class="saleItem">
-                            <p>Chicken Curry</p>
-                            <div class="itemClearFix"></div>
-                            <div class="categoryPrice">
-                                <strong class="itemCategory">V1</strong>
-                                <strong class="itemPrice">30 <small>PLN</small> </strong>
-                            </div>
-                        </div>
-
-                        <div class="saleItem">
-                            <p>Chicken Curry</p>
-                            <div class="itemClearFix"></div>
-                            <div class="categoryPrice">
-                                <strong class="itemCategory">V1</strong>
-                                <strong class="itemPrice">30 <small>PLN</small> </strong>
-                            </div>
-                        </div>
-
-                        <div class="saleItem">
-                            <p>Chicken Curry</p>
-                            <div class="itemClearFix"></div>
-                            <div class="categoryPrice">
-                                <strong class="itemCategory">V1</strong>
-                                <strong class="itemPrice">30 <small>PLN</small> </strong>
-                            </div>
-                        </div>
-
-                        <div class="saleItem">
-                            <p>Chicken Curry</p>
-                            <div class="itemClearFix"></div>
-                            <div class="categoryPrice">
-                                <strong class="itemCategory">V1</strong>
-                                <strong class="itemPrice">30 <small>PLN</small> </strong>
-                            </div>
-                        </div>
-
-                        <div class="saleItem">
-                            <p>Chicken Curry</p>
-                            <div class="itemClearFix"></div>
-                            <div class="categoryPrice">
-                                <strong class="itemCategory">V1</strong>
-                                <strong class="itemPrice">30 <small>PLN</small> </strong>
-                            </div>
-                        </div>
-                        <div class="saleItem">
-                            <p>Chicken Curry</p>
-                            <div class="itemClearFix"></div>
-                            <div class="categoryPrice">
-                                <strong class="itemCategory">V1</strong>
-                                <strong class="itemPrice">30 <small>PLN</small> </strong>
-                            </div>
-                        </div>
-
-                        <div class="saleItem">
-                            <p>Chicken Curry</p>
-                            <div class="itemClearFix"></div>
-                            <div class="categoryPrice">
-                                <strong class="itemCategory">V1</strong>
-                                <strong class="itemPrice">30 <small>PLN</small> </strong>
-                            </div>
-                        </div>
-
-                        <div class="saleItem">
-                            <p>Chicken Curry</p>
-                            <div class="itemClearFix"></div>
-                            <div class="categoryPrice">
-                                <strong class="itemCategory">V1</strong>
-                                <strong class="itemPrice">30 <small>PLN</small> </strong>
-                            </div>
-                        </div>
-                        <div class="saleItem">
-                            <p>Chicken Curry</p>
-                            <div class="itemClearFix"></div>
-                            <div class="categoryPrice">
-                                <strong class="itemCategory">V1</strong>
-                                <strong class="itemPrice">30 <small>PLN</small> </strong>
-                            </div>
-                        </div>
-
-                        <div class="saleItem">
-                            <p>Chicken Curry</p>
-                            <div class="itemClearFix"></div>
-                            <div class="categoryPrice">
-                                <strong class="itemCategory">V1</strong>
-                                <strong class="itemPrice">30 <small>PLN</small> </strong>
-                            </div>
-                        </div>
-
-                        <div class="saleItem">
-                            <p>Chicken Curry</p>
-                            <div class="itemClearFix"></div>
-                            <div class="categoryPrice">
-                                <strong class="itemCategory">V1</strong>
-                                <strong class="itemPrice">30 <small>PLN</small> </strong>
-                            </div>
-                        </div>
-
-                        <div class="saleItem">
-                            <p>Chicken Curry</p>
-                            <div class="itemClearFix"></div>
-                            <div class="categoryPrice">
-                                <strong class="itemCategory">V1</strong>
-                                <strong class="itemPrice">30 <small>PLN</small> </strong>
-                            </div>
-                        </div>
-
-                        <div class="saleItem">
-                            <p>Chicken Curry</p>
-                            <div class="itemClearFix"></div>
-                            <div class="categoryPrice">
-                                <strong class="itemCategory">V1</strong>
-                                <strong class="itemPrice">30 <small>PLN</small> </strong>
-                            </div>
-                        </div>
-                        <div class="saleItem">
-                            <p>Chicken Curry</p>
-                            <div class="itemClearFix"></div>
-                            <div class="categoryPrice">
-                                <strong class="itemCategory">V1</strong>
-                                <strong class="itemPrice">30 <small>PLN</small> </strong>
-                            </div>
-                        </div>
-
-                        <div class="saleItem">
-                            <p>Chicken Curry</p>
-                            <div class="itemClearFix"></div>
-                            <div class="categoryPrice">
-                                <strong class="itemCategory">V1</strong>
-                                <strong class="itemPrice">30 <small>PLN</small> </strong>
-                            </div>
-                        </div>
-
-                        <div class="saleItem">
-                            <p>Chicken Curry</p>
-                            <div class="itemClearFix"></div>
-                            <div class="categoryPrice">
-                                <strong class="itemCategory">V1</strong>
-                                <strong class="itemPrice">30 <small>PLN</small> </strong>
-                            </div>
-                        </div>
-                        <div class="saleItem">
-                            <p>Chicken Curry</p>
-                            <div class="itemClearFix"></div>
-                            <div class="categoryPrice">
-                                <strong class="itemCategory">V1</strong>
-                                <strong class="itemPrice">30 <small>PLN</small> </strong>
-                            </div>
-                        </div>
-
-                        <div class="saleItem">
-                            <p>Chicken Curry</p>
-                            <div class="itemClearFix"></div>
-                            <div class="categoryPrice">
-                                <strong class="itemCategory">V1</strong>
-                                <strong class="itemPrice">30 <small>PLN</small> </strong>
-                            </div>
-                        </div>
-
-                        <div class="saleItem">
-                            <p>Chicken Curry</p>
-                            <div class="itemClearFix"></div>
-                            <div class="categoryPrice">
-                                <strong class="itemCategory">V1</strong>
-                                <strong class="itemPrice">30 <small>PLN</small> </strong>
-                            </div>
-                        </div>
-
-                        <div class="saleItem">
-                            <p>Chicken Curry</p>
-                            <div class="itemClearFix"></div>
-                            <div class="categoryPrice">
-                                <strong class="itemCategory">V1</strong>
-                                <strong class="itemPrice">30 <small>PLN</small> </strong>
-                            </div>
-                        </div>
-
-                        <div class="saleItem">
-                            <p>Chicken Curry</p>
-                            <div class="itemClearFix"></div>
-                            <div class="categoryPrice">
-                                <strong class="itemCategory">V1</strong>
-                                <strong class="itemPrice">30 <small>PLN</small> </strong>
-                            </div>
-                        </div>
-                        <div class="saleItem">
-                            <p>Chicken Curry</p>
-                            <div class="itemClearFix"></div>
-                            <div class="categoryPrice">
-                                <strong class="itemCategory">V1</strong>
-                                <strong class="itemPrice">30 <small>PLN</small> </strong>
-                            </div>
-                        </div>
-
-                        <div class="saleItem">
-                            <p>Chicken Curry</p>
-                            <div class="itemClearFix"></div>
-                            <div class="categoryPrice">
-                                <strong class="itemCategory">V1</strong>
-                                <strong class="itemPrice">30 <small>PLN</small> </strong>
-                            </div>
-                        </div>
-
-                        <div class="saleItem">
-                            <p>Chicken Curry</p>
-                            <div class="itemClearFix"></div>
-                            <div class="categoryPrice">
-                                <strong class="itemCategory">V1</strong>
-                                <strong class="itemPrice">30 <small>PLN</small> </strong>
-                            </div>
-                        </div>
-                        <div class="saleItem">
-                            <p>Chicken Curry</p>
-                            <div class="itemClearFix"></div>
-                            <div class="categoryPrice">
-                                <strong class="itemCategory">V1</strong>
-                                <strong class="itemPrice">30 <small>PLN</small> </strong>
-                            </div>
-                        </div>
-
-                        <div class="saleItem">
-                            <p>Chicken Curry</p>
-                            <div class="itemClearFix"></div>
-                            <div class="categoryPrice">
-                                <strong class="itemCategory">V1</strong>
-                                <strong class="itemPrice">30 <small>PLN</small> </strong>
-                            </div>
-                        </div>
-
-                        <div class="saleItem">
-                            <p>Chicken Curry</p>
-                            <div class="itemClearFix"></div>
-                            <div class="categoryPrice">
-                                <strong class="itemCategory">V1</strong>
-                                <strong class="itemPrice">30 <small>PLN</small> </strong>
-                            </div>
-                        </div>
-
-                        <div class="saleItem">
-                            <p>Chicken Curry</p>
-                            <div class="itemClearFix"></div>
-                            <div class="categoryPrice">
-                                <strong class="itemCategory">V1</strong>
-                                <strong class="itemPrice">30 <small>PLN</small> </strong>
-                            </div>
-                        </div>
-
-                        <div class="saleItem">
-                            <p>Chicken Curry</p>
-                            <div class="itemClearFix"></div>
-                            <div class="categoryPrice">
-                                <strong class="itemCategory">V1</strong>
-                                <strong class="itemPrice">30 <small>PLN</small> </strong>
-                            </div>
-                        </div>
-                        <div class="saleItem">
-                            <p>Chicken Curry</p>
-                            <div class="itemClearFix"></div>
-                            <div class="categoryPrice">
-                                <strong class="itemCategory">V1</strong>
-                                <strong class="itemPrice">30 <small>PLN</small> </strong>
-                            </div>
-                        </div>
-
-                        <div class="saleItem">
-                            <p>Chicken Curry</p>
-                            <div class="itemClearFix"></div>
-                            <div class="categoryPrice">
-                                <strong class="itemCategory">V1</strong>
-                                <strong class="itemPrice">30 <small>PLN</small> </strong>
-                            </div>
-                        </div>
-
-                        <div class="saleItem">
-                            <p>Chicken Curry</p>
-                            <div class="itemClearFix"></div>
-                            <div class="categoryPrice">
-                                <strong class="itemCategory">V1</strong>
-                                <strong class="itemPrice">30 <small>PLN</small> </strong>
-                            </div>
-                        </div>
-
-                        <div class="saleItem">
-                            <p>Chicken Curry</p>
-                            <div class="itemClearFix"></div>
-                            <div class="categoryPrice">
-                                <strong class="itemCategory">V1</strong>
-                                <strong class="itemPrice">30 <small>PLN</small> </strong>
-                            </div>
-                        </div>
-
-                        <div class="saleItem">
-                            <p>Chicken Curry</p>
-                            <div class="itemClearFix"></div>
-                            <div class="categoryPrice">
-                                <strong class="itemCategory">V1</strong>
-                                <strong class="itemPrice">30 <small>PLN</small> </strong>
-                            </div>
-                        </div>
-                        <div class="saleItem">
-                            <p>Chicken Curry</p>
-                            <div class="itemClearFix"></div>
-                            <div class="categoryPrice">
-                                <strong class="itemCategory">V1</strong>
-                                <strong class="itemPrice">30 <small>PLN</small> </strong>
-                            </div>
-                        </div>
-
-                        <div class="saleItem">
-                            <p>Chicken Curry</p>
-                            <div class="itemClearFix"></div>
-                            <div class="categoryPrice">
-                                <strong class="itemCategory">V1</strong>
-                                <strong class="itemPrice">30 <small>PLN</small> </strong>
-                            </div>
-                        </div>
-
-                        <div class="saleItem">
-                            <p>Chicken Curry</p>
-                            <div class="itemClearFix"></div>
-                            <div class="categoryPrice">
-                                <strong class="itemCategory">V1</strong>
-                                <strong class="itemPrice">30 <small>PLN</small> </strong>
-                            </div>
-                        </div>
-
-                        <div class="saleItem">
-                            <p>Chicken Curry</p>
-                            <div class="itemClearFix"></div>
-                            <div class="categoryPrice">
-                                <strong class="itemCategory">V1</strong>
-                                <strong class="itemPrice">30 <small>PLN</small> </strong>
-                            </div>
-                        </div>
-
-                        <div class="saleItem">
-                            <p>Chicken Curry</p>
-                            <div class="itemClearFix"></div>
-                            <div class="categoryPrice">
-                                <strong class="itemCategory">V1</strong>
-                                <strong class="itemPrice">30 <small>PLN</small> </strong>
-                            </div>
-                        </div>
-                        <div class="saleItem">
-                            <p>Chicken Curry</p>
-                            <div class="itemClearFix"></div>
-                            <div class="categoryPrice">
-                                <strong class="itemCategory">V1</strong>
-                                <strong class="itemPrice">30 <small>PLN</small> </strong>
-                            </div>
-                        </div>
-
-                        <div class="saleItem">
-                            <p>Chicken Curry</p>
-                            <div class="itemClearFix"></div>
-                            <div class="categoryPrice">
-                                <strong class="itemCategory">V1</strong>
-                                <strong class="itemPrice">30 <small>PLN</small> </strong>
-                            </div>
-                        </div>
-
-                        <div class="saleItem">
-                            <p>Chicken Curry</p>
-                            <div class="itemClearFix"></div>
-                            <div class="categoryPrice">
-                                <strong class="itemCategory">V1</strong>
-                                <strong class="itemPrice">30 <small>PLN</small> </strong>
-                            </div>
-                        </div>
-
-                        <div class="saleItem">
-                            <p>Chicken Curry</p>
-                            <div class="itemClearFix"></div>
-                            <div class="categoryPrice">
-                                <strong class="itemCategory">V1</strong>
-                                <strong class="itemPrice">30 <small>PLN</small> </strong>
-                            </div>
-                        </div>
-
-                        <div class="saleItem">
-                            <p>Chicken Curry</p>
-                            <div class="itemClearFix"></div>
-                            <div class="categoryPrice">
-                                <strong class="itemCategory">V1</strong>
-                                <strong class="itemPrice">30 <small>PLN</small> </strong>
-                            </div>
-                        </div>
-                        <div class="saleItem">
-                            <p>Chicken Curry</p>
-                            <div class="itemClearFix"></div>
-                            <div class="categoryPrice">
-                                <strong class="itemCategory">V1</strong>
-                                <strong class="itemPrice">30 <small>PLN</small> </strong>
-                            </div>
-                        </div>
-
-                        <div class="saleItem">
-                            <p>Chicken Curry</p>
-                            <div class="itemClearFix"></div>
-                            <div class="categoryPrice">
-                                <strong class="itemCategory">V1</strong>
-                                <strong class="itemPrice">30 <small>PLN</small> </strong>
-                            </div>
-                        </div>
-
-                        <div class="saleItem">
-                            <p>Chicken Curry</p>
-                            <div class="itemClearFix"></div>
-                            <div class="categoryPrice">
-                                <strong class="itemCategory">V1</strong>
-                                <strong class="itemPrice">30 <small>PLN</small> </strong>
-                            </div>
-                        </div>
-
-                        <div class="saleItem">
-                            <p>Chicken Curry</p>
-                            <div class="itemClearFix"></div>
-                            <div class="categoryPrice">
-                                <strong class="itemCategory">V1</strong>
-                                <strong class="itemPrice">30 <small>PLN</small> </strong>
-                            </div>
-                        </div>
-
-                        <div class="saleItem">
-                            <p>Chicken Curry</p>
-                            <div class="itemClearFix"></div>
-                            <div class="categoryPrice">
-                                <strong class="itemCategory">V1</strong>
-                                <strong class="itemPrice">30 <small>PLN</small> </strong>
-                            </div>
-                        </div>
-                        <div class="saleItem">
-                            <p>Chicken Curry</p>
-                            <div class="itemClearFix"></div>
-                            <div class="categoryPrice">
-                                <strong class="itemCategory">V1</strong>
-                                <strong class="itemPrice">30 <small>PLN</small> </strong>
-                            </div>
-                        </div>
-
-                        <div class="saleItem">
-                            <p>Chicken Curry</p>
-                            <div class="itemClearFix"></div>
-                            <div class="categoryPrice">
-                                <strong class="itemCategory">V1</strong>
-                                <strong class="itemPrice">30 <small>PLN</small> </strong>
-                            </div>
-                        </div>
-
-                        <div class="saleItem">
-                            <p>Chicken Curry</p>
-                            <div class="itemClearFix"></div>
-                            <div class="categoryPrice">
-                                <strong class="itemCategory">V1</strong>
-                                <strong class="itemPrice">30 <small>PLN</small> </strong>
-                            </div>
-                        </div>
-
-                        <div class="saleItem">
-                            <p>Chicken Curry</p>
-                            <div class="itemClearFix"></div>
-                            <div class="categoryPrice">
-                                <strong class="itemCategory">V1</strong>
-                                <strong class="itemPrice">30 <small>PLN</small> </strong>
-                            </div>
-                        </div>
-
-                        <div class="saleItem">
-                            <p>Chicken Curry</p>
-                            <div class="itemClearFix"></div>
-                            <div class="categoryPrice">
-                                <strong class="itemCategory">V1</strong>
-                                <strong class="itemPrice">30 <small>PLN</small> </strong>
-                            </div>
-                        </div>
-                        <div class="saleItem">
-                            <p>Chicken Curry</p>
-                            <div class="itemClearFix"></div>
-                            <div class="categoryPrice">
-                                <strong class="itemCategory">V1</strong>
-                                <strong class="itemPrice">30 <small>PLN</small> </strong>
-                            </div>
-                        </div>
-
-                        <div class="saleItem">
-                            <p>Chicken Curry</p>
-                            <div class="itemClearFix"></div>
-                            <div class="categoryPrice">
-                                <strong class="itemCategory">V1</strong>
-                                <strong class="itemPrice">30 <small>PLN</small> </strong>
-                            </div>
-                        </div>
-
-                        <div class="saleItem">
-                            <p>Chicken Curry</p>
-                            <div class="itemClearFix"></div>
-                            <div class="categoryPrice">
-                                <strong class="itemCategory">V1</strong>
-                                <strong class="itemPrice">30 <small>PLN</small> </strong>
-                            </div>
-                        </div>
-
-                        <div class="saleItem">
-                            <p>Chicken Curry</p>
-                            <div class="itemClearFix"></div>
-                            <div class="categoryPrice">
-                                <strong class="itemCategory">V1</strong>
-                                <strong class="itemPrice">30 <small>PLN</small> </strong>
-                            </div>
-                        </div>
-
-                        <div class="saleItem">
-                            <p>Chicken Curry</p>
-                            <div class="itemClearFix"></div>
-                            <div class="categoryPrice">
-                                <strong class="itemCategory">V1</strong>
-                                <strong class="itemPrice">30 <small>PLN</small> </strong>
-                            </div>
-                        </div>
-                        <div class="saleItem">
-                            <p>Chicken Curry</p>
-                            <div class="itemClearFix"></div>
-                            <div class="categoryPrice">
-                                <strong class="itemCategory">V1</strong>
-                                <strong class="itemPrice">30 <small>PLN</small> </strong>
-                            </div>
-                        </div>
-
-                        <div class="saleItem">
-                            <p>Chicken Curry</p>
-                            <div class="itemClearFix"></div>
-                            <div class="categoryPrice">
-                                <strong class="itemCategory">V1</strong>
-                                <strong class="itemPrice">30 <small>PLN</small> </strong>
-                            </div>
-                        </div>
-
-                        <div class="saleItem">
-                            <p>Chicken Curry</p>
-                            <div class="itemClearFix"></div>
-                            <div class="categoryPrice">
-                                <strong class="itemCategory">V1</strong>
-                                <strong class="itemPrice">30 <small>PLN</small> </strong>
-                            </div>
-                        </div>
-
-                        <div class="saleItem">
-                            <p>Chicken Curry</p>
-                            <div class="itemClearFix"></div>
-                            <div class="categoryPrice">
-                                <strong class="itemCategory">V1</strong>
-                                <strong class="itemPrice">30 <small>PLN</small> </strong>
-                            </div>
-                        </div>
-
-                        <div class="saleItem">
-                            <p>Chicken Curry</p>
-                            <div class="itemClearFix"></div>
-                            <div class="categoryPrice">
-                                <strong class="itemCategory">V1</strong>
-                                <strong class="itemPrice">30 <small>PLN</small> </strong>
-                            </div>
+                            <a href="#" class="btn_invoice_order"> <img class="pos-icon"
+                                    src="assets/images/pos-icon/Invoice.svg" alt="">
+                                Invoice
+                            </a>
                         </div>
                     </div>
 
+
                 </div>
 
-                <div class="row sale-actions-row ">
-                    <div class="saleItemActions">
-                        <a href="#" class="btn_order">
-                            <img class="pos-icon" src="assets/images/pos-icon/Save order.svg" alt="">
-                            Save Order
-                        </a>
+            </div><!-- Content Body End -->
 
-                        <a href="#" class="btn_clear_cart"> <img class="pos-icon"
-                                src="assets/images/pos-icon/Cancle order.svg" alt=""> Clear Cart
-                        </a>
-
-                        <a href="#" class="btn_select_table">
-                            <img class="pos-icon" src="assets/images/pos-icon/Select Table.svg" alt="" />
-                            Select Table
-                        </a>
-
-                        <a href="#" class="btn_cart">
-                            <img class="pos-icon" src="assets/images/pos-icon/Select Table.svg" alt="" />
-                            Cart
-                        </a>
-
-                        <a href="#" class="btn_order_menu">
-                            <img class="pos-icon" src="assets/images/pos-icon/Select Table.svg" alt="" />
-                            Order Menu
-                        </a>
-
-                        <a href="#" class="btn_waiter"> <img class="pos-icon" src="assets/images/pos-icon/waiter.svg"
-                                alt="">
-                            Waiter </a>
-
-
-
-
-                        <a href="#" class="btn_active_order"> <img class="pos-icon"
-                                src="assets/images/pos-icon/active order.svg" alt=""> Active Order
-                        </a>
-
-                        <a href="#" class="btn_print_order">
-                            <img class="pos-icon" src="assets/images/pos-icon/Print order.svg" alt="">
-                            Print Order
-                        </a>
-
-                        <a href="#" class="btn_invoice_order"> <img class="pos-icon"
-                                src="assets/images/pos-icon/Invoice.svg" alt="">
-                            Invoice
-                        </a>
-                    </div>
-                </div>
-
-
-            </div>
-
-        </div><!-- Content Body End -->
+        </main><!-- Content Body End -->
     </div>
 
     <!-- JS
@@ -1108,12 +1133,24 @@
 
     <script>
         $(() => {
-            let width = window.screen.availHeight
-            let height = window.screen.availWidth
+
+            let width = window.screen.availHeight;
+            let height = window.screen.availWidth;
 
             console.log("Height: " + height, "width: " + width);
         });
+
+        // accordion bg
+
+
+
     </script>
+    <script>
+        function accordionShow() {
+            document.getElementsByClassName('cart-main-card').style.backgroundColor = 'green';
+        }  
+    </script>
+
 </body>
 
 </html>
