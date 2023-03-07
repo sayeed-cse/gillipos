@@ -1,7 +1,475 @@
 @media only screen and (min-width: 320px) and (max-width: 480px) {
 
-    
-:root{
-    font-size: 100%;
+
+    :root {
+        font-size: 30%;
+    }
+    /* .header-section{
+        margin-top: 0;
+    }
+    .header-logo{
+        display: none;
+    } */
+
+    .rms-content-body {
+        padding: 0;
+        margin-bottom: .1rem;
+        top: 10%;
+    }
+
+    /* SaleItem page start */
+    .mid-content {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .cart-area {
+        display: none;
+    }
+
+    .saleCategoriesColumn {
+        display: none;
+    }
+
+    .saleCategoriesColumn {
+        display: none;
+    }
+
+    .saleItemsParent {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: .15rem;
+    }
+
+    .saleItem {
+        margin: 0.063rem;
+        height: 22.5rem;
+        width: 24rem;
+        border-radius: 1rem;
+        padding: 1rem 1rem;
+
+    }
+
+    .saleItem p {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+
+
+    .categoryPrice {
+        /* width: 100%; */
+        /* padding-top: 3.5rem; */
+    }
+
+    .categoryPrice strong {
+        font-weight: normal;
+        font-size: 2rem;
+    }
+
+    .itemPrice small {
+        font-size: 1.9rem;
+    }
+
+
+
+    /* SaleItem page End */
+    /*---------- Order and Employee start ------------ 
+ -----------------------------------------*/
+    .orderBoxParent,
+    .employeeSection {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1rem;
+        border-radius: 1rem;
+        justify-items: center;
+    }
+
+    .orderBoxItem,
+    .employeeInfoCard {
+        padding: 2.5rem 1.5rem;
+        border-radius: 2rem;
+        width: 25rem;
+        height: 18rem;
+    }
+
+    .order-state,
+    .employeeInfo {
+
+        margin-bottom: 1rem;
+    }
+
+    .order-state-title,
+    .order-state-bill,
+    .employee-name,
+    .employee-desig {
+        border-radius: 2rem;
+        text-align: center;
+        padding: .5rem .3rem;
+        font-size: 1.4rem;
+        height: 2.8rem;
+
+    }
+
+    .order-state-title,
+    .employee-name {
+        width: 63%;
+
+    }
+
+    .order-state-bill,
+    .employee-desig {
+        width: 35%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .order-details>p,
+    .login-details>p {
+
+        font-size: 1.4rem;
+    }
+
+    /* waiter style section */
+
+
+    .employeeSection {
+        margin: 2rem;
+        grid-gap: 1rem;
+    }
+
+
+    .employeeInfo {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .employee-name,
+    .employee-desig {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .employee-name {
+        width: 50%;
+    }
+
+    .employee-desig {
+        width: 45%;
+    }
+
+    .login-details {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*------------------------
+    --- Table Section ---
+    ------------------ */
+    .table_section {
+        grid-template-columns: repeat(3, 1fr);
+        align-content: space-between;
+        height: 75vh;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        background-color: var(--rms-dark1);
+        grid-gap: .25rem;
+        margin-top: 1rem;
+        padding-top: 0;
+
+    }
+
+    .tables {
+        background-color: var(--rms-dark2);
+        border-radius: 1.2rem;
+        height: 23rem;
+        width: 23.5rem;
+    }
+
+    .table-num {
+        font-size: 3.2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .customer-num {
+        font-size: 2.5rem;
+    }
+
+
+    /* table section end */
+
+    /* #########################################
+    payment and Calculator start 
+#############################################*/
+    .payment-main-container {
+
+        align-content: center;
+    }
+
+    .payment-content-area {
+        display: grid;
+        width: 73vw;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: .1rem;
+
+    }
+
+
+
+    .payment-main-container>.saleItemActions_payment {
+        right: 0;
+    }
+
+    .saleItemActions_payment {
+        grid-template-columns: repeat(7, 1fr);
+        margin-bottom: 0;
+    }
+
+    #payment_noteId {
+        display: none;
+
+    }
+
+    #payment_noteTop {
+        display: inline-block;
+        padding: 1rem 2rem;
+        margin-bottom: .5rem;
+
+    }
+
+    #payment_noteTop a {
+        transform: scale(2);
+    }
+
+
+    .display-total-amount,
+    .display-paid-amount,
+    .display-payable-amount {
+        font-size: 3.5rem;
+    }
+
+    .payment-type {
+        font-size: 2.8rem;
+        font-weight: 700;
+    }
+
+
+    .display-card-amount,
+    .display-cash-amount,
+    .display-percentage-amount {
+        font-size: 2.7rem;
+    }
+
+
+    .display-card-amount,
+    .display-cash-amount,
+    .display-percentage-amount p {
+        line-height: 1.5rem;
+    }
+
+
+
+    .payment-display-section {
+
+        margin-right: 0;
+
+    }
+
+    .p-display-text {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+
+
+    .p-display-text>span {
+        font-weight: 650;
+    }
+
+
+    .top-pay-card-left {
+        padding: 1rem .1rem;
+        text-align: center;
+        border-radius: 1rem;
+        margin: 0;
+    }
+
+    .top-pay-card-left p {
+        line-height: 3.5rem;
+        font-weight: 600;
+    }
+
+    .top-pay-bottom {
+        padding: 1rem .5rem;
+        border-radius: 1rem;
+    }
+
+    .top-pay-bottom p {
+        line-height: 3rem;
+    }
+
+    .top-pay-bottom .payment-type {
+        font-size: 2rem;
+    }
+
+
+    /* payment calc section */
+    .calculator-input-area {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: .2rem;
+        width: 100%;
+    }
+
+    .calc-text-box {
+        grid-column: span 4;
+    }
+
+    .digit-area {
+        grid-column: span 4;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: .3rem;
+        width: 100%;
+    }
+
+    .btn-digit {
+
+        width: 100%;
+        height: 12rem;
+        font-size: 5rem;
+
+        border-radius: .5rem;
+    }
+
+    .payment-input-right {
+        grid-column: span 4;
+        display: grid;
+        grid-template-columns: repeat(2, 3.5fr) repeat(3, 1.5fr);
+        gap: .2rem;
+    }
+
+    .cal-button-basic,
+    .calc-text-field {
+        color: #ffffff;
+        font-size: 3rem;
+        font-weight: 600;
+        text-align: center;
+        border-radius: .5rem;
+        border: none;
+        padding: 0;
+        height: 7rem;
+    }
+
+
+
+    .calc-text-box::placeholder {
+        color: #ffffff;
+        font-size: 4.5rem;
+        font-weight: 650;
+        opacity: .75;
+
+    }
+
+    .calc-text-box:focus {
+
+        opacity: 1;
+    }
+
+
+    .button-calc-right,
+    .payment-input-right .cal-button-basic {
+        width: auto;
+        height: 6.5rem;
+        font-size: 3.5rem;
+        font-weight: 600;
+        text-align: center;
+        border-radius: .5rem;
+        border: none;
+        padding: 0;
+    }
+
+    .btn-card,
+    .btn-cash {
+        width: 100%;
+    }
+
+
+    .pay_btn {
+        grid-column: span 4;
+        height: 8rem;
+        width: 100%;
+        background-color: var(--rms-violet3);
+    }
+
+    .pay-bg {
+        font-weight: 650;
+    }
+
+    /* Sale Saving Actions */
+
+    .saleItemActions,
+    .saleItemActions_payment {
+        position: fixed;
+        bottom: .1rem;
+        right: 0;
+        width: 100vw;
+        grid-template-columns: repeat(12, 1fr);
+    }
+
+    .button-actions {
+        width: 100%;
+        border-radius: .1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .button-actions a {
+        font-size: 1.5rem;
+        font-weight: 550;
+        padding: 2.5rem 1.58rem;
+        color: white;
+    }
+
+    .btn_select_table {
+        grid-column: span 4;
+    }
+
+    .btn_waiter {
+        grid-column: span 4;
+    }
+
+    .btn_order {
+        grid-column: span 4;
+    }
+
+    .btn_clear_cart {
+        grid-column: span 3;
+    }
+
+    .btn_active_order {
+        grid-column: span 3;
+    }
+
+    .btn_print_order {
+        grid-column: span 3;
+    }
+
+    .btn_invoice_order {
+        grid-column: span 3;
+    }
+
+    .pos-icon {
+        height: 3.5rem;
+        width: 3.5rem;
+    }
+
+
 }
-}
+
+/* payment and Calculator End */
