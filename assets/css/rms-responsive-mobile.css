@@ -4,6 +4,9 @@
     :root {
         font-size: 30%;
     }
+        .header-logo {
+            display: none;
+        }
     /* .header-section{
         margin-top: 0;
     }

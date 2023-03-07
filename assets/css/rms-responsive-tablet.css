@@ -3,6 +3,9 @@
     :root {
         font-size: 60%;
     }
+    .header-logo{
+        display: none;
+    }
 
     .rms-content-body {
         padding: 0;
