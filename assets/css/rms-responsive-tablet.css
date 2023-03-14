@@ -10,7 +10,7 @@
     .rms-content-body {
         padding: 0;
         margin-bottom: .1rem;
-        top: 9%;
+        top: 7%;
     }
 
     /* SaleItem page start */
@@ -27,6 +27,7 @@
     .saleItemsParent {
         grid-template-columns: repeat(3, 1fr);
         grid-gap: .15rem;
+        height: 75vh;
     }
 
     .saleItem {
@@ -193,7 +194,7 @@
     payment and Calculator start 
     #############################################*/
     .payment-main-container {
-
+        justify-content: flex-start;
         align-content: center;
     }
 
@@ -212,7 +213,7 @@
     }
 
     .saleItemActions_payment {
-        grid-template-columns: repeat(7, 1fr);
+        /* grid-template-columns: repeat(7, 1fr); */
         margin-bottom: 0;
     }
 
@@ -240,22 +241,22 @@
     }
 
     .payment-type {
-        font-size: 2.8rem;
-        font-weight: 700;
+        font-size: 2rem;
+        font-weight: 600;
     }
 
 
     .display-card-amount,
     .display-cash-amount,
     .display-percentage-amount {
-        font-size: 2.7rem;
+        font-size: 2rem;
     }
 
 
     .display-card-amount,
     .display-cash-amount,
     .display-percentage-amount p {
-        line-height: 1.5rem;
+        line-height: 1rem;
     }
 
 
@@ -280,7 +281,7 @@
 
 
     .top-pay-card-left {
-        padding: 1rem .1rem;
+        padding: .5rem .1rem;
         text-align: center;
         border-radius: 1rem;
         margin: 0;
@@ -292,7 +293,7 @@
     }
 
     .top-pay-bottom {
-        padding: 1rem .5rem;
+        padding: .5rem .5rem;
         border-radius: 1rem;
     }
 
@@ -301,7 +302,7 @@
     }
 
     .top-pay-bottom .payment-type {
-        font-size: 2rem;
+        font-size: 1.7rem;
     }
 
 
@@ -400,12 +401,19 @@
 
     /* Sale Saving Actions */
 
-    .saleItemActions,
+    .saleItemActions {
+        position: fixed;
+        bottom: .1rem;
+        right: 0;
+        width: 100vw;
+        grid-template-columns: repeat(12, 1fr);
+    }
     .saleItemActions_payment {
         position: fixed;
         bottom: .1rem;
         right: 0;
         width: 100vw;
+        display: grid;
         grid-template-columns: repeat(12, 1fr);
     }
 
@@ -456,6 +464,52 @@
         height: 3.5rem;
         width: 3.5rem;
     }
+        /* payment btn */
+        .saleItemActions_payment>.button-actions>a {
+            padding: 1rem 0;
+            font-size: 1.5rem;
+        }
+    
+        .saleItemActions_payment .btn_select_table {
+            grid-column: span 4;
+            order: 1;
+        }
+    
+    
+    
+        .saleItemActions_payment .btn_order {
+            grid-column: span 4;
+            order: 2;
+        }
+    
+        .saleItemActions_payment .btn_clear_cart {
+            grid-column: span 4;
+            order: 3;
+        }
+    
+        .saleItemActions_payment .btn_waiter {
+            grid-column: span 3;
+            order: 4;
+        }
+    
+        .saleItemActions_payment .btn_active_order {
+            grid-column: span 3;
+            order: 5;
+        }
+    
+        .saleItemActions_payment .btn_print_order {
+            grid-column: span 3;
+            order: 6;
+        }
+    
+        .saleItemActions_payment .btn_invoice_order {
+            grid-column: span 3;
+            order: 7;
+        }
+    
+        .btn_kitchen_order {
+            display: none;
+        }
 
     /*------------------------------ 
     ------------Bill Section Start---------
@@ -568,6 +622,9 @@
 
 
 
+
+
+
 /*design for larger tab*/
 @media only screen and (min-width: 769px) and (max-width:1024px) {
     :root {
@@ -577,6 +634,7 @@
     .rms-content-body {
         padding: 0;
         margin-bottom: .1rem;
+        top: 7rem;
     }
 
     /* SaleItem page start */
@@ -593,6 +651,7 @@
     .saleItemsParent {
         grid-template-columns: repeat(3, 1fr);
         grid-gap: .15rem;
+        height: 78vh;
     }
 
     .saleItem {
@@ -733,13 +792,11 @@
     }
 
     .payment-main-container>.saleItemActions_payment {
+        margin-bottom: 0;
         right: 0;
     }
 
-    .saleItemActions_payment {
-        grid-template-columns: repeat(7, 1fr);
-        margin-bottom: 0;
-    }
+    
 
     #payment_noteId {
         display: none;
@@ -748,7 +805,7 @@
     .display-total-amount,
     .display-paid-amount,
     .display-payable-amount {
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
 
     .payment-type {
@@ -760,7 +817,7 @@
     .display-card-amount,
     .display-cash-amount,
     .display-percentage-amount {
-        font-size: 1.7rem;
+        font-size: 2rem;
     }
 
 
@@ -792,7 +849,7 @@
 
 
     .top-pay-card-left {
-        padding: 1rem .1rem;
+        padding: .5rem .1rem;
         text-align: center;
         border-radius: 1rem;
         margin: 0;
@@ -804,7 +861,7 @@
     }
 
     .top-pay-bottom {
-        padding: 1rem .5rem;
+        padding: .5rem .5rem;
         border-radius: 1rem;
     }
 
@@ -942,12 +999,20 @@
 
     /* Sale Saving Actions */
 
-    .saleItemActions,
+    .saleItemActions {
+        position: fixed;
+        bottom: .1rem;
+        right: 0;
+        width: 100vw;
+        grid-template-columns: repeat(12, 1fr);
+        /* column-gap: .125rem; */
+    }
     .saleItemActions_payment {
         position: fixed;
         bottom: .1rem;
         right: 0;
         width: 100vw;
+        display: grid;
         grid-template-columns: repeat(12, 1fr);
         /* column-gap: .125rem; */
     }
@@ -958,12 +1023,13 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        
     }
 
     .button-actions a {
-        font-size: 1.1rem;
+        font-size: 1.5rem;
         font-weight: 550;
-        padding: 2rem 1.58rem;
+        padding: 1.5rem 1.58rem;
     }
 
     .btn_select_table {
@@ -998,6 +1064,52 @@
         height: 2.5rem;
         width: 2.5rem;
     }
+        /* payment btn */
+        .saleItemActions_payment>.button-actions>a {
+            padding: 1rem 0;
+            font-size: 1rem;
+        }
+    
+        .saleItemActions_payment .btn_select_table {
+            grid-column: span 4;
+            order: 1;
+        }
+    
+    
+    
+        .saleItemActions_payment .btn_order {
+            grid-column: span 4;
+            order: 2;
+        }
+    
+        .saleItemActions_payment .btn_clear_cart {
+            grid-column: span 4;
+            order: 3;
+        }
+    
+        .saleItemActions_payment .btn_waiter {
+            grid-column: span 3;
+            order: 4;
+        }
+    
+        .saleItemActions_payment .btn_active_order {
+            grid-column: span 3;
+            order: 5;
+        }
+    
+        .saleItemActions_payment .btn_print_order {
+            grid-column: span 3;
+            order: 6;
+        }
+    
+        .saleItemActions_payment .btn_invoice_order {
+            grid-column: span 3;
+            order: 7;
+        }
+    
+        .btn_kitchen_order {
+            display: none;
+        }
 
 
 }
