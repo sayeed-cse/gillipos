@@ -91,7 +91,7 @@
     /* SaleItem page End */
     /*---------- Order and Employee start ------------ 
  -----------------------------------------*/
-    .orderBoxParent{
+    .orderBoxParent {
         width: 95vw;
         height: 78vh;
         display: grid;
@@ -99,6 +99,7 @@
         border-radius: 1rem;
         justify-items: center;
     }
+
     .employeeSection {
         width: 95vw;
         height: 78vh;
@@ -115,6 +116,7 @@
         width: 100%;
         /* height: 8rem; */
     }
+
     .employeeInfoCard {
         padding: 1.5rem 1.5rem;
         border-radius: 1rem;
@@ -227,7 +229,7 @@
     .login-details {
         display: flex;
         flex-direction: column-reverse;
-        
+
     }
 
     /*------------------------
@@ -286,6 +288,7 @@
 
     .payment-main-container>.saleItemActions_payment {
         right: 0;
+        margin-bottom: 0;
     }
 
     /* .saleItemActions_payment {
@@ -317,7 +320,7 @@
     }
 
     .payment-type {
-        font-size: 2.8rem;
+        font-size: 3rem;
         font-weight: 700;
     }
 
@@ -325,7 +328,7 @@
     .display-card-amount,
     .display-cash-amount,
     .display-percentage-amount {
-        font-size: 2.7rem;
+        font-size: 3rem;
     }
 
 
@@ -378,7 +381,7 @@
     }
 
     .top-pay-bottom .payment-type {
-        font-size: 2rem;
+        font-size: 2.8rem;
     }
 
 
@@ -421,13 +424,13 @@
     .cal-button-basic,
     .calc-text-field {
         color: #ffffff;
-        font-size: 3rem;
+        font-size: 4.5rem;
         font-weight: 600;
         text-align: center;
         border-radius: .5rem;
         border: none;
         padding: 0;
-        height: 7rem;
+        height: 10rem;
     }
 
 
@@ -485,6 +488,7 @@
         width: 100vw;
         grid-template-columns: repeat(12, 1fr);
     }
+
     .saleItemActions_payment {
         position: fixed;
         bottom: .1rem;
@@ -536,6 +540,61 @@
     .btn_invoice_order {
         grid-column: span 3;
     }
+
+    .pos-icon {
+        height: 3.5rem;
+        width: 3.5rem;
+    }
+
+    /* payment btn */
+        .saleItemActions_payment>.button-actions>a {
+            padding: 2rem 0;
+            font-size: 2rem;
+        }
+    .saleItemActions_payment .btn_select_table {
+        grid-column: span 4;
+        order: 1;
+    }
+
+
+
+    .saleItemActions_payment .btn_order {
+        grid-column: span 4;
+        order: 2;
+    }
+
+    .saleItemActions_payment .btn_clear_cart {
+        grid-column: span 4;
+        order: 3;
+    }
+
+    .saleItemActions_payment .btn_waiter {
+        grid-column: span 3;
+        order: 4;
+    }
+
+    .saleItemActions_payment .btn_active_order {
+        grid-column: span 3;
+        order: 5;
+    }
+
+    .saleItemActions_payment .btn_print_order {
+        grid-column: span 3;
+        order: 6;
+    }
+
+    .saleItemActions_payment .btn_invoice_order {
+        grid-column: span 3;
+        order: 7;
+    }
+
+    .btn_kitchen_order {
+        display: none;
+    }
+
+    /* .btn_clear_cart {
+        display: none;
+    } */
 
     .pos-icon {
         height: 3.5rem;
@@ -662,7 +721,7 @@
     /* SaleItem page End */
     /*---------- Order and Employee start ------------ 
  -----------------------------------------*/
-    .orderBoxParent{
+    .orderBoxParent {
         width: 95vw;
         height: 80vh;
         display: grid;
@@ -670,6 +729,7 @@
         border-radius: 1rem;
         justify-items: center;
     }
+
     .employeeSection {
         width: 95vw;
         height: 80vh;
@@ -686,6 +746,7 @@
         width: 100%;
         /* height: 8rem; */
     }
+
     .employeeInfoCard {
         padding: 2.5rem 1.5rem;
         border-radius: 1rem;
@@ -695,9 +756,11 @@
         width: 100%;
         height: 14rem;
     }
- .login-details>p {
-     font-size: 2.5rem;
- }
+
+    .login-details>p {
+        font-size: 2.5rem;
+    }
+
     .order-state,
     .employeeInfo {
         order: 2;
@@ -739,7 +802,7 @@
         order: 1;
     }
 
-    .order-details>p{
+    .order-details>p {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 1fr 1fr;
@@ -854,6 +917,7 @@
 
     .payment-main-container>.saleItemActions_payment {
         right: 0;
+        margin-bottom: 0;
     }
 
     /* .saleItemActions_payment {
@@ -946,7 +1010,7 @@
     }
 
     .top-pay-bottom .payment-type {
-        font-size: 2rem;
+        font-size: 3rem;
     }
 
 
@@ -995,7 +1059,7 @@
         border-radius: .5rem;
         border: none;
         padding: 0;
-        height: 7rem;
+        height: 10rem;
     }
 
 
@@ -1053,6 +1117,7 @@
         width: 100vw;
         grid-template-columns: repeat(12, 1fr);
     }
+
     .saleItemActions_payment {
         position: fixed;
         bottom: .1rem;
@@ -1104,6 +1169,62 @@
     .btn_invoice_order {
         grid-column: span 3;
     }
+
+    .pos-icon {
+        height: 3.5rem;
+        width: 3.5rem;
+    }
+
+    /* payment btn */
+    .saleItemActions_payment>.button-actions>a {
+        padding: 3rem 0;
+        font-size: 2rem;
+    }
+
+    .saleItemActions_payment .btn_select_table {
+        grid-column: span 4;
+        order: 1;
+    }
+
+
+
+    .saleItemActions_payment .btn_order {
+        grid-column: span 4;
+        order: 2;
+    }
+
+    .saleItemActions_payment .btn_clear_cart {
+        grid-column: span 4;
+        order: 3;
+    }
+
+    .saleItemActions_payment .btn_waiter {
+        grid-column: span 3;
+        order: 4;
+    }
+
+    .saleItemActions_payment .btn_active_order {
+        grid-column: span 3;
+        order: 5;
+    }
+
+    .saleItemActions_payment .btn_print_order {
+        grid-column: span 3;
+        order: 6;
+    }
+
+    .saleItemActions_payment .btn_invoice_order {
+        grid-column: span 3;
+        order: 7;
+    }
+
+    .btn_kitchen_order {
+        display: none;
+    }
+
+    /* .btn_clear_cart {
+            display: none;
+        } */
 
     .pos-icon {
         height: 3.5rem;
