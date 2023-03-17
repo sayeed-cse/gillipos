@@ -411,13 +411,13 @@
     .cart-group-products {
         line-height: 1.5rem;
         display: flex;
+        align-items: center;
         margin-top: 1rem;
         margin-bottom: 1.25rem;
     }
 
     .cart-group-products label {
         font-size: 1rem;
-        margin-left: .5rem;
         color: white;
     }
 
@@ -430,7 +430,6 @@
         background-color: var(--rms-dark3);
         padding: .625rem;
         margin-right: .563rem;
-        margin-left: .513rem;
     }
 
     /* Cart Footer */
@@ -448,7 +447,6 @@
         bottom: 1.5rem;
         display: flex;
         flex-grow: 1;
-        /* padding: 0 12px; */
         margin: 0;
     }
 
@@ -475,13 +473,14 @@
     .dropdown-menu {
         background: rgb(49, 44, 84);
         border-radius: 0;
+        width: 100%;
         /* --bs-dropdown-min-width: 7.12rem; */
     }
 
     .dropdown-menu>.dropdown-item {
         font-size: 1rem;
         color: #ffffff;
-        padding: 1rem 1.5rem;
+        padding: 1rem 0rem;
         text-align: center;
     }
 

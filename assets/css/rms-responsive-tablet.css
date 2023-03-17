@@ -3,7 +3,8 @@
     :root {
         font-size: 60%;
     }
-    .header-logo{
+
+    .header-logo {
         display: none;
     }
 
@@ -23,6 +24,158 @@
     .cart-area {
         display: none;
     }
+
+    #cart_page_id {
+        display: block;
+    }
+
+    /* cart section start*/
+    /* Cart Item Left */
+    .accordion .card {
+        border-bottom: .25rem solid var(--rms-dark2);
+    }
+
+    .cart-main-card {
+        background-color: var(--rms-dark2);
+    }
+
+    .cart-item-header {
+        padding: 1rem 2.5rem !important;
+        margin-bottom: 0.063rem;
+    }
+
+    .cart-item-name {
+        width: 41%;
+
+    }
+
+    .cart-item-name p {
+        font-size: 2.4rem;
+    }
+
+    /* Cart Actions */
+
+    .cart-actions {
+        padding: 1rem;
+
+
+
+    }
+
+    .btn_cart_action {
+        margin-left: 1rem;
+        width: 5rem;
+        height: 5rem;
+        border: 0.125rem transparent;
+        border-radius: 1rem;
+        font-size: 3rem;
+    }
+
+    .btn_plus {
+        border: 0.063rem transparent;
+        font-size: 2rem;
+    }
+
+    .btn_minus {
+        font-size: 2rem;
+    }
+
+    .cart-collapse-btn {
+        margin-right: .5rem;
+        border: 0.13rem transparent;
+        font-size: 3.5rem;
+    }
+
+    /* Cart-groups */
+
+    .cart-inside-group {
+        padding-left: 3rem;
+    }
+
+    .cart-inside-group h4 {
+        font-size: 2.5rem;
+        font-weight: 500;
+    }
+
+    .cart-group-products {
+        line-height: 1.5rem;
+        /* display: flex;
+        align-items: center; */
+        margin-top: 1rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .cart-group-products label {
+        font-size: 2rem;
+    }
+
+    .cart-group-products input[type="checkbox"] {
+        /* appearance: none; */
+        height: 2.5rem;
+        width: 2.5rem;
+        border: .25rem solid var(--rms-violet4);
+        border-radius: 1.1rem;
+        background-color: var(--rms-dark3);
+        padding: 1.2rem;
+        margin-right: 1.563rem;
+    }
+
+    /* Cart Footer */
+    .cart-area {
+        display: flex;
+        height: 70vh;
+    }
+
+    .inside-area {
+        width: 100%;
+        padding: 0 .9rem;
+    }
+
+
+    .cart-delivery-option {
+        width: 35%;
+    }
+
+
+
+    .button-inside {
+        font-size: 4rem;
+
+
+    }
+
+    .dropdown-menu {
+        transform: translate3d(0px, -71px, 0px);
+
+    }
+
+    .dropdown-menu>.dropdown-item {
+        font-size: 2.2rem;
+        padding: 1.5rem 0rem;
+    }
+
+
+
+    .cart-total {
+        background: rgb(70, 48, 131);
+        font-size: 4rem;
+        font-weight: 600;
+        width: 55%;
+    }
+
+    .cart-note {
+        width: 10%;
+
+    }
+
+    .cart-note img {
+        padding: .4rem 1rem;
+        transform: scale(0.6);
+
+    }
+
+    /* cart section End*/
+
 
     .saleItemsParent {
         grid-template-columns: repeat(3, 1fr);
@@ -408,6 +561,7 @@
         width: 100vw;
         grid-template-columns: repeat(12, 1fr);
     }
+
     .saleItemActions_payment {
         position: fixed;
         bottom: .1rem;
@@ -464,52 +618,53 @@
         height: 3.5rem;
         width: 3.5rem;
     }
-        /* payment btn */
-        .saleItemActions_payment>.button-actions>a {
-            padding: 1rem 0;
-            font-size: 1.5rem;
-        }
-    
-        .saleItemActions_payment .btn_select_table {
-            grid-column: span 4;
-            order: 1;
-        }
-    
-    
-    
-        .saleItemActions_payment .btn_order {
-            grid-column: span 4;
-            order: 2;
-        }
-    
-        .saleItemActions_payment .btn_clear_cart {
-            grid-column: span 4;
-            order: 3;
-        }
-    
-        .saleItemActions_payment .btn_waiter {
-            grid-column: span 3;
-            order: 4;
-        }
-    
-        .saleItemActions_payment .btn_active_order {
-            grid-column: span 3;
-            order: 5;
-        }
-    
-        .saleItemActions_payment .btn_print_order {
-            grid-column: span 3;
-            order: 6;
-        }
-    
-        .saleItemActions_payment .btn_invoice_order {
-            grid-column: span 3;
-            order: 7;
-        }
-    
-        .btn_kitchen_order {
-            display: none;
-        }
+
+    /* payment btn */
+    .saleItemActions_payment>.button-actions>a {
+        padding: 1rem 0;
+        font-size: 1.5rem;
+    }
+
+    .saleItemActions_payment .btn_select_table {
+        grid-column: span 4;
+        order: 1;
+    }
+
+
+
+    .saleItemActions_payment .btn_order {
+        grid-column: span 4;
+        order: 2;
+    }
+
+    .saleItemActions_payment .btn_clear_cart {
+        grid-column: span 4;
+        order: 3;
+    }
+
+    .saleItemActions_payment .btn_waiter {
+        grid-column: span 3;
+        order: 4;
+    }
+
+    .saleItemActions_payment .btn_active_order {
+        grid-column: span 3;
+        order: 5;
+    }
+
+    .saleItemActions_payment .btn_print_order {
+        grid-column: span 3;
+        order: 6;
+    }
+
+    .saleItemActions_payment .btn_invoice_order {
+        grid-column: span 3;
+        order: 7;
+    }
+
+    .btn_kitchen_order {
+        display: none;
+    }
 
     /*------------------------------ 
     ------------Bill Section Start---------
@@ -605,7 +760,7 @@
     .bill_table {
         display: none;
     }
-   
+
 
 
     /*------------------------------ 
@@ -648,6 +803,155 @@
         display: none;
     }
 
+    #cart_page_id {
+        display: block;
+    }
+
+    /* cart section start*/
+    /* Cart Item Left */
+    .accordion .card {
+        border-bottom: .25rem solid var(--rms-dark2);
+    }
+
+    .cart-main-card {
+        background-color: var(--rms-dark2);
+    }
+
+    .cart-item-header {
+        padding: .5rem 2.5rem !important;
+        margin-bottom: 0.063rem;
+    }
+
+    .cart-item-name {
+        width: 41%;
+
+    }
+
+    .cart-item-name p {
+        font-size: 2rem;
+    }
+
+    /* Cart Actions */
+
+    .cart-actions {
+        padding: 1rem;
+
+
+
+    }
+
+    .btn_cart_action {
+        margin-left: 1rem;
+        width: 4rem;
+        height: 4rem;
+        border: 0.125rem transparent;
+        border-radius: .8rem;
+        font-size: 2.5rem;
+    }
+
+    .btn_plus {
+        border: 0.063rem transparent;
+        font-size: 2rem;
+    }
+
+    .btn_minus {
+        font-size: 2rem;
+    }
+
+    .cart-collapse-btn {
+        margin-right: .5rem;
+        border: 0.13rem transparent;
+        font-size: 3rem;
+    }
+
+    /* Cart-groups */
+
+    .cart-inside-group {
+        padding-left: 3.5rem;
+    }
+
+    .cart-inside-group h4 {
+        font-size: 1.8rem;
+        font-weight: 500;
+    }
+
+    .cart-group-products {
+        line-height: 1.5rem;
+        /* display: flex;
+        align-items: center; */
+        margin-top: 1rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .cart-group-products label {
+        font-size: 1.5rem;
+    }
+
+    .cart-group-products input[type="checkbox"] {
+        /* appearance: none; */
+        height: 2rem;
+        width: 2rem;
+        border: .3rem solid var(--rms-violet4);
+        border-radius: 1rem;
+        padding: 1rem;
+        /* margin-right: 1rem; */
+    }
+
+    /* Cart Footer */
+    .cart-area {
+        display: flex;
+        height: 75vh;
+    }
+
+    .inside-area {
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+
+    .cart-delivery-option {
+        width: 32%;
+    }
+
+
+
+    .button-inside {
+        font-size: 3rem;
+
+
+    }
+
+    .dropdown-menu {
+        transform: translate3d(0px, -71px, 0px);
+
+    }
+
+    .dropdown-menu>.dropdown-item {
+        font-size: 1.5rem;
+        padding: 2rem 0rem;
+    }
+
+
+
+    .cart-total {
+        background: rgb(70, 48, 131);
+        font-size: 3rem;
+        font-weight: 600;
+        width: 57%;
+    }
+
+    .cart-note {
+        width: 10%;
+
+    }
+
+    .cart-note img {
+        padding: .4rem 1rem;
+        transform: scale(0.6);
+
+    }
+
+    /* cart section End*/
     .saleItemsParent {
         grid-template-columns: repeat(3, 1fr);
         grid-gap: .15rem;
@@ -796,7 +1100,7 @@
         right: 0;
     }
 
-    
+
 
     #payment_noteId {
         display: none;
@@ -1007,6 +1311,7 @@
         grid-template-columns: repeat(12, 1fr);
         /* column-gap: .125rem; */
     }
+
     .saleItemActions_payment {
         position: fixed;
         bottom: .1rem;
@@ -1023,7 +1328,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        
+
     }
 
     .button-actions a {
@@ -1064,52 +1369,53 @@
         height: 2.5rem;
         width: 2.5rem;
     }
-        /* payment btn */
-        .saleItemActions_payment>.button-actions>a {
-            padding: 1rem 0;
-            font-size: 1rem;
-        }
-    
-        .saleItemActions_payment .btn_select_table {
-            grid-column: span 4;
-            order: 1;
-        }
-    
-    
-    
-        .saleItemActions_payment .btn_order {
-            grid-column: span 4;
-            order: 2;
-        }
-    
-        .saleItemActions_payment .btn_clear_cart {
-            grid-column: span 4;
-            order: 3;
-        }
-    
-        .saleItemActions_payment .btn_waiter {
-            grid-column: span 3;
-            order: 4;
-        }
-    
-        .saleItemActions_payment .btn_active_order {
-            grid-column: span 3;
-            order: 5;
-        }
-    
-        .saleItemActions_payment .btn_print_order {
-            grid-column: span 3;
-            order: 6;
-        }
-    
-        .saleItemActions_payment .btn_invoice_order {
-            grid-column: span 3;
-            order: 7;
-        }
-    
-        .btn_kitchen_order {
-            display: none;
-        }
+
+    /* payment btn */
+    .saleItemActions_payment>.button-actions>a {
+        padding: 1rem 0;
+        font-size: 1rem;
+    }
+
+    .saleItemActions_payment .btn_select_table {
+        grid-column: span 4;
+        order: 1;
+    }
+
+
+
+    .saleItemActions_payment .btn_order {
+        grid-column: span 4;
+        order: 2;
+    }
+
+    .saleItemActions_payment .btn_clear_cart {
+        grid-column: span 4;
+        order: 3;
+    }
+
+    .saleItemActions_payment .btn_waiter {
+        grid-column: span 3;
+        order: 4;
+    }
+
+    .saleItemActions_payment .btn_active_order {
+        grid-column: span 3;
+        order: 5;
+    }
+
+    .saleItemActions_payment .btn_print_order {
+        grid-column: span 3;
+        order: 6;
+    }
+
+    .saleItemActions_payment .btn_invoice_order {
+        grid-column: span 3;
+        order: 7;
+    }
+
+    .btn_kitchen_order {
+        display: none;
+    }
 
 
 }
