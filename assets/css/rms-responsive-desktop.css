@@ -3,11 +3,61 @@
         font-size: 62.5%;
     }
 
+    .rms-content-body {
+        top: 11.5rem;
+    }
+
+    .mid-content,
+    .cart-area {
+        height: 85.5vh;
+
+    }
+
+    /* .saleItemActions {
+        bottom: 5rem;
+    } */
+
+    .rms-content-body-payment {
+        top: 13rem;
+    }
+
+
+    .saleItemActions_payment {
+        bottom: 4.5rem;
+    }
+
+    .saleItemActions_payment>.button-actions>a {
+        font-size: 1.1rem;
+    }
+
 }
 
 @media only screen and (min-width :1280px) and (max-width:1365px) {
     :root {
         font-size: 66%;
+    }
+
+    .rms-content-body {
+        top: 11rem;
+    }
+
+    .mid-content,
+    .cart-area {
+        position: relative;
+        height: 86.5vh;
+
+    }
+
+    .rms-content-body-payment {
+        top: 13rem;
+    }
+
+    .saleItemActions_payment {
+        bottom: 4.5rem;
+    }
+
+    .saleItemActions_payment>.button-actions>a {
+        font-size: 1.1rem;
     }
 
 }
@@ -17,11 +67,51 @@
         font-size: 71%;
     }
 
+    .rms-content-body {
+        top: 10rem;
+    }
+
+    .mid-content,
+    .cart-area {
+        height: 86.5vh;
+
+    }
+
+    .rms-content-body-payment {
+        top: 13rem;
+    }
+
+    .saleItemActions_payment {
+        bottom: 4.5rem;
+    }
+
 }
 
 @media only screen and (min-width :1440px) and (max-width:1599px) {
     :root {
         font-size: 74.5%;
+    }
+
+    .rms-content-body {
+        top: 9.5rem;
+    }
+
+    .mid-content,
+    .cart-area {
+        height: 87vh;
+
+    }
+
+    .rms-content-body-payment {
+        top: 17rem;
+    }
+
+    .saleItemActions_payment {
+        bottom: 4rem;
+    }
+
+    .saleItemActions_payment>.button-actions>a {
+        font-size: 1.1rem;
     }
 
 }
@@ -31,6 +121,28 @@
         font-size: 83.01%;
     }
 
+    .rms-content-body {
+        top: 9rem;
+    }
+
+    .mid-content,
+    .cart-area {
+        height: 88vh;
+
+    }
+
+    .rms-content-body-payment {
+        top: 13rem;
+    }
+
+    .saleItemActions_payment {
+        bottom: 4.5rem;
+    }
+
+    .saleItemActions_payment>.button-actions>a {
+        font-size: 1.1rem;
+    }
+
 }
 
 @media only screen and (min-width :1751px) and (max-width:1920px) {
@@ -38,11 +150,35 @@
         font-size: 100%;
     }
 
+    .rms-content-body-payment {
+        top: 13rem;
+    }
+
+    .saleItemActions_payment {
+        bottom: 4.5rem;
+    }
+
+    .saleItemActions_payment>.button-actions>a {
+        font-size: 1.1rem;
+    }
+
 }
 
 @media only screen and (min-width:2560px) {
     :root {
         font-size: 133.334%;
+    }
+
+    .rms-content-body-payment {
+        top: 13rem;
+    }
+
+    .saleItemActions_payment {
+        bottom: 3rem;
+    }
+
+    .saleItemActions_payment>.button-actions>a {
+        font-size: 1.1rem;
     }
 
 }

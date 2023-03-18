@@ -179,7 +179,6 @@
 
     /* Sale Item Parents */
 
-
     .saleItemsParent {
         overflow-y: scroll;
         padding-right: 0;
@@ -194,7 +193,6 @@
         margin-left: .05rem;
         margin-right: .01rem;
     }
-
 
     .saleItemsParent>div:nth-child(n+1):nth-child(-n+8),
     .saleItemsParent>div:nth-child(n+33):nth-child(-n+40),
@@ -225,9 +223,6 @@
     }
 
 
-
-
-
     .saleItem {
         background-color: rgb(52, 37, 115);
         margin-top: 0.073rem;
@@ -242,14 +237,11 @@
         flex-direction: column;
         justify-content: space-around;
     }
-
     .saleItem p {
         font-size: 1.1rem;
         text-align: center;
         color: #fff;
     }
-
-
 
     .categoryPrice {
         width: 100%;
@@ -257,13 +249,11 @@
         justify-content: space-around;
 
     }
-
     .categoryPrice strong {
         color: #ffffffcf;
         font-weight: normal;
         font-size: 1rem;
     }
-
 
     .itemPrice small {
         font-size: .9rem;
@@ -288,15 +278,6 @@
         margin-bottom: 0.063rem;
         background-color: var(--rms-dark3) !important;
     }
-
-    /* .cart-item-header h3 {
-        padding: .625rem .313rem;
-        font-size: 1rem;
-    }
-
-    .cart-item-header h3 button {
-        display: inline-block;
-    } */
 
     .cart-item-name {
         width: 41%;
@@ -399,7 +380,7 @@
 
     .cart-inside-group {
         overflow: hidden;
-        padding-left: .563rem;
+        padding-left: .5rem;
     }
 
     .cart-inside-group h4 {
@@ -994,6 +975,10 @@
 
     .top-pay-card-left>.card-body {
         padding: 0 !important;
+
+    }
+    .card-body>.row{
+        padding-left: 1.2rem !important;
     }
 
     .top-pay-bottom {
