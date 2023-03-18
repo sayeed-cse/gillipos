@@ -1,15 +1,10 @@
 @media (320px<=width<=380px) {
-
-
     :root {
         font-size: 30%;
     }
-
-
     .header-logo {
         display: none;
     }
-
     .container-fluid {
         position: fixed;
         top: 0;
@@ -416,9 +411,10 @@
     payment and Calculator start 
 #############################################*/
     .payment-main-container {
-        justify-content: flex-start;
-        align-content: center;
+        justify-content: space-between;
+        align-items: flex-end;
         width: 90vw;
+        height: 75vh;
     }
 
     .payment-content-area {
@@ -436,36 +432,38 @@
         margin-bottom: 0;
     }
 
-    /* .saleItemActions_payment {
-        grid-template-columns: repeat(7, 1fr);
-        margin-bottom: 0;
-    } */
-
-    #payment_noteId {
-        display: none;
-
-    }
-
-    #payment_noteTop {
-        display: inline-block;
-        padding: 1rem 2rem;
-        margin-bottom: .5rem;
-
-    }
-
-    #payment_noteTop a {
-        transform: scale(2);
-    }
+         .btn_pay_note {
+             width: auto;
+             border-radius: 1rem;
+         }
+    
+         #payment_noteId {
+             display: none;
+    
+         }
+    
+         #payment_noteTop {
+             display: inline-block;
+             padding: 2rem 2.5rem;
+             margin-bottom: 1rem;
+             background-color: var(--rms-dark2);
+    
+         }
+    
+         #payment_noteTop a>.note-icon {
+             width: 4rem;
+             height: 4rem;
+         }
 
 
     .display-total-amount,
     .display-paid-amount,
     .display-payable-amount {
-        font-size: 3.5rem;
+        font-size: 4rem;
     }
 
     .payment-type {
-        font-size: 3rem;
+        font-size: 3.5rem;
         font-weight: 700;
     }
 
@@ -473,7 +471,7 @@
     .display-card-amount,
     .display-cash-amount,
     .display-percentage-amount {
-        font-size: 3rem;
+        font-size: 3.5rem;
     }
 
 
@@ -486,7 +484,7 @@
 
 
     .payment-display-section {
-
+        margin-bottom: .5rem;
         margin-right: 0;
 
     }
@@ -505,14 +503,14 @@
 
 
     .top-pay-card-left {
-        padding: 1rem .1rem;
-        text-align: center;
+        padding: 1.5rem .1rem;
+        /* text-align: center; */
         border-radius: 1rem;
         margin: 0;
     }
 
     .top-pay-card-left p {
-        line-height: 3.5rem;
+        line-height: 5rem;
         font-weight: 600;
     }
 
@@ -522,7 +520,7 @@
     }
 
     .top-pay-bottom p {
-        line-height: 3rem;
+        line-height: 4rem;
     }
 
     .top-pay-bottom .payment-type {
@@ -553,7 +551,7 @@
     .btn-digit {
 
         width: 100%;
-        height: 15rem;
+        height: 14.8rem;
         font-size: 5.5rem;
 
         border-radius: 1.5rem;
@@ -568,23 +566,15 @@
 
     .cal-button-basic,
     .calc-text-field {
-        color: #ffffff;
-        font-size: 4.5rem;
-        font-weight: 600;
-        text-align: center;
-        border-radius: .5rem;
-        border: none;
-        padding: 0;
+        font-size: 7rem;
+        border-radius: 1rem;
         height: 10rem;
     }
 
 
 
     .calc-text-box::placeholder {
-        color: #ffffff;
-        font-size: 4.5rem;
-        font-weight: 650;
-        opacity: .75;
+        font-size: 7rem;
 
     }
 
@@ -596,14 +586,14 @@
 
     .button-calc-right,
     .payment-input-right .cal-button-basic {
-        width: auto;
-        height: 8.5rem;
-        font-size: 4.5rem;
-        font-weight: 600;
-        text-align: center;
+        /* width: auto; */
+        height: 7.5rem;
+        font-size: 4rem;
+        /* font-weight: 600; */
+        /* text-align: center; */
         border-radius: .5rem;
-        border: none;
-        padding: 0;
+        /* border: none; */
+        /* padding: 0; */
     }
 
     .btn-card,
@@ -617,7 +607,7 @@
         height: 10rem;
         width: 100%;
         background-color: var(--rms-violet3);
-        font-size: 4.5rem;
+        font-size: 6rem;
     }
 
     .pay-bg {
@@ -651,12 +641,6 @@
         align-items: center;
     }
 
-    .button-actions a {
-        font-size: 2rem;
-        font-weight: 550;
-        padding: 2.5rem 1rem;
-        color: white;
-    }
 
     .btn_select_table {
         grid-column: span 4;
@@ -693,7 +677,7 @@
 
     /* payment btn */
     .saleItemActions_payment>.button-actions>a {
-        padding: 2rem 0;
+        padding: 3rem 0;
         font-size: 2rem;
     }
 
@@ -1194,9 +1178,10 @@
     payment and Calculator start 
 #############################################*/
     .payment-main-container {
-        justify-content: flex-start;
-        align-content: center;
-        width: 90vw;
+        justify-content: space-between;
+            align-items: flex-end;
+            width: 90vw;
+            height: 78vh;
     }
 
     .payment-content-area {
@@ -1214,66 +1199,68 @@
         margin-bottom: 0;
     }
 
-    /* .saleItemActions_payment {
-        grid-template-columns: repeat(7, 1fr);
-        margin-bottom: 0;
-    } */
-
-    #payment_noteId {
-        display: none;
-
-    }
-
-    #payment_noteTop {
-        display: inline-block;
-        padding: 1rem 2rem;
-        margin-bottom: .5rem;
-
-    }
-
-    #payment_noteTop a {
-        transform: scale(2);
-    }
+        .btn_pay_note {
+            width: auto;
+            border-radius: 1rem;
+        }
+    
+        #payment_noteId {
+            display: none;
+    
+        }
+    
+        #payment_noteTop {
+            display: inline-block;
+            padding: 2.5rem 3rem;
+            margin-bottom: 1rem;
+            background-color: var(--rms-dark2);
+    
+        }
+    
+        #payment_noteTop a>.note-icon {
+            width: 4rem;
+            height: 4rem;
+        }
 
 
     .display-total-amount,
     .display-paid-amount,
     .display-payable-amount {
-        font-size: 3.5rem;
+        font-size: 4.5rem;
     }
 
     .payment-type {
-        font-size: 2.8rem;
-        font-weight: 700;
+        font-size: 3.5rem;
+        font-weight: 500;
     }
 
 
     .display-card-amount,
     .display-cash-amount,
     .display-percentage-amount {
-        font-size: 2.7rem;
+        font-size: 3rem;
     }
 
 
     .display-card-amount,
     .display-cash-amount,
     .display-percentage-amount p {
-        line-height: 1.5rem;
+        line-height: 2rem;
     }
 
 
 
     .payment-display-section {
-
+        margin-bottom: .5rem;
         margin-right: 0;
 
     }
 
-    .p-display-text {
+    /* .p-display-text {
         display: flex;
         flex-direction: column;
 
-    }
+    } */
 
 
 
@@ -1283,24 +1270,24 @@
 
 
     .top-pay-card-left {
-        padding: 1rem .1rem;
-        text-align: center;
+        padding: 1.5rem .1rem;
+        /* text-align: center; */
         border-radius: 1rem;
-        margin: 0;
+        /* margin: 0; */
     }
 
     .top-pay-card-left p {
-        line-height: 3.5rem;
+        line-height: 6rem;
         font-weight: 600;
     }
 
     .top-pay-bottom {
-        padding: 1rem .5rem;
+        padding: 1.5rem .5rem;
         border-radius: 1rem;
     }
 
     .top-pay-bottom p {
-        line-height: 3rem;
+        line-height: 4rem;
     }
 
     .top-pay-bottom .payment-type {
@@ -1324,44 +1311,35 @@
         grid-column: span 4;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-gap: .3rem;
+        grid-gap: .4rem;
         width: 100%;
     }
 
     .btn-digit {
 
         width: 100%;
-        height: 20rem;
-        font-size: 5rem;
-
-        border-radius: .5rem;
+        height: 17rem;
+        font-size: 6rem;
+        border-radius: 1rem;
     }
 
     .payment-input-right {
         grid-column: span 4;
         display: grid;
         grid-template-columns: repeat(2, 3.5fr) repeat(3, 1.5fr);
-        gap: .2rem;
+        grid-gap: .2rem;
     }
 
     .cal-button-basic,
     .calc-text-field {
-        color: #ffffff;
-        font-size: 5rem;
-        font-weight: 600;
-        text-align: center;
-        border-radius: .5rem;
-        border: none;
-        padding: 0;
-        height: 10rem;
+        font-size: 7rem;
+        height: 11rem;
     }
 
 
 
     .calc-text-box::placeholder {
-        color: #ffffff;
-        font-size: 4.5rem;
-        font-weight: 650;
+        font-size: 7rem;
         opacity: .75;
 
     }
@@ -1375,13 +1353,11 @@
     .button-calc-right,
     .payment-input-right .cal-button-basic {
         width: auto;
-        height: 6.5rem;
-        font-size: 3.5rem;
+        height: 9rem;
+        font-size: 4rem;
         font-weight: 600;
-        text-align: center;
-        border-radius: .5rem;
-        border: none;
-        padding: 0;
+        border-radius: 1rem;
+       
     }
 
     .btn-card,
@@ -1391,11 +1367,11 @@
 
 
     .pay_btn {
-        grid-column: span 4;
-        font-size: 5rem;
-        height: 8rem;
-        width: 100%;
-        background-color: var(--rms-violet3);
+        /* grid-column: span 4; */
+        font-size: 6rem;
+        height: 11rem;
+        /* width: 100%; */
+        /* background-color: var(--rms-violet3); */
     }
 
     .pay-bg {

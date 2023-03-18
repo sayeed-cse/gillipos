@@ -348,7 +348,7 @@
     #############################################*/
     .payment-main-container {
         justify-content: flex-start;
-        align-content: center;
+        align-items: flex-end;
     }
 
     .payment-content-area {
@@ -370,6 +370,10 @@
         margin-bottom: 0;
     }
 
+    .btn_pay_note {
+        width: auto;
+    }
+
     #payment_noteId {
         display: none;
 
@@ -377,13 +381,15 @@
 
     #payment_noteTop {
         display: inline-block;
-        padding: 1rem 2rem;
-        margin-bottom: .5rem;
+        padding: 2rem 2.2rem;
+        margin-bottom: 1.5rem;
+        background-color: var(--rms-dark2);
 
     }
 
-    #payment_noteTop a {
-        transform: scale(2);
+    #payment_noteTop a>.note-icon {
+        width: 2.5rem;
+        height: 2.5rem;
     }
 
 
@@ -579,12 +585,6 @@
         align-items: center;
     }
 
-    .button-actions a {
-        font-size: 1.5rem;
-        font-weight: 550;
-        padding: 2.5rem 1.58rem;
-        color: white;
-    }
 
     .btn_select_table {
         grid-column: span 4;
@@ -621,7 +621,7 @@
 
     /* payment btn */
     .saleItemActions_payment>.button-actions>a {
-        padding: 1rem 0;
+        padding: 1.7rem 0;
         font-size: 1.5rem;
     }
 
@@ -1060,13 +1060,6 @@
         grid-gap: 1rem;
     }
 
-
-    /* .employeeInfo {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: .313rem;
-    } */
-
     .employee-name,
     .employee-desig {
         border-radius: 1.313rem;
@@ -1082,9 +1075,8 @@
     /* payment section start */
     .payment-main-container {
         display: flex;
-        justify-content: center;
-        /* height: 10rem; */
-        align-content: center;
+        justify-content: flex-start;
+        align-items: flex-end;
     }
 
     .payment-content-area {
@@ -1109,7 +1101,7 @@
     .display-total-amount,
     .display-paid-amount,
     .display-payable-amount {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     .payment-type {
@@ -1275,7 +1267,7 @@
     .button-calc-right,
     .payment-input-right .cal-button-basic {
         width: auto;
-        height: 5.5rem;
+        height: 5rem;
         font-size: 2rem;
         font-weight: 600;
         text-align: center;
@@ -1292,7 +1284,7 @@
 
     .pay_btn {
         grid-column: span 4;
-        height: 7rem;
+        height: 6rem;
         width: 100%;
         background-color: var(--rms-violet3);
     }
@@ -1331,10 +1323,22 @@
 
     }
 
-    .button-actions a {
-        font-size: 1.5rem;
-        font-weight: 550;
-        padding: 1.5rem 1.58rem;
+    .btn_pay_note {
+        width: auto;
+    }
+
+
+    #payment_noteTop {
+        display: inline-block;
+        padding: 1.5rem 1.5rem;
+        margin-bottom: 1rem;
+        background-color: var(--rms-dark2);
+
+    }
+
+    #payment_noteTop a>.note-icon {
+        width: 2rem;
+        height: 2rem;
     }
 
     .btn_select_table {
@@ -1372,8 +1376,8 @@
 
     /* payment btn */
     .saleItemActions_payment>.button-actions>a {
-        padding: 1rem 0;
-        font-size: 1rem;
+        padding: 1.5rem 0;
+        font-size: 1.3rem;
     }
 
     .saleItemActions_payment .btn_select_table {
