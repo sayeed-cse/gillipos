@@ -31,6 +31,10 @@
 
     /* cart section start*/
     /* Cart Item Left */
+    .card-body>.row {
+        padding-left: 1.5rem !important;
+    }
+
     .accordion .card {
         border-bottom: .25rem solid var(--rms-dark2);
     }
@@ -128,7 +132,7 @@
 
     .inside-area {
         width: 100%;
-        padding: 0 .9rem;
+        padding: 0 .1rem;
     }
 
 
@@ -178,9 +182,10 @@
 
 
     .saleItemsParent {
+        display: none;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: .15rem;
-        height: 75vh;
+        height: 78vh;
     }
 
     .saleItem {
@@ -566,6 +571,9 @@
         right: 0;
         width: 100vw;
         grid-template-columns: repeat(12, 1fr);
+        column-gap: 0rem;
+        margin-left: 0rem;
+        margin-right: 0rem;
     }
 
     .saleItemActions_payment {
@@ -580,11 +588,15 @@
     .button-actions {
         width: 100%;
         border-radius: .1rem;
-        display: flex;
+        height: 6.5rem;
+        /* display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: center; */
     }
 
+    .button-actions a {
+        font-size: 1.7rem;
+    }
 
     .btn_select_table {
         grid-column: span 4;
@@ -791,7 +803,7 @@
         margin-bottom: .1rem;
         top: 7rem;
     }
-    
+
     /* SaleItem page start */
     .mid-content {
         display: flex;
@@ -815,6 +827,10 @@
 
     .cart-main-card {
         background-color: var(--rms-dark2);
+    }
+
+    .card-body>.row {
+        padding-left: 3rem !important;
     }
 
     .cart-item-header {
@@ -867,7 +883,7 @@
     /* Cart-groups */
 
     .cart-inside-group {
-        padding-left: 3.5rem;
+        padding-left: .5rem;
     }
 
     .cart-inside-group h4 {
@@ -905,7 +921,7 @@
 
     .inside-area {
         width: 100%;
-        padding: 0 1rem;
+        padding: 0 .1rem;
     }
 
 
@@ -953,6 +969,7 @@
 
     /* cart section End*/
     .saleItemsParent {
+        display: none;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: .15rem;
         height: 78vh;
@@ -1301,6 +1318,9 @@
         right: 0;
         width: 100vw;
         grid-template-columns: repeat(12, 1fr);
+        column-gap: 0rem;
+        margin-left: 0rem;
+        margin-right: 0rem;
         /* column-gap: .125rem; */
     }
 
@@ -1317,10 +1337,13 @@
     .button-actions {
         width: 100%;
         border-radius: .1rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        height: 6rem;
+        
 
+    }
+
+    .button-actions a {
+        font-size: 1.5rem;
     }
 
     .btn_pay_note {
