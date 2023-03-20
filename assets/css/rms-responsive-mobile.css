@@ -1,10 +1,17 @@
-@media (320px<=width<=380px) {
+@media only screen and (320px<=width<=380px) {
     :root {
         font-size: 30%;
     }
 
     .header-logo {
         display: none;
+    }
+
+    .header-section {
+        height: 5.5vh;
+        width: 100vw;
+        padding: 0;
+        margin: 0;
     }
 
     .container-fluid {
@@ -15,29 +22,40 @@
     }
 
     .header-right {
-        padding-top: .25rem;
+        padding-top: 0rem;
+        padding: 0 2rem;
+    }
+
+    .side-header {
+        height: calc(100% - 5.5vh);
+        top: 5.5vh;
     }
 
     .rms-content-body {
+        top: 5.5vh;
+        height: calc(100vh - 17.5vh);
         padding: 0;
+        padding-top: .5rem;
         margin-bottom: .1rem;
-        top: 8%;
+        overflow-y: visible;
     }
 
-    /* SaleItem page start */
     .mid-content {
         display: flex;
         justify-content: center;
-
-
+        height: 100%;
+        width: 100%;
     }
 
     .cart-area {
         display: none;
     }
 
+
+
     #cart_page_id {
         display: block;
+        height: calc(100vh - 18vh);
     }
 
     /* cart section start*/
@@ -130,10 +148,7 @@
     }
 
     /* Cart Footer */
-    .cart-area {
-        display: flex;
-        height: 80vh;
-    }
+
 
     .inside-area {
         width: 100%;
@@ -180,8 +195,8 @@
 
     .cart-note img {
         height: 100%;
-            width: 100%;
-        
+        width: 100%;
+
 
     }
 
@@ -190,43 +205,44 @@
         display: none;
     }
 
-    .saleCategoriesColumn {
-        display: none;
+
+    .saleItemsParent ,.productItemsParent{
+        width: 96vw;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: .2rem;
+        height: calc(100vh - 19vh);
+        margin-top: .5rem;
     }
 
-    .saleItemsParent {
-        display: none;
-    }
-
-    .saleItem {
+    .saleItem, .productItemsParent>.saleItem {
         margin: 0.063rem;
-        height: 22.5rem;
-        width: 24rem;
+        height: 23.5rem;
+        width: calc(100% - .1rem);
         border-radius: 1rem;
         padding: 1rem 1rem;
-        background-color: var(--rms-violet2);
+        background-color: var(--rms-violet2) !important;
 
     }
 
-    .saleItem p {
-        font-size: 2.5rem;
+    .saleItem p, .productItemsParent>.saleItem p {
+        font-size: 2.8rem;
         text-align: center;
     }
 
 
 
-    .categoryPrice {
-        /* width: 100%; */
-        /* padding-top: 3.5rem; */
+    .categoryPrice {}
+
+    .categoryPrice .itemCategory ,.productItemsParent>.saleItem .itemCategory{
+        font-size: 2.1rem;
     }
 
-    .categoryPrice strong {
-        font-weight: normal;
+    .categoryPrice .itemPrice,.productItemsParent>.saleItem .itemPrice {
         font-size: 2rem;
     }
 
-    .itemPrice small {
-        font-size: 1.9rem;
+    .itemPrice small,.productItemsParent>.saleItem .itemPrice small {
+        font-size: 1.2rem;
     }
 
 
@@ -236,7 +252,8 @@
  -----------------------------------------*/
     .orderBoxParent {
         width: 95vw;
-        height: 78vh;
+        height: calc(100vh - 19vh);
+        margin-top: .5rem;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         border-radius: 1rem;
@@ -245,14 +262,15 @@
 
     .employeeSection {
         width: 95vw;
-        height: 78vh;
+        height: calc(100vh - 19vh);
+        margin-top: .5rem;
         display: flex;
         flex-direction: column;
         border-radius: 1rem;
     }
 
     .orderBoxItem {
-        padding: 1.5rem 1.5rem;
+        padding: 1.5rem 1rem;
         border-radius: 1rem;
         display: flex;
         justify-content: space-between;
@@ -315,7 +333,7 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 1fr 1fr;
-        font-size: 2.5rem;
+        font-size: 2.3rem;
     }
 
     .login-details>p {
@@ -379,14 +397,15 @@
     --- Table Section ---
     ------------------ */
     .table_section {
+        width: 100vw;
         grid-template-columns: repeat(3, 1fr);
         align-content: space-between;
-        height: 75vh;
+        height: calc(100vh - 19vh);
         overflow-y: scroll;
         overflow-x: hidden;
         background-color: var(--rms-dark1);
         grid-gap: .25rem;
-        margin-top: 1rem;
+        margin: 1rem;
         padding-top: 0;
 
     }
@@ -394,12 +413,12 @@
     .tables {
         background-color: var(--rms-dark2);
         border-radius: 1.2rem;
-        height: 23rem;
-        width: 23.5rem;
+        height: 22rem;
+        width: 100%;
     }
 
     .table-num {
-        font-size: 3.2rem;
+        font-size: 3.8rem;
         margin-bottom: 1.5rem;
     }
 
@@ -449,6 +468,7 @@
         display: inline-block;
         padding: 2rem 2.5rem;
         margin-bottom: 1rem;
+        margin-top: 2rem;
         background-color: var(--rms-dark2);
 
     }
@@ -620,8 +640,9 @@
     /* Sale Saving Actions */
 
     .saleItemActions {
+        height: 12vh;
         position: fixed;
-        bottom: .1rem;
+        bottom: .5rem;
         right: 0;
         width: 100vw;
         grid-template-columns: repeat(12, 1fr);
@@ -630,9 +651,11 @@
         margin-right: 0rem;
     }
 
+
     .saleItemActions_payment {
+        height: 13vh;
         position: fixed;
-        bottom: .1rem;
+        bottom: .1rem !important;
         right: 0;
         width: 100vw;
         display: grid;
@@ -771,8 +794,6 @@
 
 /* payment and Calculator End */
 @media (381px<=width<=480px) {
-
-
     :root {
         font-size: 33%;
     }
@@ -780,6 +801,14 @@
 
     .header-logo {
         display: none;
+    }
+
+    .header-section {
+        height: 5vh;
+        align-items: center;
+        width: 100vw;
+        padding: 0;
+        margin: 0;
     }
 
     .container-fluid {
@@ -790,21 +819,30 @@
     }
 
     .header-right {
-        padding-top: .25rem;
+        padding-top: 0rem;
+        padding: 0 2rem;
+    }
+
+    .side-header {
+        height: calc(100% - 5vh);
+        top: 5vh;
     }
 
     .rms-content-body {
+        top: 5vh;
+        height: calc(100vh - 18vh);
         padding: 0;
+        padding-top: .5rem;
         margin-bottom: .1rem;
-        top: 8%;
+        overflow-y: visible;
     }
 
     /* SaleItem page start */
     .mid-content {
         display: flex;
         justify-content: center;
-
-
+        height: 100%;
+        width: 100%;
     }
 
     .cart-area {
@@ -813,6 +851,7 @@
 
     #cart_page_id {
         display: block;
+        height: calc(100vh - 17.2vh);
     }
 
     /* cart section start*/
@@ -905,10 +944,7 @@
     }
 
     /* Cart Footer */
-    .cart-area {
-        display: flex;
-        height: 80vh;
-    }
+
 
     .inside-area {
         width: 100%;
@@ -929,7 +965,7 @@
     }
 
     .dropdown-menu {
-        transform: translate3d(0px,-8rem, 0px) !important;
+        transform: translate3d(0px, -8rem, 0px) !important;
 
     }
 
@@ -965,43 +1001,46 @@
         display: none;
     }
 
-    .saleCategoriesColumn {
-        display: none;
+
+
+    .saleItemsParent ,.productItemsParent{
+        margin-top: .5rem;
+        width: 95vw;
+        grid-template-columns: repeat(3, 1fr);
+        height: calc(100vh - 18vh);
+        grid-gap: .15rem;
+
     }
 
-    .saleItemsParent {
-        display: none;
-    }
-
-    .saleItem {
+    .saleItem,.productItemsParent>.saleItem {
         margin: 0.063rem;
         height: 22.5rem;
-        width: 23.5rem;
+        width: calc(100% - .07rem);
         border-radius: 1rem;
         padding: 1rem 1rem;
-        background-color: var(--rms-violet2);
+        background-color: var(--rms-violet2) !important;
 
     }
 
-    .saleItem p {
-        font-size: 2.5rem;
+    .saleItem p, .productItemsParent>.saleItem p {
+        font-size: 2.8rem;
         text-align: center;
     }
 
 
 
-    .categoryPrice {
-        /* width: 100%; */
-        /* padding-top: 3.5rem; */
+
+
+    .categoryPrice .itemCategory ,.productItemsParent>.saleItem .itemCategory{
+        font-size: 2.2rem;
     }
 
-    .categoryPrice strong {
-        font-weight: normal;
-        font-size: 2rem;
+    .categoryPrice .itemPrice,.productItemsParent>.saleItem .itemPrice {
+        font-size: 2.1rem;
     }
 
-    .itemPrice small {
-        font-size: 1.9rem;
+    .itemPrice small,.productItemsParent>.saleItem .itemPrice small {
+        font-size: 1.4rem;
     }
 
 
@@ -1010,8 +1049,9 @@
     /*---------- Order and Employee start ------------ 
  -----------------------------------------*/
     .orderBoxParent {
+        margin-top: .5rem;
         width: 95vw;
-        height: 80vh;
+        height: calc(100vh - 18vh);
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         border-radius: 1rem;
@@ -1019,15 +1059,16 @@
     }
 
     .employeeSection {
+        margin-top: .5rem;
         width: 95vw;
-        height: 80vh;
+        height: calc(100vh - 18vh);
         display: flex;
         flex-direction: column;
         border-radius: 1rem;
     }
 
     .orderBoxItem {
-        padding: 1.5rem 1.5rem;
+        padding: 1.5rem 1rem;
         border-radius: 1rem;
         display: flex;
         justify-content: space-between;
@@ -1153,14 +1194,15 @@
     --- Table Section ---
     ------------------ */
     .table_section {
+        width: 100vw;
         grid-template-columns: repeat(3, 1fr);
         align-content: space-between;
-        height: 75vh;
+        height: calc(100vh - 18vh);
         overflow-y: scroll;
         overflow-x: hidden;
         background-color: var(--rms-dark1);
         grid-gap: .25rem;
-        margin-top: 1rem;
+        margin: 1rem;
         padding-top: 0;
 
     }
@@ -1173,12 +1215,12 @@
     }
 
     .table-num {
-        font-size: 3.2rem;
+        font-size: 4.2rem;
         margin-bottom: 1.5rem;
     }
 
     .customer-num {
-        font-size: 2.5rem;
+        font-size: 2.8rem;
     }
 
 
@@ -1223,6 +1265,7 @@
         display: inline-block;
         padding: 2.5rem 3rem;
         margin-bottom: 1rem;
+        margin-top: 2rem;
         background-color: var(--rms-dark2);
 
     }
@@ -1328,7 +1371,7 @@
     .btn-digit {
 
         width: 100%;
-        height: 17rem;
+        height: 16rem;
         font-size: 6rem;
         border-radius: 1rem;
     }
@@ -1395,6 +1438,7 @@
         bottom: .1rem;
         right: 0;
         width: 100vw;
+        height: 12vh;
         grid-template-columns: repeat(12, 1fr);
         column-gap: 0rem;
         margin-left: 0rem;
@@ -1402,8 +1446,9 @@
     }
 
     .saleItemActions_payment {
+        height: 12vh;
         position: fixed;
-        bottom: .1rem;
+        bottom: .1rem !important;
         right: 0;
         width: 100vw;
         display: grid;
@@ -1419,7 +1464,7 @@
     }
 
     .button-actions a {
-        font-size: 2rem;
+        font-size: 2.1rem;
         font-weight: 550;
         padding: 2.5rem 1rem;
         color: white;

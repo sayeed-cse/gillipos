@@ -1619,8 +1619,8 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
     - Avatar
 --------------------------------------*/
 .avatar {
-  width: 40px;
-  height: 40px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   position: relative;
   background-color: #f1f1f1;
@@ -6159,7 +6159,7 @@ table.data-table.collapsed tbody tr.child td.child ul li .dtr-title {
 }
 @media only screen and (max-width: 767px) {
   .header-section {
-    position: relative;
+    /* position: relative; */
   }
 }
 
