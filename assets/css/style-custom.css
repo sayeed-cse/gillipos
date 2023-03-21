@@ -245,7 +245,8 @@
         margin-right: 0.073rem;
         margin-bottom: 0.05rem;
         height: 9.8rem;
-        width: 9.85rem;
+        /* width: 9.85rem; */
+        width: calc(100% - .1rem);
         border-radius: .375rem;
         padding: .625rem .3rem;
         cursor: pointer;
