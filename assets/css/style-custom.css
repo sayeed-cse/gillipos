@@ -14,7 +14,6 @@
         --rms-warn: rgb(201, 152, 2);
         --rms-elf-green1: rgb(59, 120, 122);
         --rms-elf-green2: rgb(22, 130, 108);
-        /* font-size: calc(16px + (35 - 16) * (100vw - 320px) / (1920 - 320)); */
     }
 
     /* common class start */
@@ -85,11 +84,10 @@
 
     .header-section {
         height: 10vh;
-        /* font-size: 100%; */
     }
 
     .header-logo {
-        height: 10vh;
+        height: 4rem;
     }
 
     .side-header {
@@ -104,7 +102,6 @@
         top: 10vh;
         right: 0;
         left: 0;
-        /* height: 100%; */
         height: calc(100% - 10vh);
 
     }
@@ -206,8 +203,9 @@
         align-content: flex-start;
         padding-left: .15rem;
         height: 83.5vh;
-        margin-left: .05rem;
-        margin-right: .05rem;
+        width: 100%;
+        grid-gap: .063rem;
+        
     }
 
     .saleItemsParent>div:nth-child(n+1):nth-child(-n+8),
@@ -242,12 +240,9 @@
     .saleItem {
         background-color: rgb(52, 37, 115);
         margin-top: 0.073rem;
-        margin-right: 0.073rem;
-        margin-bottom: 0.05rem;
         height: 9.8rem;
-        /* width: 9.85rem; */
-        width: calc(100% - .1rem);
-        border-radius: .375rem;
+        width: calc(100% - .063rem);
+            border-radius: .375rem;
         padding: .625rem .3rem;
         cursor: pointer;
         display: flex;
@@ -288,7 +283,6 @@
     /* Cart Item Left */
     .accordion .card {
         margin-bottom: 0;
-        /* border-bottom: 1px transparent; */
         border-bottom: .125rem solid var(--rms-dark2);
     }
 
@@ -305,12 +299,10 @@
         background-color: var(--rms-dark3) !important;
     }
 
-
     .cart-item-name {
         width: 41%;
         overflow: hidden;
         float: left;
-        /* padding-top: 1.125rem; */
     }
 
     .cart-item-name p {
@@ -325,8 +317,6 @@
     .cart-actions {
         display: inline-block;
         padding: .313rem;
-        /* display: inline-block !important;
-        float: right; */
         display: flex;
         justify-content: flex-end;
 
@@ -458,12 +448,9 @@
         margin: 0;
     }
 
-
     .cart-delivery-option {
         width: 35%;
     }
-
-
 
     .button-inside {
         background-color: rgb(135, 104, 207);
@@ -474,14 +461,12 @@
         font-weight: 700;
         font-size: 1.9rem;
         height: 100%;
-
     }
 
     .dropdown-menu {
         background: rgb(49, 44, 84);
         border-radius: 0;
         width: 100%;
-        /* --bs-dropdown-min-width: 7.12rem; */
     }
 
     .dropdown-menu>.dropdown-item {
@@ -499,8 +484,6 @@
         background-color: rgb(70, 48, 131);
     }
 
-
-
     .cart-total {
         background: rgb(70, 48, 131);
         display: flex;
@@ -514,14 +497,10 @@
         width: 50%;
     }
 
-
-
     .cart-note {
         background-color: rgb(49, 55, 84);
         width: 15%;
-
     }
-
 
     .cart-note img {
         padding-left: .1rem;
@@ -529,7 +508,6 @@
         height: 100%;
         width: 100%;
     }
-
 
     /* Sale Saving Actions */
 
@@ -545,11 +523,7 @@
         width: 100%;
     }
 
-
-
-
     .button-actions {
-        /* width: 100%; */
         border-radius: .625rem;
         display: flex;
         justify-content: center;
@@ -561,7 +535,6 @@
         font-weight: 550;
         padding: 1rem 1.58rem;
         color: white;
-        /* width: 100%; */
     }
 
     .pos-icon {
@@ -579,14 +552,9 @@
         width: 100%;
         display: flex;
         justify-content: flex-end;
-        /* display: grid; */
-
-        /* grid-template-columns: repeat(8, 1fr); */
         margin-bottom: 2rem;
         justify-items: flex-end;
     }
-
-
 
     .btn_pay_note {
         border-radius: .625rem;
@@ -595,7 +563,6 @@
         align-items: center;
         width: 5rem;
         background-color: var(--rms-dark3);
-
     }
 
     .btn_pay_note .note-icon {
@@ -607,8 +574,6 @@
     #payment_noteTop {
         display: none;
     }
-
-
 
 
     /*---------------------------------------
@@ -624,7 +589,6 @@
         padding-left: .188rem;
         padding-top: 0;
         overflow-x: hidden;
-        /* row-gap: 0; */
         height: 82vh;
     }
 
@@ -659,7 +623,6 @@
         padding: .288rem .313rem;
         font-size: .8rem;
         height: 1.6rem;
-
     }
 
     .order-state-title,
@@ -714,7 +677,6 @@
         padding: .288rem .313rem;
         font-size: .9rem;
         height: 1.6rem;
-
     }
 
     .employee-name {
@@ -791,7 +753,6 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        /* height: 10rem; */
         align-items: center;
     }
 
@@ -799,8 +760,6 @@
         display: grid;
         width: 80vw;
         grid-template-columns: 7fr 5fr;
-
-        /* grid-template-rows: 2; */
     }
 
     .payment-main-container>.saleItemActions_payment {
@@ -874,8 +833,6 @@
         margin: 0;
     }
 
-
-
     .payment-display-section {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -889,24 +846,18 @@
     .p-display-text {
         display: flex;
         flex-direction: column;
-
     }
 
     .display-amount {
-        /* padding-bottom: 1rem; */
     }
 
     .p-display-text>span {
         font-weight: 650;
     }
 
-
-
     .bottom-pay-card .display-6 {
         font-size: 2.5rem;
     }
-
-
 
     /* payment calc section */
     .calculator-input-area {
@@ -967,7 +918,6 @@
         font-size: 3.5rem;
         font-weight: 650;
         opacity: .9;
-
     }
 
 
@@ -987,8 +937,6 @@
         height: 6rem;
 
     }
-
-
 
     .pay_btn {
         grid-column: span 4;
@@ -1120,7 +1068,6 @@
     }
 
     .bill_Input_section {
-        /* width: 100%; */
         height: 30%;
     }
 

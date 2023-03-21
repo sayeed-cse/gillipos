@@ -229,7 +229,7 @@
 
     }
 
-        .saleItem, .productItemsParent>.saleItem p {
+        .saleItem p, .productItemsParent>.saleItem p {
         font-size: 3rem;
         text-align: center;
     }
