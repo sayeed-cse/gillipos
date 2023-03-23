@@ -250,6 +250,8 @@
         justify-content: space-around;
     }
 
+
+
     .saleItem p {
         font-size: 1.1rem;
         text-align: center;
@@ -279,6 +281,28 @@
     .itemPrice small {
         font-size: .6rem;
     }
+
+    /* category page start */
+    
+
+    .category_page .saleItem {
+        height: 21vh;
+    }
+
+    .category_page .saleItem p {
+        font-size: 1.5rem;
+    }
+
+    .category_page .saleItem .itemCategory {
+        font-size: 1.1rem;
+    }
+
+    .category_page .saleItem .itemPrice {
+        font-size: 1.1rem;
+    }
+
+
+    /* category page End */
 
     /* Cart Item Left */
     .accordion .card {

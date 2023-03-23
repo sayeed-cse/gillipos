@@ -251,7 +251,62 @@
         font-size: 1.2rem;
     }
 
+/* category page start */
+.category_page{
+    width: 100vw;
+    justify-content: center;
+    margin-left: 0;
+}
+.category_page .mid-content{
+    /* display: inline-block; */
+    width: 75vw;
+}
+.category_page .saleItemsParent{
+    height: calc(100vh - 21vh);
+    width: 100%;
+    grid-gap: .25rem;
+    padding-left: 0;
+}
+.category_page .saleItem {
+    height: 18rem;
+    width: calc(100% - .125rem);
+}
 
+.category_page .saleItem p {
+    font-size: 2rem;
+}
+
+.category_page .saleItem .itemCategory {
+    font-size: 1.5rem;
+}
+
+.category_page .saleItem .itemPrice {
+    font-size: 1.5rem;
+}
+.category_page .saleCategoriesColumn {
+    width: 20vw;
+    display: block;
+    height: calc(100vh - 17vh);
+    overflow-y: scroll;
+            overflow-x: hidden;
+}
+.category_page .saleCategories{
+    width: 100%;
+    margin-left: .3rem;
+    margin-right: .1rem;
+    margin-top: .5rem;
+    justify-items: start;
+    row-gap: .25rem;
+}
+.category_page .saleCategories>a{
+    font-size: 2.8rem;
+    width: 100%;
+    height: 13.5rem;
+    margin-left: .063rem;
+    border-radius: 1rem;
+}
+
+/* category page End */
 
     /* SaleItem page End */
     /*---------- Order and Employee start ------------ 
@@ -1058,6 +1113,71 @@
 
 
     /* SaleItem page End */
+
+        /* category page start */
+        .category_page {
+            width: 100vw;
+            justify-content: center;
+            margin-left: 0;
+        }
+    
+        .category_page .mid-content {
+            /* display: inline-block; */
+            width: 75vw;
+        }
+    
+        .category_page .saleItemsParent {
+            height: calc(100vh - 20vh);
+            width: 100%;
+            grid-gap: .25rem;
+            padding-left: 0;
+        }
+    
+        .category_page .saleItem {
+            height:19rem;
+            width: calc(100% - .25rem);
+        }
+    
+        .category_page .saleItem p {
+            font-size: 2.4rem;
+        }
+    
+        .category_page .saleItem .itemCategory {
+            font-size: 1.8rem;
+        }
+    
+        .category_page .saleItem .itemPrice {
+            font-size: 1.8rem;
+        }
+    
+        .category_page .saleCategoriesColumn {
+            width: 20vw;
+            display: block;
+            height: calc(100vh - 17vh);
+            overflow-y: scroll;
+            overflow-x: hidden;
+        }
+    
+        .category_page .saleCategories {
+            width: 100%;
+            margin-left: .3rem;
+            margin-right: .1rem;
+            margin-top: .5rem;
+            justify-items: start;
+            row-gap: .2%;
+        }
+    
+        .category_page .saleCategories>a {
+            font-size: 2.8rem;
+            width: 100%;
+            height: 14rem;
+            margin-left: .063rem;
+            border-radius: 1.5rem;
+        }
+    
+        /* category page End */
+
+
     /*---------- Order and Employee start ------------ 
  -----------------------------------------*/
     .orderBoxParent {
