@@ -1225,7 +1225,6 @@ body {
   column-gap: 1rem;
   margin: 1rem 1.5rem;
   width: calc(100% - 4rem);
-  
   margin-bottom: 5rem;
   overflow-y: scroll;
 }
@@ -1234,10 +1233,40 @@ body {
   width: 100%;
   background-color: rgb(38, 39, 44);
   color: #fff;
-  margin-bottom: 10px;
+  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
   overflow: hidden;
   display: inline-block;
+  position: relative;
+
 }
+/*sawtooth wave */
+.orderParentDiv::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2rem;
+  background: linear-gradient(135deg,rgb(38, 39, 44) 1rem,
+    transparent 0%), linear-gradient(-135deg,rgb(38, 39, 44) 1rem,
+    transparent 0%);
+  background-size: 1rem;
+}
+  .orderParentDiv::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2rem;
+  background: linear-gradient(45deg,var(--rms-dark1) 1rem,
+    transparent 0%), linear-gradient(-45deg,var(--rms-dark1) 1rem,
+    transparent 0%);
+  background-size: 1rem;
+}
+
+/*sawtooth wave */
 
 
 .orderTable {
@@ -1279,22 +1308,29 @@ body {
 
 .orderBody {
 }
-.button_orderTable{
+.button_orderTable,.button_orderTable_undo{
 
   /* text-align: right; */
-  margin: 2rem .5rem .5rem;
+  margin: 2rem .5rem 2rem;
 }
-.button_orderTable>a{
+.button_orderTable>a,.button_orderTable_undo>a{
   width: 100%;
   padding: .5rem;
-  background-color: var(--rms-success2);
   font-size: 1.5rem;
   font-weight: bold;
   text-align: center;
   border-radius: .5rem;
   text-decoration: none;
+}
+.button_orderTable>a{
+  background-color: var(--rms-success2);
   color: white;
 }
+.button_orderTable_undo>a{
+  background-color: var(--rms-warn);
+  color: white;
+}
+
 
 .orderItem {
     /* display: block; */
@@ -1318,18 +1354,7 @@ body {
 }
 /** Order Parent Body End  */
 
-@media screen and (max-width: 480px) {
-  .ordersTableContents {
-    column-count: 1;
-  }
-}
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
-  .ordersTableContents {
-    column-count: 1;
-    
-  }
-}
 /*----------------------------------
     ---------- kitchen order page End-------------
     ----------------------------------------- */

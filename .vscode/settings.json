@@ -16,7 +16,7 @@
   "editor.scrollbar.verticalScrollbarSize": 10,
   "editor.mouseWheelZoom": true,
   "editor.minimap.maxColumn": 60,
-  "editor.minimap.size": "fit",
+  "editor.minimap.size": "proportional",
   "editor.quickSuggestionsDelay": 100,
   "editor.suggestSelection": "recentlyUsed",
   "liveServer.settings.donotVerifyTags": true,
@@ -27,6 +27,6 @@
   "editor.tabSize": 2,
   "diffEditor.wordWrap": "on",
   "editor.codeActionsOnSave": {
-    "source.fixAll": true,
+    "source.fixAll": true
   }
 }

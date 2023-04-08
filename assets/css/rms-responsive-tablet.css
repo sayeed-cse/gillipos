@@ -1,1618 +1,1501 @@
-@media only screen and (min-width: 481px) and (max-width: 768px) {
+@media only screen and (481px<=width<=769px) {
+  :root {
+    font-size: 60%;
+  }
 
-    :root {
-        font-size: 60%;
-    }
+  .header-logo {
+    display: none;
+  }
 
-    .header-logo {
-        display: none;
-    }
+  .header-section {
+    height: 5vh;
+    align-items: center;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+  }
 
-    .header-section {
-        height: 5vh;
-        align-items: center;
-        width: 100vw;
-        padding: 0;
-        margin: 0;
-    }
+  .container-fluid {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+  }
 
-    .container-fluid {
-        position: fixed;
-        top: 0;
-        right: 0;
-        left: 0;
-    }
+  .header-right {
+    padding-top: 0rem;
+    padding: 0 2rem;
+  }
 
-    .header-right {
-        padding-top: 0rem;
-        padding: 0 2rem;
-    }
+  .side-header {
+    height: calc(100% - 5vh);
+    top: 5vh;
+  }
 
-    .side-header {
-        height: calc(100% - 5vh);
-        top: 5vh;
-    }
-
-    .rms-content-body {
-        top: 5vh;
-        height: calc(100vh - 18vh);
-        padding: 0;
-        padding-top: .5rem;
-        margin-bottom: .1rem;
-        overflow-y: visible;
-    }
-.rms-content-body-payment {
+  .rms-content-body {
+    top: 5vh;
+    height: calc(100vh - 18vh);
+    padding: 0;
+    padding-top: 0.5rem;
+    margin-bottom: 0.1rem;
+    overflow-y: visible;
+  }
+  .rms-content-body-payment {
     height: calc(100vh - 13vh);
-}
-    /* SaleItem page start */
-    .mid-content {
-        display: flex;
-        justify-content: center;
-        height: 100%;
-        width: 100%;
+  }
+  /* SaleItem page start */
+  .mid-content {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+  }
 
-    }
+  .cart-area {
+    display: none;
+  }
 
-    .cart-area {
-        display: none;
-    }
+  #cart_page_id {
+    display: block;
+    height: calc(100vh - 17.5vh);
+    width: 100%;
+  }
 
-    #cart_page_id {
-        display: block;
-        height: calc(100vh - 17.5vh);
-        width: 100%;
-    }
+  /* cart section start*/
+  /* Cart Item Left */
+  .card-body > .row {
+    padding-left: 1.5rem !important;
+  }
 
-    /* cart section start*/
-    /* Cart Item Left */
-    .card-body>.row {
-        padding-left: 1.5rem !important;
-    }
+  .accordion .card {
+    border-bottom: 0.25rem solid var(--rms-dark2);
+  }
 
-    .accordion .card {
-        border-bottom: .25rem solid var(--rms-dark2);
-    }
+  .cart-main-card {
+    background-color: var(--rms-dark2);
+  }
 
-    .cart-main-card {
-        background-color: var(--rms-dark2);
-    }
+  .cart-item-header {
+    padding: 1rem 2.5rem !important;
+    margin-bottom: 0.063rem;
+  }
 
-    .cart-item-header {
-        padding: 1rem 2.5rem !important;
-        margin-bottom: 0.063rem;
-    }
+  .cart-item-name {
+    width: 41%;
+  }
 
-    .cart-item-name {
-        width: 41%;
+  .cart-item-name p {
+    font-size: 2.4rem;
+  }
 
-    }
+  /* Cart Actions */
 
-    .cart-item-name p {
-        font-size: 2.4rem;
-    }
+  .cart-actions {
+    padding: 1rem;
+  }
 
-    /* Cart Actions */
+  .btn_cart_action {
+    margin-left: 1rem;
+    width: 5rem;
+    height: 5rem;
+    border: 0.125rem transparent;
+    border-radius: 1rem;
+    font-size: 3rem;
+  }
 
-    .cart-actions {
-        padding: 1rem;
+  .btn_plus {
+    border: 0.063rem transparent;
+    font-size: 2rem;
+  }
 
+  .btn_minus {
+    font-size: 2rem;
+  }
 
+  .cart-collapse-btn {
+    margin-right: 0.5rem;
+    border: 0.13rem transparent;
+    font-size: 3.5rem;
+  }
 
-    }
+  /* Cart-groups */
 
-    .btn_cart_action {
-        margin-left: 1rem;
-        width: 5rem;
-        height: 5rem;
-        border: 0.125rem transparent;
-        border-radius: 1rem;
-        font-size: 3rem;
-    }
+  .cart-inside-group {
+    padding-left: 3rem;
+  }
 
-    .btn_plus {
-        border: 0.063rem transparent;
-        font-size: 2rem;
-    }
+  .cart-inside-group h4 {
+    font-size: 2.5rem;
+    font-weight: 500;
+  }
 
-    .btn_minus {
-        font-size: 2rem;
-    }
-
-    .cart-collapse-btn {
-        margin-right: .5rem;
-        border: 0.13rem transparent;
-        font-size: 3.5rem;
-    }
-
-    /* Cart-groups */
-
-    .cart-inside-group {
-        padding-left: 3rem;
-    }
-
-    .cart-inside-group h4 {
-        font-size: 2.5rem;
-        font-weight: 500;
-    }
-
-    .cart-group-products {
-        line-height: 1.5rem;
-        /* display: flex;
+  .cart-group-products {
+    line-height: 1.5rem;
+    /* display: flex;
         align-items: center; */
-        margin-top: 1rem;
-        margin-bottom: 1.25rem;
-    }
+    margin-top: 1rem;
+    margin-bottom: 1.25rem;
+  }
 
-    .cart-group-products label {
-        font-size: 2rem;
-    }
+  .cart-group-products label {
+    font-size: 2rem;
+  }
 
-    .cart-group-products input[type="checkbox"] {
-        /* appearance: none; */
-        height: 2.5rem;
-        width: 2.5rem;
-        border: .25rem solid var(--rms-violet4);
-        border-radius: 1.1rem;
-        background-color: var(--rms-dark3);
-        padding: 1.2rem;
-        margin-right: 1.563rem;
-    }
+  .cart-group-products input[type="checkbox"] {
+    /* appearance: none; */
+    height: 2.5rem;
+    width: 2.5rem;
+    border: 0.25rem solid var(--rms-violet4);
+    border-radius: 1.1rem;
+    background-color: var(--rms-dark3);
+    padding: 1.2rem;
+    margin-right: 1.563rem;
+  }
 
-    /* Cart Footer */
+  /* Cart Footer */
 
+  .inside-area {
+    width: 100%;
+    padding: 0 0.1rem;
+  }
 
-    .inside-area {
-        width: 100%;
-        padding: 0 .1rem;
-    }
+  .cart-delivery-option {
+    width: 35%;
+  }
 
+  .button-inside {
+    font-size: 4rem;
+  }
 
-    .cart-delivery-option {
-        width: 35%;
-    }
+  .dropdown-menu {
+    transform: translate3d(0px, -71px, 0px);
+  }
 
+  .dropdown-menu > .dropdown-item {
+    font-size: 2.2rem;
+    padding: 1.5rem 0rem;
+  }
 
+  .cart-total {
+    background: rgb(70, 48, 131);
+    font-size: 4rem;
+    font-weight: 600;
+    width: 55%;
+  }
 
-    .button-inside {
-        font-size: 4rem;
+  .cart-note {
+    width: 10%;
+  }
 
+  .cart-note img {
+    padding: 0.4rem 1rem;
+    transform: scale(0.6);
+  }
 
-    }
+  /* cart section End*/
 
-    .dropdown-menu {
-        transform: translate3d(0px, -71px, 0px);
+  .saleItemsParent,
+  .productItemsParent {
+    width: 95vw;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0.15rem;
+    height: calc(100vh - 19vh);
+    margin-top: 0.5rem;
+  }
 
-    }
+  .saleItem,
+  .productItemsParent > .saleItem {
+    margin: 0.063rem;
+    height: 22.5rem;
+    width: calc(100% - 0.1rem);
+    border-radius: 1rem;
+    padding: 1rem 1rem;
+    background-color: var(--rms-violet2) !important;
+  }
 
-    .dropdown-menu>.dropdown-item {
-        font-size: 2.2rem;
-        padding: 1.5rem 0rem;
-    }
+  .saleItem p,
+  .productItemsParent > .saleItem p {
+    font-size: 3rem;
+    text-align: center;
+  }
 
+  .categoryPrice {
+    /* width: 100%; */
+    /* padding-top: 3.5rem; */
+  }
 
+  .categoryPrice .itemCategory,
+  .productItemsParent > .saleItem .itemCategory {
+    font-size: 2.2rem;
+  }
 
-    .cart-total {
-        background: rgb(70, 48, 131);
-        font-size: 4rem;
-        font-weight: 600;
-        width: 55%;
-    }
+  .categoryPrice .itemPrice,
+  .productItemsParent > .saleItem .itemPrice {
+    font-size: 2.2rem;
+  }
 
-    .cart-note {
-        width: 10%;
+  .itemPrice small,
+  .productItemsParent > .saleItem .itemPrice small {
+    font-size: 1.5rem;
+  }
 
-    }
+  .saleCategoriesColumn {
+    display: none;
+  }
 
-    .cart-note img {
-        padding: .4rem 1rem;
-        transform: scale(0.6);
+  /* SaleItem page End */
 
-    }
-
-    /* cart section End*/
-
-
-    .saleItemsParent,
-    .productItemsParent {
-        width: 95vw;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: .15rem;
-        height: calc(100vh - 19vh);
-        margin-top: .5rem;
-
-    }
-
-    .saleItem,
-    .productItemsParent>.saleItem {
-        margin: 0.063rem;
-        height: 22.5rem;
-        width: calc(100% - .1rem);
-        border-radius: 1rem;
-        padding: 1rem 1rem;
-        background-color: var(--rms-violet2) !important;
-
-    }
-
-    .saleItem p,
-    .productItemsParent>.saleItem p {
-        font-size: 3rem;
-        text-align: center;
-    }
-
-
-
-    .categoryPrice {
-        /* width: 100%; */
-        /* padding-top: 3.5rem; */
-    }
-
-    .categoryPrice .itemCategory,
-    .productItemsParent>.saleItem .itemCategory {
-        font-size: 2.2rem;
-    }
-
-    .categoryPrice .itemPrice,
-    .productItemsParent>.saleItem .itemPrice {
-        font-size: 2.2rem;
-    }
-
-    .itemPrice small,
-    .productItemsParent>.saleItem .itemPrice small {
-        font-size: 1.5rem;
-    }
-
-    .saleCategoriesColumn {
-        display: none;
-    }
-
-    /* SaleItem page End */
-
-/* category page start */
-.category_page {
+  /* category page start */
+  .category_page {
     width: 100vw;
     justify-content: center;
     margin-left: 0;
-}
+  }
 
-.category_page .mid-content {
+  .category_page .mid-content {
     /* display: inline-block; */
     width: 75vw;
-}
+  }
 
-.category_page .saleItemsParent {
+  .category_page .saleItemsParent {
     height: calc(100vh - 21vh);
     width: 100%;
-    grid-gap: .125rem;
+    grid-gap: 0.125rem;
     padding-left: 0;
-}
+  }
 
-.category_page .saleItem {
+  .category_page .saleItem {
     height: 18.5rem;
-    width: calc(100% - .063rem);
-}
+    width: calc(100% - 0.063rem);
+  }
 
-.category_page .saleItem p {
+  .category_page .saleItem p {
     font-size: 2.4rem;
-}
+  }
 
-.category_page .saleItem .itemCategory {
+  .category_page .saleItem .itemCategory {
     font-size: 1.7rem;
-}
+  }
 
-.category_page .saleItem .itemPrice {
+  .category_page .saleItem .itemPrice {
     font-size: 1.6rem;
-}
+  }
 
-.category_page .saleCategoriesColumn {
+  .category_page .saleCategoriesColumn {
     width: 20vw;
     display: block;
     height: calc(100vh - 17vh);
     overflow-y: scroll;
-    overflow-x: hidden ;
-}
+    overflow-x: hidden;
+  }
 
-.category_page .saleCategories {
+  .category_page .saleCategories {
     width: 100%;
-    margin-left: .3rem;
-    margin-right: .1rem;
-    margin-top: .5rem;
+    margin-left: 0.3rem;
+    margin-right: 0.1rem;
+    margin-top: 0.5rem;
     justify-items: start;
-    row-gap: .25rem;
-}
+    row-gap: 0.25rem;
+  }
 
-.category_page .saleCategories>a {
+  .category_page .saleCategories > a {
     font-size: 2.8rem;
     width: 100%;
     height: 13.5rem;
-    margin-left: .063rem;
+    margin-left: 0.063rem;
     border-radius: 1rem;
-}
+  }
 
-/* category page End */
+  /* category page End */
 
-    /*---------- Order and Employee start ------------ 
+  /*---------- Order and Employee start ------------ 
  -----------------------------------------*/
-    .orderBoxParent,
-    .employeeSection {
-        width: 96vw;
-        height: calc(100vh - 19vh);
-        margin-top: .5rem;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: .5rem;
-        border-radius: 1rem;
-        justify-items: center;
-    }
+  .orderBoxParent,
+  .employeeSection {
+    width: 96vw;
+    height: calc(100vh - 19vh);
+    margin-top: 0.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0.5rem;
+    border-radius: 1rem;
+    justify-items: center;
+  }
 
-    .orderBoxItem,
-    .employeeInfoCard {
-        padding: 2rem 1rem;
-        border-radius: 1rem;
-        width: 100%;
-        height: 19rem;
-    }
+  .orderBoxItem,
+  .employeeInfoCard {
+    padding: 2rem 1rem;
+    border-radius: 1rem;
+    width: 100%;
+    height: 19rem;
+  }
 
-    .order-state,
-    .employeeInfo {
+  .order-state,
+  .employeeInfo {
+    margin-bottom: 1rem;
+  }
 
-        margin-bottom: 1rem;
-    }
+  .order-state-title,
+  .order-state-bill,
+  .employee-name,
+  .employee-desig {
+    border-radius: 1.7rem;
+    text-align: center;
+    padding: 0.5rem 0.3rem;
+    font-size: 1.6rem;
+    height: 3.5rem;
+  }
 
-    .order-state-title,
-    .order-state-bill,
-    .employee-name,
-    .employee-desig {
-        border-radius: 1.7rem;
-        text-align: center;
-        padding: .5rem .3rem;
-        font-size: 1.6rem;
-        height: 3.5rem;
+  .order-state-title,
+  .employee-name {
+    width: 63%;
+  }
 
-    }
+  .order-state-bill,
+  .employee-desig {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .order-state-title,
-    .employee-name {
-        width: 63%;
+  .order-details > p,
+  .login-details > p {
+    font-size: 1.6rem;
+  }
 
-    }
+  /* waiter style section */
+  .employeeSection {
+    margin: 2rem;
+    grid-gap: 1rem;
+  }
 
-    .order-state-bill,
-    .employee-desig {
-        width: 35%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+  .employeeInfo {
+    display: flex;
+    justify-content: space-between;
+  }
 
-    .order-details>p,
-    .login-details>p {
-        font-size: 1.6rem;
-    }
+  .employee-name,
+  .employee-desig {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-    /* waiter style section */
-    .employeeSection {
-        margin: 2rem;
-        grid-gap: 1rem;
-    }
+  .employee-name {
+    width: 50%;
+  }
 
-    .employeeInfo {
-        display: flex;
-        justify-content: space-between;
-    }
+  .employee-desig {
+    width: 45%;
+  }
 
-    .employee-name,
-    .employee-desig {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+  .login-details {
+    display: flex;
+    flex-direction: column;
+  }
 
-    .employee-name {
-        width: 50%;
-    }
-
-    .employee-desig {
-        width: 45%;
-    }
-
-    .login-details {
-        display: flex;
-        flex-direction: column;
-    }
-
-    /*------------------------
+  /*------------------------
     --- Table Section ---
     ------------------ */
-    .table_section {
-        width: 100vw;
-        grid-template-columns: repeat(3, 1fr);
-        align-content: space-between;
-        height: calc(100vh - 19vh);
-        overflow-y: scroll;
-        overflow-x: hidden;
-        background-color: var(--rms-dark1);
-        grid-gap: .5rem;
-        margin: 1rem;
-        padding-top: 0;
+  .table_section {
+    width: 100vw;
+    grid-template-columns: repeat(3, 1fr);
+    align-content: space-between;
+    height: calc(100vh - 19vh);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: var(--rms-dark1);
+    grid-gap: 0.5rem;
+    margin: 1rem;
+    padding-top: 0;
+  }
 
-    }
+  .tables {
+    background-color: var(--rms-dark2);
+    border-radius: 1.2rem;
+    height: 23rem;
+    width: 100%;
+  }
 
-    .tables {
-        background-color: var(--rms-dark2);
-        border-radius: 1.2rem;
-        height: 23rem;
-        width: 100%;
-    }
+  .table-num {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+  }
 
-    .table-num {
-        font-size: 4rem;
-        margin-bottom: 1.5rem;
-    }
+  .customer-num {
+    font-size: 3rem;
+  }
 
-    .customer-num {
-        font-size: 3rem;
-    }
+  /* table section end */
 
-
-    /* table section end */
-
-    /* #########################################
+  /* #########################################
     payment and Calculator start 
     #############################################*/
-    .payment-main-container {
-        justify-content: space-around;
-        align-items: flex-end;
-    }
+  .payment-main-container {
+    justify-content: space-around;
+    align-items: flex-end;
+  }
 
-    .payment-content-area {
-        display: grid;
-        width: 73vw;
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap: .1rem;
+  .payment-content-area {
+    display: grid;
+    width: 73vw;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 0.1rem;
+  }
 
-    }
+  .payment-main-container > .saleItemActions_payment {
+    right: 0;
+    margin-bottom: 0;
+  }
 
+  .btn_pay_note {
+    width: auto;
+  }
 
+  #payment_noteId {
+    display: none;
+  }
 
-    .payment-main-container>.saleItemActions_payment {
-        right: 0;
-        margin-bottom: 0;
-    }
+  #payment_noteTop {
+    display: inline-block;
+    padding: 2rem 2.2rem;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+    background-color: var(--rms-dark2);
+  }
 
+  #payment_noteTop a > .note-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
 
-    .btn_pay_note {
-        width: auto;
-    }
+  .display-total-amount,
+  .display-paid-amount,
+  .display-payable-amount {
+    font-size: 3.5rem;
+  }
 
-    #payment_noteId {
-        display: none;
+  .payment-type {
+    font-size: 2rem;
+    font-weight: 600;
+  }
 
-    }
+  .display-card-amount,
+  .display-cash-amount,
+  .display-percentage-amount {
+    font-size: 2rem;
+  }
 
-    #payment_noteTop {
-        display: inline-block;
-        padding: 2rem 2.2rem;
-        margin-bottom: 1.5rem;
-        margin-top: 1.5rem;
-        background-color: var(--rms-dark2);
+  .display-card-amount,
+  .display-cash-amount,
+  .display-percentage-amount p {
+    line-height: 1rem;
+  }
 
-    }
+  .payment-display-section {
+    margin-right: 0;
+  }
 
-    #payment_noteTop a>.note-icon {
-        width: 2.5rem;
-        height: 2.5rem;
-    }
+  .p-display-text {
+    display: flex;
+    flex-direction: column;
+  }
 
+  .p-display-text > span {
+    font-weight: 650;
+  }
 
-    .display-total-amount,
-    .display-paid-amount,
-    .display-payable-amount {
-        font-size: 3.5rem;
-    }
+  .top-pay-card-left {
+    padding: 0.5rem 0.1rem;
+    text-align: center;
+    border-radius: 1rem;
+    margin: 0;
+  }
 
-    .payment-type {
-        font-size: 2rem;
-        font-weight: 600;
-    }
+  .top-pay-card-left p {
+    line-height: 3.5rem;
+    font-weight: 600;
+  }
 
+  .top-pay-bottom {
+    padding: 0.5rem 0.5rem;
+    border-radius: 1rem;
+  }
 
-    .display-card-amount,
-    .display-cash-amount,
-    .display-percentage-amount {
-        font-size: 2rem;
-    }
+  .top-pay-bottom p {
+    line-height: 3rem;
+  }
 
+  .top-pay-bottom .payment-type {
+    font-size: 1.7rem;
+  }
 
-    .display-card-amount,
-    .display-cash-amount,
-    .display-percentage-amount p {
-        line-height: 1rem;
-    }
+  /* payment calc section */
+  .calculator-input-area {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0.2rem;
+    width: 100%;
+  }
 
+  .calc-text-box {
+    grid-column: span 4;
+  }
 
+  .digit-area {
+    grid-column: span 4;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0.3rem;
+    width: 100%;
+  }
 
-    .payment-display-section {
+  .btn-digit {
+    width: 100%;
+    height: 13rem;
+    font-size: 6rem;
+    font-weight: 600;
+    border-radius: 0.5rem;
+  }
 
-        margin-right: 0;
+  .payment-input-right {
+    grid-column: span 4;
+    display: grid;
+    grid-template-columns: repeat(2, 3.5fr) repeat(3, 1.5fr);
+    gap: 0.2rem;
+  }
 
-    }
+  .cal-button-basic,
+  .calc-text-field {
+    color: #ffffff;
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 0.5rem;
+    border: none;
+    padding: 0;
+    height: 7.5rem;
+  }
 
-    .p-display-text {
-        display: flex;
-        flex-direction: column;
+  .calc-text-box::placeholder {
+    color: #ffffff;
+    font-size: 4.5rem;
+    font-weight: 650;
+    opacity: 0.75;
+  }
 
-    }
+  .calc-text-box:focus {
+    opacity: 1;
+  }
 
+  .button-calc-right,
+  .payment-input-right .cal-button-basic {
+    width: auto;
+    height: 6.5rem;
+    font-size: 3.8rem;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 1rem;
+    border: none;
+    padding: 0;
+  }
 
+  .btn-card,
+  .btn-cash {
+    width: 100%;
+  }
 
-    .p-display-text>span {
-        font-weight: 650;
-    }
+  .pay_btn {
+    grid-column: span 4;
+    height: 8rem;
+    width: 100%;
+    font-size: 4.5rem;
+    background-color: var(--rms-violet3);
+  }
 
+  .pay-bg,
+  .pay-bg-input {
+    font-weight: 650;
+  }
+  .pay-bg {
+    background-color: var(--rms-dark2);
+  }
 
-    .top-pay-card-left {
-        padding: .5rem .1rem;
-        text-align: center;
-        border-radius: 1rem;
-        margin: 0;
-    }
+  /* Sale Saving Actions */
 
-    .top-pay-card-left p {
-        line-height: 3.5rem;
-        font-weight: 600;
-    }
+  .saleItemActions {
+    height: 12vh;
+    position: fixed;
+    bottom: 0.1rem;
+    right: 0;
+    width: 100vw;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 0rem;
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
 
-    .top-pay-bottom {
-        padding: .5rem .5rem;
-        border-radius: 1rem;
-    }
+  .saleItemActions_payment {
+    height: 7vh;
+    position: fixed;
+    bottom: 0.1rem !important;
+    right: 0;
+    width: 100vw;
+    display: grid;
+    align-items: flex-end;
+    grid-template-columns: repeat(12, 1fr);
+  }
 
-    .top-pay-bottom p {
-        line-height: 3rem;
-    }
-
-    .top-pay-bottom .payment-type {
-        font-size: 1.7rem;
-    }
-
-
-    /* payment calc section */
-    .calculator-input-area {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-gap: .2rem;
-        width: 100%;
-    }
-
-    .calc-text-box {
-        grid-column: span 4;
-    }
-
-    .digit-area {
-        grid-column: span 4;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-gap: .3rem;
-        width: 100%;
-    }
-
-    .btn-digit {
-
-        width: 100%;
-        height: 13rem;
-        font-size: 6rem;
-        font-weight: 600;
-        border-radius: .5rem;
-    }
-
-    .payment-input-right {
-        grid-column: span 4;
-        display: grid;
-        grid-template-columns: repeat(2, 3.5fr) repeat(3, 1.5fr);
-        gap: .2rem;
-    }
-
-    .cal-button-basic,
-    .calc-text-field {
-        color: #ffffff;
-        font-size: 3rem;
-        font-weight: 600;
-        text-align: center;
-        border-radius: .5rem;
-        border: none;
-        padding: 0;
-        height: 7.5rem;
-    }
-
-
-
-    .calc-text-box::placeholder {
-        color: #ffffff;
-        font-size: 4.5rem;
-        font-weight: 650;
-        opacity: .75;
-
-    }
-
-    .calc-text-box:focus {
-
-        opacity: 1;
-    }
-
-
-    .button-calc-right,
-    .payment-input-right .cal-button-basic {
-        width: auto;
-        height: 6.5rem;
-        font-size: 3.8rem;
-        font-weight: 600;
-        text-align: center;
-        border-radius: 1rem;
-        border: none;
-        padding: 0;
-    }
-
-    .btn-card,
-    .btn-cash {
-        width: 100%;
-    }
-
-
-    .pay_btn {
-        grid-column: span 4;
-        height: 8rem;
-        width: 100%;
-        font-size: 4.5rem;
-        background-color: var(--rms-violet3);
-    }
-
-    .pay-bg,
-    .pay-bg-input {
-        font-weight: 650;
-    }
-    .pay-bg{
-        background-color: var(--rms-dark2);
-    }
-
-    /* Sale Saving Actions */
-
-    .saleItemActions {
-        height: 12vh;
-        position: fixed;
-        bottom: .1rem;
-        right: 0;
-        width: 100vw;
-        grid-template-columns: repeat(12, 1fr);
-        column-gap: 0rem;
-        margin-left: 0rem;
-        margin-right: 0rem;
-    }
-
-    .saleItemActions_payment {
-        height: 7vh;
-        position: fixed;
-        bottom: 0.1rem !important;
-        right: 0;
-        width: 100vw;
-        display: grid;
-        align-items: flex-end;
-        grid-template-columns: repeat(12, 1fr);
-    }
-
-    .button-actions {
-        width: 100%;
-        border-radius: .1rem;
-        height: 6.5rem;
-        /* display: flex;
+  .button-actions {
+    width: 100%;
+    border-radius: 0.1rem;
+    height: 6.5rem;
+    /* display: flex;
         justify-content: center;
         align-items: center; */
-    }
+  }
 
-    .button-actions a {
-        font-size: 2.1rem;
-    }
+  .button-actions a {
+    font-size: 2.1rem;
+  }
 
-    .btn_select_table {
-        grid-column: span 4;
-    }
+  .btn_select_table {
+    grid-column: span 4;
+  }
 
-    .btn_waiter {
-        grid-column: span 4;
-    }
+  .btn_waiter {
+    grid-column: span 4;
+  }
 
-    .btn_order {
-        grid-column: span 4;
-    }
+  .btn_order {
+    grid-column: span 4;
+  }
 
-    .btn_clear_cart {
-        grid-column: span 3;
-    }
+  .btn_clear_cart {
+    grid-column: span 3;
+  }
 
-    .btn_active_order {
-        grid-column: span 3;
-    }
+  .btn_active_order {
+    grid-column: span 3;
+  }
 
-    .btn_print_order {
-        grid-column: span 3;
-    }
+  .btn_print_order {
+    grid-column: span 3;
+  }
 
-    .btn_invoice_order {
-        grid-column: span 3;
-    }
+  .btn_invoice_order {
+    grid-column: span 3;
+  }
 
-    .pos-icon {
-        height: 3.5rem;
-        width: 3.5rem;
-    }
+  .pos-icon {
+    height: 3.5rem;
+    width: 3.5rem;
+  }
 
-    /* payment btn */
-        .saleItemActions_payment>.button-actions {
-            height: 7.5rem;
-        }
-    .saleItemActions_payment>.button-actions>a {
-        padding: 1.7rem 0;
-        font-size: 2rem;
-    }
+  /* payment btn */
+  .saleItemActions_payment > .button-actions {
+    height: 7.5rem;
+  }
+  .saleItemActions_payment > .button-actions > a {
+    padding: 1.7rem 0;
+    font-size: 2rem;
+  }
 
-    .saleItemActions_payment .btn_select_table {
-        grid-column: span 4;
-        order: 1;
-    }
+  .saleItemActions_payment .btn_select_table {
+    grid-column: span 4;
+    order: 1;
+  }
 
+  .saleItemActions_payment .btn_order {
+    grid-column: span 4;
+    order: 2;
+  }
 
+  .saleItemActions_payment .btn_clear_cart {
+    grid-column: span 4;
+    order: 3;
+  }
 
-    .saleItemActions_payment .btn_order {
-        grid-column: span 4;
-        order: 2;
-    }
+  .saleItemActions_payment .btn_waiter {
+    grid-column: span 3;
+    order: 4;
+  }
 
-    .saleItemActions_payment .btn_clear_cart {
-        grid-column: span 4;
-        order: 3;
-    }
+  .saleItemActions_payment .btn_active_order {
+    grid-column: span 4;
+    /* grid-column: span 3; */
+    order: 5;
+  }
 
-    .saleItemActions_payment .btn_waiter {
-        grid-column: span 3;
-        order: 4;
-    }
+  .saleItemActions_payment .btn_print_order {
+    grid-column: span 4;
+    /* grid-column: span 3; */
+    order: 6;
+  }
 
-    .saleItemActions_payment .btn_active_order {
-        grid-column: span 4;
-        /* grid-column: span 3; */
-        order: 5;
-    }
+  .saleItemActions_payment .btn_invoice_order {
+    grid-column: span 4;
+    /* grid-column: span 3; */
+    order: 7;
+  }
 
-    .saleItemActions_payment .btn_print_order {
-        grid-column: span 4;
-        /* grid-column: span 3; */
-        order: 6;
-    }
+  .btn_kitchen_order {
+    display: none;
+  }
 
-    .saleItemActions_payment .btn_invoice_order {
-        grid-column: span 4;
-        /* grid-column: span 3; */
-        order: 7;
-    }
-
-    .btn_kitchen_order {
-        display: none;
-    }
-
-    /*------------------------------ 
+  /*------------------------------ 
     ------------Bill Section Start---------
     ---------------------------------------- */
 
-    .bill_section {
-        background-color: var(--rms-dark1);
-        margin: 1rem;
-        margin-top: .1rem;
-        width: 100%;
-        justify-content: flex-start;
-    }
+  .bill_section {
+    background-color: var(--rms-dark1);
+    margin: 1rem;
+    margin-top: 0.1rem;
+    width: 100%;
+    justify-content: flex-start;
+  }
 
-    .bill_Input_section {
-        /* width: 100%; */
-        height: 50%;
-    }
+  .bill_Input_section {
+    /* width: 100%; */
+    height: 50%;
+  }
 
+  .bill_heading {
+    font-size: 2.5rem;
+  }
 
-    .bill_heading {
-        font-size: 2.5rem;
+  .bill_form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 1.5rem;
+    grid-column-gap: 0.8rem;
+    align-content: center;
+  }
 
-    }
+  .bill_form input::placeholder {
+    /* color: #ffffff; */
+    font-size: 2.2rem;
+    padding-left: 1rem;
+  }
 
-    .bill_form {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-row-gap: 1.5rem;
-        grid-column-gap: .8rem;
-        align-content: center;
-    }
+  .bills-input-field {
+    background-color: var(--rms-dark2);
+    /* color: #ffffff; */
+    padding: 2rem 2.5rem;
+    border-radius: 2.5rem;
+    border: 0;
+    /* width: 100%; */
+  }
 
-    .bill_form input::placeholder {
-        /* color: #ffffff; */
-        font-size: 2.2rem;
-        padding-left: 1rem;
-    }
+  .bill_table_section {
+    height: 30%;
+    background-color: var(--rms-dark2);
+    border-radius: 1.2rem;
+    overflow: hidden;
+    padding: 2rem;
+    /* position: relative; */
+  }
 
-    .bills-input-field {
-        background-color: var(--rms-dark2);
-        /* color: #ffffff; */
-        padding: 2rem 2.5rem;
-        border-radius: 2.5rem;
-        border: 0;
-        /* width: 100%; */
-    }
-
-
-
-    .bill_table_section {
-        height: 30%;
-        background-color: var(--rms-dark2);
-        border-radius: 1.2rem;
-        overflow: hidden;
-        padding: 2rem;
-        /* position: relative; */
-    }
-
-
-    .bill_table {
-        display: none;
-    }
-
-
-
-    /*------------------------------ 
+  .bill_table {
+    display: none;
+  }
+  /*------------------------------ 
     ------------Bill Section End---------
     ---------------------------------------- */
+
+  /* payment and Calculator End */
+
+  /* kitchen Order */
+  .ordersTableContents {
+    column-count: 3;
+  }
 }
 
-/* payment and Calculator End */
-
-
-
-
-
-
-
-
-
-
-
 /*design for larger tab*/
-@media only screen and (min-width: 769px) and (max-width:1024px) {
-    :root {
-        font-size: 84%;
-    }
+@media only screen and (769px <= width <= 1024px) {
+  :root {
+    font-size: 84%;
+  }
 
-    .header-logo {
-        display: none;
-    }
+  .header-logo {
+    display: none;
+  }
 
-    .header-section {
-        height: 5.5vh;
-        align-items: center;
-        width: 100vw;
-        padding: 0;
-        margin: 0;
-    }
+  .header-section {
+    height: 5.5vh;
+    align-items: center;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+  }
 
-    .container-fluid {
-        position: fixed;
-        top: 0;
-        right: 0;
-        left: 0;
-    }
+  .container-fluid {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+  }
 
-    .header-right {
-        padding-top: 0rem;
-        padding: 0 2rem;
-    }
+  .header-right {
+    padding-top: 0rem;
+    padding: 0 2rem;
+  }
 
-    .side-header {
-        height: calc(100% - 5.5vh);
-        top: 5vh;
-    }
+  .side-header {
+    height: calc(100% - 5.5vh);
+    top: 5vh;
+  }
 
-    .rms-content-body {
-        top: 5vh;
-        height: calc(100vh - 18vh);
-        padding: 0;
-        padding-top: .5rem;
-        margin-bottom: .1rem;
-        overflow-y: visible;
-    }
-    .rms-content-body-payment{
-        height: calc(100vh - 13vh);
-    }
+  .rms-content-body {
+    top: 5vh;
+    height: calc(100vh - 18vh);
+    padding: 0;
+    padding-top: 0.5rem;
+    margin-bottom: 0.1rem;
+    overflow-y: visible;
+  }
+  .rms-content-body-payment {
+    height: calc(100vh - 13vh);
+  }
 
-    /* SaleItem page start */
-    .mid-content {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        height: 100%;
-    }
+  /* SaleItem page start */
+  .mid-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+  }
 
-    .cart-area {
-        display: none;
-    }
+  .cart-area {
+    display: none;
+  }
 
-    #cart_page_id {
-        display: block;
-        height: calc(100vh - 19vh);
-        width: 100%;
-    }
+  #cart_page_id {
+    display: block;
+    height: calc(100vh - 19vh);
+    width: 100%;
+  }
 
-    /* cart section start*/
-    /* Cart Item Left */
-    .accordion .card {
-        border-bottom: .25rem solid var(--rms-dark2);
-    }
+  /* cart section start*/
+  /* Cart Item Left */
+  .accordion .card {
+    border-bottom: 0.25rem solid var(--rms-dark2);
+  }
 
-    .cart-main-card {
-        background-color: var(--rms-dark2);
-    }
+  .cart-main-card {
+    background-color: var(--rms-dark2);
+  }
 
-    .card-body>.row {
-        padding-left: 3rem !important;
-    }
+  .card-body > .row {
+    padding-left: 3rem !important;
+  }
 
-    .cart-item-header {
-        padding: .5rem 2.5rem !important;
-        margin-bottom: 0.063rem;
-    }
+  .cart-item-header {
+    padding: 0.5rem 2.5rem !important;
+    margin-bottom: 0.063rem;
+  }
 
-    .cart-item-name {
-        width: 41%;
+  .cart-item-name {
+    width: 41%;
+  }
 
-    }
+  .cart-item-name p {
+    font-size: 2rem;
+  }
 
-    .cart-item-name p {
-        font-size: 2rem;
-    }
+  /* Cart Actions */
 
-    /* Cart Actions */
+  .cart-actions {
+    padding: 1rem;
+  }
 
-    .cart-actions {
-        padding: 1rem;
+  .btn_cart_action {
+    margin-left: 1rem;
+    width: 4rem;
+    height: 4rem;
+    border: 0.125rem transparent;
+    border-radius: 0.8rem;
+    font-size: 2.5rem;
+  }
 
+  .btn_plus {
+    border: 0.063rem transparent;
+    font-size: 2rem;
+  }
 
+  .btn_minus {
+    font-size: 2rem;
+  }
 
-    }
+  .cart-collapse-btn {
+    margin-right: 0.5rem;
+    border: 0.13rem transparent;
+    font-size: 3rem;
+  }
 
-    .btn_cart_action {
-        margin-left: 1rem;
-        width: 4rem;
-        height: 4rem;
-        border: 0.125rem transparent;
-        border-radius: .8rem;
-        font-size: 2.5rem;
-    }
+  /* Cart-groups */
 
-    .btn_plus {
-        border: 0.063rem transparent;
-        font-size: 2rem;
-    }
+  .cart-inside-group {
+    padding-left: 0.5rem;
+  }
 
-    .btn_minus {
-        font-size: 2rem;
-    }
+  .cart-inside-group h4 {
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
 
-    .cart-collapse-btn {
-        margin-right: .5rem;
-        border: 0.13rem transparent;
-        font-size: 3rem;
-    }
-
-    /* Cart-groups */
-
-    .cart-inside-group {
-        padding-left: .5rem;
-    }
-
-    .cart-inside-group h4 {
-        font-size: 1.8rem;
-        font-weight: 500;
-    }
-
-    .cart-group-products {
-        line-height: 1.5rem;
-        /* display: flex;
+  .cart-group-products {
+    line-height: 1.5rem;
+    /* display: flex;
         align-items: center; */
-        margin-top: 1rem;
-        margin-bottom: 1.25rem;
-    }
+    margin-top: 1rem;
+    margin-bottom: 1.25rem;
+  }
 
-    .cart-group-products label {
-        font-size: 1.5rem;
-    }
+  .cart-group-products label {
+    font-size: 1.5rem;
+  }
 
-    .cart-group-products input[type="checkbox"] {
-        /* appearance: none; */
-        height: 2rem;
-        width: 2rem;
-        border: .3rem solid var(--rms-violet4);
-        border-radius: 1rem;
-        padding: 1rem;
-        /* margin-right: 1rem; */
-    }
+  .cart-group-products input[type="checkbox"] {
+    /* appearance: none; */
+    height: 2rem;
+    width: 2rem;
+    border: 0.3rem solid var(--rms-violet4);
+    border-radius: 1rem;
+    padding: 1rem;
+    /* margin-right: 1rem; */
+  }
 
-    /* Cart Footer */
+  /* Cart Footer */
 
+  .inside-area {
+    width: 100%;
+    padding: 0 0.1rem;
+  }
 
-    .inside-area {
-        width: 100%;
-        padding: 0 .1rem;
-    }
+  .cart-delivery-option {
+    width: 32%;
+  }
 
+  .button-inside {
+    font-size: 3rem;
+  }
 
-    .cart-delivery-option {
-        width: 32%;
-    }
+  .dropdown-menu {
+    transform: translate3d(0px, -71px, 0px);
+  }
 
+  .dropdown-menu > .dropdown-item {
+    font-size: 1.5rem;
+    padding: 2rem 0rem;
+  }
 
+  .cart-total {
+    background: rgb(70, 48, 131);
+    font-size: 3rem;
+    font-weight: 600;
+    width: 57%;
+  }
 
-    .button-inside {
-        font-size: 3rem;
+  .cart-note {
+    width: 10%;
+  }
 
+  .cart-note img {
+    padding: 0.4rem 1rem;
+    transform: scale(0.6);
+  }
 
-    }
+  /* cart section End*/
+  .saleItemsParent,
+  .productItemsParent {
+    margin: 1rem;
+    width: 95vw;
+    grid-template-columns: repeat(3, 1fr);
+    height: calc(100vh - 21vh);
+    grid-gap: 0.15rem;
+  }
 
-    .dropdown-menu {
-        transform: translate3d(0px, -71px, 0px);
+  .saleItem,
+  .productItemsParent > .saleItem {
+    margin: 0.063rem;
+    height: 20.5rem;
+    width: calc(100% - 0.07rem);
+    border-radius: 1rem;
+    padding: 1rem 1rem;
+    background-color: var(--rms-violet2) !important;
+  }
 
-    }
+  .productItemsParent > .saleItem p,
+  .saleItem p {
+    font-size: 2.5rem;
+    text-align: center;
+  }
 
-    .dropdown-menu>.dropdown-item {
-        font-size: 1.5rem;
-        padding: 2rem 0rem;
-    }
+  .categoryPrice .itemCategory,
+  .productItemsParent > .saleItem .itemCategory {
+    font-size: 1.8rem;
+  }
 
+  .categoryPrice .itemPrice,
+  .productItemsParent > .saleItem .itemPrice {
+    font-size: 1.6rem;
+  }
 
+  .itemPrice small,
+  .productItemsParent > .saleItem .itemPrice small {
+    font-size: 1.3rem;
+  }
 
-    .cart-total {
-        background: rgb(70, 48, 131);
-        font-size: 3rem;
-        font-weight: 600;
-        width: 57%;
-    }
+  .saleCategoriesColumn {
+    display: none;
+  }
 
-    .cart-note {
-        width: 10%;
+  /* SaleItem page End */
 
-    }
+  /* category page start */
+  .category_page {
+    width: 100vw;
+    justify-content: center;
+    margin-left: 0;
+  }
 
-    .cart-note img {
-        padding: .4rem 1rem;
-        transform: scale(0.6);
+  .category_page .mid-content {
+    /* display: inline-block; */
+    width: 75vw;
+  }
 
-    }
+  .category_page .saleItemsParent {
+    height: calc(100vh - 21vh);
+    width: 100%;
+    grid-gap: 0.063rem;
+    padding-left: 0;
+    margin: 0;
+    margin-top: 0.25rem;
+  }
 
-    /* cart section End*/
-    .saleItemsParent,
-    .productItemsParent {
-        margin: 1rem;
-        width: 95vw;
-        grid-template-columns: repeat(3, 1fr);
-        height: calc(100vh - 21vh);
-        grid-gap: .15rem;
-    }
+  .category_page .saleItem {
+    height: 14rem;
+    width: calc(100% - 0.125rem);
+  }
 
-    .saleItem,
-    .productItemsParent>.saleItem {
-        margin: 0.063rem;
-        height: 20.5rem;
-        width: calc(100% - .07rem);
-        border-radius: 1rem;
-        padding: 1rem 1rem;
-        background-color: var(--rms-violet2) !important;
+  .category_page .saleItem p {
+    font-size: 1.8rem;
+  }
 
-    }
+  .category_page .saleItem .itemCategory {
+    font-size: 1.3rem;
+  }
 
-    .productItemsParent>.saleItem p,
-    .saleItem p {
-        font-size: 2.5rem;
-        text-align: center;
-    }
+  .category_page .saleItem .itemPrice {
+    font-size: 1.3rem;
+  }
 
+  .category_page .saleCategoriesColumn {
+    width: 20vw;
+    display: block;
+    height: calc(100vh - 17vh);
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
 
+  .category_page .saleCategories {
+    width: 100%;
+    margin-left: 0.3rem;
+    margin-right: 0.1rem;
+    margin-top: 0.5rem;
+    justify-items: start;
+    row-gap: 0.125rem;
+  }
 
-    .categoryPrice .itemCategory,
-    .productItemsParent>.saleItem .itemCategory {
-        font-size: 1.8rem;
-    }
+  .category_page .saleCategories > a {
+    font-size: 2.2rem;
+    width: 100%;
+    height: 10.5rem;
+    margin-left: 0.063rem;
+    border-radius: 0.7rem;
+  }
 
-    .categoryPrice .itemPrice,
-    .productItemsParent>.saleItem .itemPrice {
-        font-size: 1.6rem;
-    }
+  /* category page End */
 
-    .itemPrice small,
-    .productItemsParent>.saleItem .itemPrice small {
-        font-size: 1.3rem;
-    }
-
-    .saleCategoriesColumn {
-        display: none;
-    }
-
-    /* SaleItem page End */
-
-
-        /* category page start */
-        .category_page {
-            width: 100vw;
-            justify-content: center;
-            margin-left: 0;
-        }
-    
-        .category_page .mid-content {
-            /* display: inline-block; */
-            width: 75vw;
-        }
-    
-        .category_page .saleItemsParent {
-            height: calc(100vh - 21vh);
-            width: 100%;
-            grid-gap: .063rem;
-            padding-left: 0;
-            margin: 0;
-            margin-top: .25rem;
-        }
-    
-        .category_page .saleItem {
-            height: 14rem;
-            width: calc(100% - .125rem);
-        }
-    
-        .category_page .saleItem p {
-            font-size: 1.8rem;
-        }
-    
-        .category_page .saleItem .itemCategory {
-            font-size: 1.3rem;
-        }
-    
-        .category_page .saleItem .itemPrice {
-            font-size: 1.3rem;
-        }
-    
-        .category_page .saleCategoriesColumn {
-            width: 20vw;
-            display: block;
-            height: calc(100vh - 17vh);
-            overflow-y: scroll;
-            overflow-x: hidden;
-        }
-    
-        .category_page .saleCategories {
-            width: 100%;
-            margin-left: .3rem;
-            margin-right: .1rem;
-            margin-top: .5rem;
-            justify-items: start;
-            row-gap: .125rem;
-        }
-    
-        .category_page .saleCategories>a {
-            font-size: 2.2rem;
-            width: 100%;
-            height: 10.5rem;
-            margin-left: .063rem;
-            border-radius: .7rem;
-        }
-    
-        /* category page End */
-
-    /*---------- Order and Employee start ------------ 
+  /*---------- Order and Employee start ------------ 
      -----------------------------------------*/
 
-    .orderBoxParent,
-    .employeeSection {
-        width: 95vw;
-        height: calc(100vh - 20.3vh);
-        margin: .5rem;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        justify-items: center;
-        grid-gap: .5rem;
-        border-radius: .5rem;
-    }
+  .orderBoxParent,
+  .employeeSection {
+    width: 95vw;
+    height: calc(100vh - 20.3vh);
+    margin: 0.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    grid-gap: 0.5rem;
+    border-radius: 0.5rem;
+  }
 
-    .orderBoxItem {
-        border-radius: 1rem;
-        padding: 1.5rem .3rem;
-        width: 100%;
-        height: 14rem;
-    }
+  .orderBoxItem {
+    border-radius: 1rem;
+    padding: 1.5rem 0.3rem;
+    width: 100%;
+    height: 14rem;
+  }
 
-    .employeeInfoCard {
-        border-radius: 1rem;
-        padding: 1.5rem 2rem;
-        width: 100%;
-        height: 14rem;
-    }
+  .employeeInfoCard {
+    border-radius: 1rem;
+    padding: 1.5rem 2rem;
+    width: 100%;
+    height: 14rem;
+  }
 
-    .order-state,
-    .employeeInfo {
+  .order-state,
+  .employeeInfo {
+    margin-bottom: 0.6rem;
+  }
 
-        margin-bottom: .6rem;
-    }
+  .order-state-title,
+  .order-state-bill {
+    border-radius: 1.5rem;
+    text-align: center;
+    padding: 0.5rem 0.2rem;
+    font-size: 1.2rem;
+    height: 3rem;
+  }
 
-    .order-state-title,
-    .order-state-bill {
-        border-radius: 1.5rem;
-        text-align: center;
-        padding: .5rem .2rem;
-        font-size: 1.2rem;
-        height: 3rem;
-    }
+  .employee-name,
+  .employee-desig {
+    border-radius: 1.5rem;
+    text-align: center;
+    padding: 0.5rem 0.2rem;
+    font-size: 1.1rem;
+    height: 3rem;
+  }
 
-    .employee-name,
-    .employee-desig {
-        border-radius: 1.5rem;
-        text-align: center;
-        padding: .5rem .2rem;
-        font-size: 1.1rem;
-        height: 3rem;
+  .order-details > p {
+    font-size: 1.1rem;
+  }
 
-    }
+  /* waiter style section */
+  .login-details > p {
+    font-size: 1.2rem;
+  }
 
-    .order-details>p {
+  .employeeSection {
+    margin: 2rem;
+    grid-gap: 1rem;
+  }
 
-        font-size: 1.1rem;
-    }
+  .employee-name,
+  .employee-desig {
+    border-radius: 1.313rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 0.6rem;
+    font-size: 1.3rem;
+    height: 2.5rem;
+  }
 
-    /* waiter style section */
-    .login-details>p {
-        font-size: 1.2rem;
-    }
+  /* payment section start */
+  .payment-main-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+  }
 
-    .employeeSection {
-        margin: 2rem;
-        grid-gap: 1rem;
-    }
+  .payment-content-area {
+    display: grid;
+    width: 80vw;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 0.1rem;
+  }
 
-    .employee-name,
-    .employee-desig {
-        border-radius: 1.313rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: .5rem .6rem;
-        font-size: 1.3rem;
-        height: 2.5rem;
+  .payment-main-container > .saleItemActions_payment {
+    margin-bottom: 0;
+    right: 0;
+  }
 
-    }
+  #payment_noteId {
+    display: none;
+  }
 
-    /* payment section start */
-    .payment-main-container {
-        display: flex;
-        justify-content: space-around;
-        align-items: flex-end;
-    }
+  .display-total-amount,
+  .display-paid-amount,
+  .display-payable-amount {
+    font-size: 2.5rem;
+  }
 
-    .payment-content-area {
-        display: grid;
-        width: 80vw;
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap: .1rem;
+  .payment-type {
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
 
-    }
+  .display-card-amount,
+  .display-cash-amount,
+  .display-percentage-amount {
+    font-size: 2rem;
+  }
 
-    .payment-main-container>.saleItemActions_payment {
-        margin-bottom: 0;
-        right: 0;
-    }
+  .display-card-amount,
+  .display-cash-amount,
+  .display-percentage-amount p {
+    line-height: 1.5rem;
+  }
 
+  .payment-display-section {
+    margin-right: 0;
+  }
 
+  .p-display-text {
+    display: flex;
+    flex-direction: column;
+  }
 
-    #payment_noteId {
-        display: none;
-    }
+  .p-display-text > span {
+    font-weight: 650;
+  }
 
-    .display-total-amount,
-    .display-paid-amount,
-    .display-payable-amount {
-        font-size: 2.5rem;
-    }
+  .top-pay-card-left {
+    padding: 0.5rem 0.1rem;
+    text-align: center;
+    border-radius: 1rem;
+    margin: 0;
+  }
 
-    .payment-type {
-        font-size: 1.8rem;
-        font-weight: 700;
-    }
+  .top-pay-card-left p {
+    line-height: 3.5rem;
+    font-weight: 600;
+  }
 
+  .top-pay-bottom {
+    padding: 0.5rem 0.5rem;
+    border-radius: 1rem;
+  }
 
-    .display-card-amount,
-    .display-cash-amount,
-    .display-percentage-amount {
-        font-size: 2rem;
-    }
+  .top-pay-bottom p {
+    line-height: 2rem;
+  }
 
+  .top-pay-bottom .payment-type {
+    font-size: 1.5rem;
+  }
 
-    .display-card-amount,
-    .display-cash-amount,
-    .display-percentage-amount p {
-        line-height: 1.5rem;
-    }
-
-
-
-    .payment-display-section {
-
-        margin-right: 0;
-
-    }
-
-    .p-display-text {
-        display: flex;
-        flex-direction: column;
-
-    }
-
-
-
-    .p-display-text>span {
-        font-weight: 650;
-    }
-
-
-    .top-pay-card-left {
-        padding: .5rem .1rem;
-        text-align: center;
-        border-radius: 1rem;
-        margin: 0;
-    }
-
-    .top-pay-card-left p {
-        line-height: 3.5rem;
-        font-weight: 600;
-    }
-
-    .top-pay-bottom {
-        padding: .5rem .5rem;
-        border-radius: 1rem;
-    }
-
-    .top-pay-bottom p {
-        line-height: 2rem;
-    }
-
-    .top-pay-bottom .payment-type {
-        font-size: 1.5rem;
-    }
-
-    /*------------------------
+  /*------------------------
     --- Table Section ---
     ------------------ */
-    .table_section {
-        grid-template-columns: repeat(3, 1fr);
-        align-content: space-between;
-        height: 75vh;
-        overflow-y: scroll;
-        overflow-x: hidden;
-        background-color: var(--rms-dark1);
-        grid-gap: .2rem;
-        margin-top: 1rem;
-        padding-top: 0;
+  .table_section {
+    grid-template-columns: repeat(3, 1fr);
+    align-content: space-between;
+    height: 75vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: var(--rms-dark1);
+    grid-gap: 0.2rem;
+    margin-top: 1rem;
+    padding-top: 0;
+  }
 
-    }
+  .tables {
+    background-color: var(--rms-dark2);
+    border-radius: 0.8rem;
+    height: 18rem;
+    width: 18rem;
+  }
 
-    .tables {
-        background-color: var(--rms-dark2);
-        border-radius: .8rem;
-        height: 18rem;
-        width: 18rem;
-    }
+  .table-num {
+    font-size: 3rem;
+  }
 
-    .table-num {
-        font-size: 3rem;
-    }
+  .customer-num {
+    font-size: 1.8rem;
+  }
 
-    .customer-num {
-        font-size: 1.8rem;
-    }
+  /* table section end */
+  /* payment calc section Start */
+  .calculator-input-area {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0.2rem;
+    width: 100%;
+  }
 
+  .calc-text-box {
+    grid-column: span 4;
+  }
 
-    /* table section end */
-    /* payment calc section Start */
-    .calculator-input-area {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-gap: .2rem;
-        width: 100%;
-    }
+  .digit-area {
+    grid-column: span 4;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0.3rem;
+    width: 100%;
+  }
 
-    .calc-text-box {
-        grid-column: span 4;
-    }
+  .btn-digit {
+    width: 100%;
+    height: 11rem;
+    font-size: 5rem;
+    font-weight: 600;
+    border-radius: 0.5rem;
+  }
 
-    .digit-area {
-        grid-column: span 4;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-gap: .3rem;
-        width: 100%;
-    }
+  .payment-input-right {
+    grid-column: span 4;
+    display: grid;
+    grid-template-columns: repeat(2, 3.5fr) repeat(3, 1.5fr);
+    gap: 0.2rem;
+  }
 
-    .btn-digit {
+  .cal-button-basic,
+  .calc-text-field {
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 0.5rem;
+    border: none;
+    padding: 0;
+    height: 7.5rem;
+  }
 
-        width: 100%;
-        height: 11rem;
-        font-size: 5rem;
-            font-weight: 600;
-        border-radius: .5rem;
-    }
+  .calc-text-box::placeholder {
+    font-size: 3.5rem;
+    font-weight: 650;
+    opacity: 0.75;
+  }
 
-    .payment-input-right {
-        grid-column: span 4;
-        display: grid;
-        grid-template-columns: repeat(2, 3.5fr) repeat(3, 1.5fr);
-        gap: .2rem;
-    }
+  .calc-text-box:focus {
+    opacity: 1;
+  }
 
-    .cal-button-basic,
-    .calc-text-field {
-        font-size: 3rem;
-        font-weight: 600;
-        text-align: center;
-        border-radius: .5rem;
-        border: none;
-        padding: 0;
-        height: 7.5rem;
-    }
+  .button-calc-right,
+  .payment-input-right .cal-button-basic {
+    width: auto;
+    height: 5rem;
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 0.6rem;
+    border: none;
+    padding: 0;
+  }
 
+  .btn-card,
+  .btn-cash {
+    width: 100%;
+  }
 
+  .pay_btn {
+    grid-column: span 4;
+    height: 6.5rem;
+    font-size: 3.5rem;
+    width: 100%;
+    background-color: var(--rms-violet3);
+  }
 
-    .calc-text-box::placeholder {
-        font-size: 3.5rem;
-        font-weight: 650;
-        opacity: .75;
+  .pay-bg,
+  .pay-bg-input {
+    font-weight: 650;
+  }
+  .pay-bg {
+    background-color: var(--rms-dark2);
+  }
 
-    }
+  /* Sale Saving Actions */
 
-    .calc-text-box:focus {
+  .saleItemActions {
+    position: fixed;
+    bottom: 0.1rem;
+    right: 0;
+    width: 100vw;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 0rem;
+    margin-left: 0rem;
+    margin-right: 0rem;
+    /* column-gap: .125rem; */
+  }
 
-        opacity: 1;
-    }
+  .saleItemActions_payment {
+    position: fixed;
+    bottom: 0.1rem !important;
+    right: 0;
+    width: 100vw;
+    height: 7vh;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(12, 1fr);
+    /* column-gap: .125rem; */
+  }
 
+  .button-actions {
+    width: 100%;
+    border-radius: 0.1rem;
+    height: 6rem;
+  }
 
-    .button-calc-right,
-    .payment-input-right .cal-button-basic {
-        width: auto;
-        height: 5rem;
-        font-size: 3rem;
-        font-weight: 600;
-        text-align: center;
-        border-radius: .6rem;
-        border: none;
-        padding: 0;
-    }
+  .button-actions a {
+    font-size: 1.5rem;
+  }
 
-    .btn-card,
-    .btn-cash {
-        width: 100%;
-    }
+  .btn_pay_note {
+    width: auto;
+  }
 
+  #payment_noteTop {
+    display: inline-block;
+    padding: 1.5rem 1.5rem;
+    margin-bottom: 1rem;
+    margin-top: 1.5rem;
+    background-color: var(--rms-dark2);
+  }
 
-    .pay_btn {
-        grid-column: span 4;
-        height: 6.5rem;
-        font-size: 3.5rem;
-        width: 100%;
-        background-color: var(--rms-violet3);
-    }
+  #payment_noteTop a > .note-icon {
+    width: 2rem;
+    height: 2rem;
+  }
 
-    .pay-bg,
-    .pay-bg-input {
-        font-weight: 650;
-    }
-        .pay-bg {
-            background-color: var(--rms-dark2);
-        }
+  .btn_select_table {
+    grid-column: span 4;
+  }
 
-    /* Sale Saving Actions */
+  .btn_waiter {
+    grid-column: span 4;
+  }
 
-    .saleItemActions {
-        position: fixed;
-        bottom: .1rem;
-        right: 0;
-        width: 100vw;
-        grid-template-columns: repeat(12, 1fr);
-        column-gap: 0rem;
-        margin-left: 0rem;
-        margin-right: 0rem;
-        /* column-gap: .125rem; */
-    }
+  .btn_order {
+    grid-column: span 4;
+  }
 
-    .saleItemActions_payment {
-        position: fixed;
-        bottom: .1rem !important;
-        right: 0;
-        width: 100vw;
-        height: 7vh;
-        display: grid;
-        align-items: center;
-        grid-template-columns: repeat(12, 1fr);
-        /* column-gap: .125rem; */
-    }
+  .btn_clear_cart {
+    grid-column: span 3;
+  }
 
-    .button-actions {
-        width: 100%;
-        border-radius: .1rem;
-        height: 6rem;
+  .btn_active_order {
+    grid-column: span 3;
+  }
 
+  .btn_print_order {
+    grid-column: span 3;
+  }
 
-    }
+  .btn_invoice_order {
+    grid-column: span 3;
+  }
 
-    .button-actions a {
-        font-size: 1.5rem;
-    }
+  .pos-icon {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
 
-    .btn_pay_note {
-        width: auto;
-    }
+  /* payment btn */
+  .saleItemActions_payment > .button-actions {
+    height: 7rem;
+  }
+  .saleItemActions_payment > .button-actions > a {
+    padding: 1.8rem 0;
+    font-size: 1.8rem;
+  }
 
-
-    #payment_noteTop {
-        display: inline-block;
-        padding: 1.5rem 1.5rem;
-        margin-bottom: 1rem;
-        margin-top: 1.5rem;
-        background-color: var(--rms-dark2);
-
-    }
-
-    #payment_noteTop a>.note-icon {
-        width: 2rem;
-        height: 2rem;
-    }
-
-    .btn_select_table {
-        grid-column: span 4;
-    }
-
-    .btn_waiter {
-        grid-column: span 4;
-    }
-
-    .btn_order {
-        grid-column: span 4;
-    }
-
-    .btn_clear_cart {
-        grid-column: span 3;
-    }
-
-    .btn_active_order {
-        grid-column: span 3;
-    }
-
-    .btn_print_order {
-        grid-column: span 3;
-    }
-
-    .btn_invoice_order {
-        grid-column: span 3;
-    }
-
-    .pos-icon {
-        height: 2.5rem;
-        width: 2.5rem;
-    }
-
-    /* payment btn */
-        .saleItemActions_payment>.button-actions{
-            height: 7rem;
-        }
-    .saleItemActions_payment>.button-actions>a {
-        padding: 1.8rem 0;
-        font-size: 1.8rem;
-    }
-    
-
-    /* 
+  /* 
     .saleItemActions_payment .btn_select_table {
         grid-column: span 4;
         order: 1;
@@ -1635,34 +1518,36 @@
         order: 4;
     } */
 
-    .saleItemActions_payment .btn_active_order {
-        grid-column: span 4;
-        order: 5;
-    }
+  .saleItemActions_payment .btn_active_order {
+    grid-column: span 4;
+    order: 5;
+  }
 
-    .saleItemActions_payment .btn_print_order {
-        grid-column: span 4;
-        order: 6;
-    }
+  .saleItemActions_payment .btn_print_order {
+    grid-column: span 4;
+    order: 6;
+  }
 
-    .saleItemActions_payment .btn_invoice_order {
-        grid-column: span 4;
-        order: 7;
-    }
+  .saleItemActions_payment .btn_invoice_order {
+    grid-column: span 4;
+    order: 7;
+  }
 
-    .btn_kitchen_order {
-        display: none;
-    }
+  .btn_kitchen_order {
+    display: none;
+  }
 
-
+  /*################################
+  payment calc section End 
+  #################################*/
+  /* kitchen Order */
+  .ordersTableContents {
+    column-count: 3;
+  }
 }
 
-/*################################
-         payment calc section End 
-         #################################*/
-
-@media only screen and (width:1024px) {
-    :root {
-        font-size: 100%;
-    }
+@media only screen and (width: 1024px) {
+  :root {
+    font-size: 100%;
+  }
 }
