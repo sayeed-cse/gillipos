@@ -147,7 +147,7 @@ body {
 }
 
 .saleCategories {
-  height: 100vh;
+  height: 89vh;
   overflow-x: hidden;
   overflow-y: scroll;
   display: grid;
@@ -420,22 +420,62 @@ body {
   margin-top: 1rem;
   margin-bottom: 1.25rem;
 }
+/* checkbox start */
 
-.cart-group-products label {
+.checkbox_level {
+  display: block;
+  position: relative;
+  padding-left: 3rem;
+  /* margin-bottom: 15px; */
+  cursor: pointer;
   font-size: 1rem;
-  color: white;
+  color: #ffffff;
 }
 
 .cart-group-products input[type="checkbox"] {
-  appearance: none;
+  visibility: hidden;
+}
+
+.checkbox_custom {
+  position: absolute;
+  top: 0;
+  left: 0;
   height: 1rem;
   width: 1rem;
   border: 0.125rem solid var(--rms-violet2);
   border-radius: 0.25rem;
   background-color: var(--rms-dark3);
   padding: 0.625rem;
-  margin-right: 0.563rem;
+  margin-right: 0.5rem;
 }
+.checkbox_level:hover input ~ .checkbox_custom {
+  background-color: var(--rms-violet2);
+}
+
+.checkbox_level input:active ~ .checkbox_custom {
+  background-color: var(--rms-violet3);
+}
+.checkbox_level input:checked ~ .checkbox_custom {
+  background-color: var(--rms-violet3);
+  border: .15rem solid var(--rms-violet1);
+}
+.checkbox_level:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.checkbox_level input:checked ~ .checkbox_custom:after {
+  display: block;
+}
+.checkbox_level .checkbox_custom:after {
+  left: 6px;
+  bottom: 5px;
+  width: 6px;
+  height: 6px;
+  border: solid white;
+  border-width: 4px 4px 4px 4px;
+}
+/* checkbox End */
 
 /* Cart Footer */
 .cart-area {
@@ -1238,36 +1278,32 @@ body {
   overflow: hidden;
   display: inline-block;
   position: relative;
-
 }
 /*sawtooth wave */
-.orderParentDiv::before{
+.orderParentDiv::before {
   content: "";
   position: absolute;
   left: 0;
   right: 0;
   bottom: 0;
   height: 2rem;
-  background: linear-gradient(135deg,rgb(38, 39, 44) 1rem,
-    transparent 0%), linear-gradient(-135deg,rgb(38, 39, 44) 1rem,
-    transparent 0%);
+  background: linear-gradient(135deg, rgb(38, 39, 44) 1rem, transparent 0%),
+    linear-gradient(-135deg, rgb(38, 39, 44) 1rem, transparent 0%);
   background-size: 1rem;
 }
-  .orderParentDiv::after{
+.orderParentDiv::after {
   content: "";
   position: absolute;
   left: 0;
   right: 0;
   bottom: 0;
   height: 2rem;
-  background: linear-gradient(45deg,var(--rms-dark1) 1rem,
-    transparent 0%), linear-gradient(-45deg,var(--rms-dark1) 1rem,
-    transparent 0%);
+  background: linear-gradient(45deg, var(--rms-dark1) 1rem, transparent 0%),
+    linear-gradient(-45deg, var(--rms-dark1) 1rem, transparent 0%);
   background-size: 1rem;
 }
 
 /*sawtooth wave */
-
 
 .orderTable {
 }
@@ -1286,18 +1322,17 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-.kitchen_table_red{
-    background-color: var(--rms-danger);
+.kitchen_table_red {
+  background-color: var(--rms-danger);
 }
-.kitchen_table_yellow{
-    background-color: var(--rms-warn);
+.kitchen_table_yellow {
+  background-color: var(--rms-warn);
 }
-.kitchen_table_green{
-    background-color: var(--rms-success2);
+.kitchen_table_green {
+  background-color: var(--rms-success2);
 }
 
 .orderHead p {
-   
 }
 
 .orderTableName {
@@ -1309,36 +1344,36 @@ body {
 
 .orderBody {
 }
-.button_orderTable,.button_orderTable_undo{
-
+.button_orderTable,
+.button_orderTable_undo {
   /* text-align: right; */
-  margin: 2rem .5rem 2rem;
+  margin: 2rem 0.5rem 2rem;
 }
-.button_orderTable>a,.button_orderTable_undo>a{
+.button_orderTable > a,
+.button_orderTable_undo > a {
   width: 100%;
-  padding: .5rem;
+  padding: 0.5rem;
   font-size: 1.5rem;
   font-weight: bold;
   text-align: center;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   text-decoration: none;
 }
-.button_orderTable>a{
+.button_orderTable > a {
   background-color: var(--rms-success2);
   color: white;
 }
-.button_orderTable_undo>a{
+.button_orderTable_undo > a {
   background-color: var(--rms-warn);
   color: white;
 }
 
-
 .orderItem {
-    /* display: block; */
-    font-size: 1.5rem;
-    display: flex;
-    column-gap: 3rem;
-    padding: 0 1rem;
+  /* display: block; */
+  font-size: 1.5rem;
+  display: flex;
+  column-gap: 3rem;
+  padding: 0 1rem;
 }
 
 .orderItemQty {
@@ -1354,7 +1389,6 @@ body {
   width: 80vw;
 }
 /** Order Parent Body End  */
-
 
 /*----------------------------------
     ---------- kitchen order page End-------------
