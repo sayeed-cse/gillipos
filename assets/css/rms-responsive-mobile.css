@@ -796,6 +796,7 @@
 
   .ordersTableContents {
     column-count: 1;
+    margin-bottom: 8rem;
   }
 
   .orderParentDiv {
@@ -1667,6 +1668,7 @@
 
   .ordersTableContents {
     column-count: 1;
+    margin-bottom: 8rem;
   }
 
   .orderParentDiv {

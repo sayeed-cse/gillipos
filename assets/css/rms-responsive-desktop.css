@@ -1,11 +1,11 @@
-@media only screen and (min-width :1201px) and (max-width:1279px) {
+@media only screen and (min-width :1200px) and (max-width:1279px) {
     :root {
         font-size: 62.5%;
     }
 
 }
 
-@media only screen and (min-width :1280px) and (max-width:1365px) {
+@media only screen and (min-width :1279px) and (max-width:1365px) {
     :root {
         font-size: 66%;
     }
@@ -15,13 +15,13 @@
     }
 }
 
-@media only screen and (min-width :1366px) and (max-width:1439px) {
+@media only screen and (min-width :1365px) and (max-width:1439px) {
     :root {
         font-size: 71%;
     }
 }
 
-@media only screen and (min-width :1440px) and (max-width:1599px) {
+@media only screen and (min-width :1439px) and (max-width:1599px) {
     :root {
         font-size: 74.5%;
     }
@@ -49,14 +49,14 @@
 
 }
 
-@media only screen and (min-width :1600px) and (max-width :1750px) {
+@media only screen and (min-width :1599px) and (max-width :1750px) {
     :root {
         font-size: 83.01%;
     }
 
 }
 
-@media only screen and (min-width :1751px) and (max-width:1920px) {
+@media only screen and (min-width :1750px) and (max-width:1920px) {
     :root {
         font-size: 100%;
     }
