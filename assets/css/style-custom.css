@@ -1301,6 +1301,7 @@ body {
 }
 
 .orderTableName {
+  margin-bottom: 0;
 }
 
 .orderTimer {
