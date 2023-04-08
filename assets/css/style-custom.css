@@ -1326,7 +1326,7 @@ body {
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .ordersTableContents {
-    column-count: 3;
+    column-count: 1;
     
   }
 }
