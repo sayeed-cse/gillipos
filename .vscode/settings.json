@@ -28,5 +28,6 @@
   "diffEditor.wordWrap": "on",
   "editor.codeActionsOnSave": {
     "source.fixAll": true
-  }
+  },
+  "liveServer.settings.port": 5501
 }
