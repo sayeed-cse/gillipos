@@ -153,8 +153,19 @@ body {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
 }
+.saleCategoriesColumnQr{
 
-.saleCategories a {
+}
+.saleCategoriesQr{
+  overflow-y: hidden;
+  overflow-x: scroll;
+  display: flex;
+  column-gap: 1.5rem;
+  margin: 2rem 1.5rem;
+
+  /* position: ; */
+}
+.saleCategories a{
   margin-right: 0.125rem;
   margin-bottom: 0.135rem;
   border-radius: 0.5rem;
@@ -163,16 +174,32 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-
   width: 9.7rem;
   height: 8.5rem;
   font-size: 1.5rem;
   font-weight: 450;
 }
+.saleCategoriesQr a {
+  /* margin-right: 0.125rem;
+  margin-bottom: 0.135rem; */
+  padding: .5rem 3rem;
+  border-radius: 2.5rem;
+  background-color: var(--rms-dark3);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.2rem;
+  font-weight: 500;
 
+}
 .saleCategoryActive,
 .payment-note {
   background-color: rgb(49, 55, 84) !important;
+  border: 0.063rem transparent;
+}
+.saleCategoryQrActive{
+  background-color: var(--rms-violet3) !important;
   border: 0.063rem transparent;
 }
 
@@ -1434,6 +1461,78 @@ input[type="checkbox"]:checked:after {
   width: 80vw;
 }
 /** Order Parent Body End  */
+
+/* qr page start */
+.cart-areaQr .cart-main-card{
+  margin: 1rem 3rem !important;
+  padding:3rem !important;
+  border-radius: 8rem !important;
+  background-color: var(--rms-dark2) !important;
+}
+.cart-item-headerQr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cart-action-qr{
+  padding: 0;
+  margin: 5rem 0rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cart-actions-amount p{
+  font-size: 3rem;
+  font-weight: 400;
+  color: white;
+  background-color: var(--rms-violet3);
+  padding: .5rem 5rem;
+  border-radius: 3rem;
+}
+.item_image_section{
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  overflow: hidden;
+
+}
+.item_image_section img{
+  height: 100%;
+  width: 100%;
+}
+.item_details{
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  margin-left: 3rem;
+
+}
+.item_details h5{
+  font-size: 4rem;
+  font-weight: 600;
+}
+.item_details >p{
+  font-size: 2rem;
+}
+.item_details_bottom{
+  display: flex;
+  justify-content: space-between;
+}
+.item_details_bottom p{
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+.btn_plusQr {
+  background-color: var(--rms-warn);
+  border: 0.063rem transparent;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.btn_plusQr:hover {
+  background-color: var(--rms-dark3);
+}
+/* qr page End */
 
 /*----------------------------------
     ---------- kitchen order page End-------------
