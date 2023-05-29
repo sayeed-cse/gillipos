@@ -38,22 +38,23 @@
     <!-- rms custom style -->
     <link rel="stylesheet" href="assets/css/style-custom.css">
 
-     <!-- smartphone Stylesheet -->
-    <link rel="stylesheet" media-only-screen="(min-width:320px) and (max-width:480px)"
-        href="assets/css/rms-responsive-mobile.css">
-     <!-- tablet stylesheet -->
+    <!-- smartphone Stylesheet -->
+    <link rel="stylesheet" media="screen and (min-width:320px) and (max-width:480px)"
+        href="assets/css/rms-responsive-mobile.css" />
      
-    <link rel="stylesheet" media-only-screen="(min-width:481px) and (max-width:1024px)"
-        href="assets/css/rms-responsive-tablet.css">
+    <!-- tablet stylesheet -->
      
-     <!-- laptop md stylesheet -->
+    <link rel="stylesheet" media="screen and (min-width:481px) and (max-width:1024px)"
+        href="assets/css/rms-responsive-tablet.css" />
+       
+    <!-- laptop md stylesheet -->
      
-    <link rel="stylesheet" media-only-screen="(min-width:1025px) and (max-width:1200)"
-        href="assets/css/rms-responsive-laptop.css">
+    <link rel="stylesheet" media="screen and (min-width:1025px) and (max-width:1200)"
+        href="assets/css/rms-responsive-laptop.css" />
     <!-- desktop stylesheet -->
      
-    <link rel="stylesheet" media-only-screen="(min-width: 1201px) and (max-width:1920px)"
-        href="assets/css/rms-responsive-desktop.css">
+    <link rel="stylesheet" media="screen and (min-width: 1201px) and (max-width:1920px)"
+        href="assets/css/rms-responsive-desktop.css" />
 
 
 </head>
@@ -419,226 +420,253 @@
 
                 <!--Default Start-->
                 <div class="col-lg-3 col-12 p-0 cart-area">
-                
+
                     <div class="">
-                       <!--Accordion Start-->
-            <div class="accordion" id="accordionExample">
-              <!--Card Start-->
-              <div class="card cart-main-card">
-                <!--Card Header Start-->
-                <div class="card-header cart-item-header">
-                  <div class="cart-item-name">
-                    <p>Chicken Curry</p>
-                  </div>
-                  <div class="cart-actions">
-                    <button data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                      class="btn_cart_action cart-collapse-btn">
-                      <i class="fa fa-angle-up"></i>
-                    </button>
-                    <button type="button" class="btn_cart_action btn_minus text-white">
-                      <i class="fa fa-minus"></i>
-                    </button>
-                    <button type="button" class="btn_cart_action btn_qty text-white">
-                      2
-                    </button>
-                    <button type="button" class="btn_cart_action btn_plus text-white">
-                      <i class="fa fa-plus"></i>
-                    </button>
-                  </div>
-                </div>
-                <!--Card Header End-->
+                        <!--Accordion Start-->
+                        <div class="accordion" id="accordionExample">
+                            <!--Card Start-->
+                            <div class="card cart-main-card">
+                                <!--Card Header Start-->
+                                <div class="card-header cart-item-header">
+                                    <div class="cart-item-name">
+                                        <p>Chicken Curry</p>
+                                    </div>
+                                    <div class="cart-actions">
+                                        <button data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                            class="btn_cart_action cart-collapse-btn">
+                                            <i class="fa fa-angle-up"></i>
+                                        </button>
+                                        <button type="button" class="btn_cart_action btn_minus text-white">
+                                            <i class="fa fa-minus"></i>
+                                        </button>
+                                        <button type="button" class="btn_cart_action btn_qty text-white">
+                                            2
+                                        </button>
+                                        <button type="button" class="btn_cart_action btn_plus text-white">
+                                            <i class="fa fa-plus"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <!--Card Header End-->
 
-                <!--Collapse Start-->
-                <div id="collapseOne" class="collapse" data-bs-parent="#accordionExample">
-                  <div class="card-body p-0">
-                    <div class="row p-0">
-                      <div class="col-4 p-0">
-                        <div class="cart-inside-group">
-                          <h4 class="text-left mb-2">Level Spice</h4>
-                          <div class="cart-group-products"><input type="checkbox" class="checkBox" id="level19"><label
-                              for="level19" class="ckeckBox_lvl">Level 1</label></div>
-                          <div class="cart-group-products"><input type="checkbox" class="checkBox" id="level20"><label
-                              for="level20" class="ckeckBox_lvl">Level 2</label></div>
-                          <div class="cart-group-products"><input type="checkbox" class="checkBox" id="level21"><label
-                              for="level21" class="ckeckBox_lvl">Level 3</label></div>
-                        </div>
-                      </div>
+                                <!--Collapse Start-->
+                                <div id="collapseOne" class="collapse" data-bs-parent="#accordionExample">
+                                    <div class="card-body p-0">
+                                        <div class="row p-0">
+                                            <div class="col-4 p-0">
+                                                <div class="cart-inside-group">
+                                                    <h4 class="text-left mb-2">Level Spice</h4>
+                                                    <div class="cart-group-products"><input type="checkbox"
+                                                            class="checkBox" id="level19"><label for="level19"
+                                                            class="ckeckBox_lvl">Level 1</label></div>
+                                                    <div class="cart-group-products"><input type="checkbox"
+                                                            class="checkBox" id="level20"><label for="level20"
+                                                            class="ckeckBox_lvl">Level 2</label></div>
+                                                    <div class="cart-group-products"><input type="checkbox"
+                                                            class="checkBox" id="level21"><label for="level21"
+                                                            class="ckeckBox_lvl">Level 3</label></div>
+                                                </div>
+                                            </div>
 
-                      <div class="col-4 p-0">
-                        <div class="cart-inside-group">
-                          <h4 class="text-left mb-2">Level Spice</h4>
-                          <div class="cart-group-products"><input type="checkbox" class="checkBox" id="level22"><label
-                              for="level22" class="ckeckBox_lvl">Level 1</label></div>
-                          <div class="cart-group-products"><input type="checkbox" class="checkBox" id="level23"><label
-                              for="level23" class="ckeckBox_lvl">Level 2</label></div>
-                          <div class="cart-group-products"><input type="checkbox" class="checkBox" id="level24"><label
-                              for="level24" class="ckeckBox_lvl">Level 3</label></div>
-                        </div>
-                      </div>
+                                            <div class="col-4 p-0">
+                                                <div class="cart-inside-group">
+                                                    <h4 class="text-left mb-2">Level Spice</h4>
+                                                    <div class="cart-group-products"><input type="checkbox"
+                                                            class="checkBox" id="level22"><label for="level22"
+                                                            class="ckeckBox_lvl">Level 1</label></div>
+                                                    <div class="cart-group-products"><input type="checkbox"
+                                                            class="checkBox" id="level23"><label for="level23"
+                                                            class="ckeckBox_lvl">Level 2</label></div>
+                                                    <div class="cart-group-products"><input type="checkbox"
+                                                            class="checkBox" id="level24"><label for="level24"
+                                                            class="ckeckBox_lvl">Level 3</label></div>
+                                                </div>
+                                            </div>
 
-                      <div class="col-4 p-0">
-                        <div class="cart-inside-group">
-                          <h4 class="text-left mb-2">Level Spice</h4>
-                          <div class="cart-group-products"><input type="checkbox" class="checkBox" id="level25"><label
-                              for="level25" class="ckeckBox_lvl">Level 1</label></div>
-                          <div class="cart-group-products"><input type="checkbox" class="checkBox" id="level26"><label
-                              for="level26" class="ckeckBox_lvl">Level 2</label></div>
-                          <div class="cart-group-products"><input type="checkbox" class="checkBox" id="level27"><label
-                              for="level27" class="ckeckBox_lvl">Level 3</label></div>
+                                            <div class="col-4 p-0">
+                                                <div class="cart-inside-group">
+                                                    <h4 class="text-left mb-2">Level Spice</h4>
+                                                    <div class="cart-group-products"><input type="checkbox"
+                                                            class="checkBox" id="level25"><label for="level25"
+                                                            class="ckeckBox_lvl">Level 1</label></div>
+                                                    <div class="cart-group-products"><input type="checkbox"
+                                                            class="checkBox" id="level26"><label for="level26"
+                                                            class="ckeckBox_lvl">Level 2</label></div>
+                                                    <div class="cart-group-products"><input type="checkbox"
+                                                            class="checkBox" id="level27"><label for="level27"
+                                                            class="ckeckBox_lvl">Level 3</label></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Collapse End-->
+                            </div>
+                            <!--Card End-->
+
+                            <!--Card Start-->
+                            <div class="card cart-main-card">
+                                <!--Card Header Start-->
+                                <div class="card-header cart-item-header">
+                                    <div class="cart-item-name">
+                                        <p>Chicken Curry</p>
+                                    </div>
+                                    <div class="cart-actions">
+                                        <button data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                            class="btn_cart_action cart-collapse-btn">
+                                            <i class="fa fa-angle-up"></i>
+                                        </button>
+                                        <button type="button" class="btn_cart_action btn_minus text-white">
+                                            <i class="fa fa-minus"></i>
+                                        </button>
+                                        <button type="button" class="btn_cart_action btn_qty text-white">
+                                            2
+                                        </button>
+                                        <button type="button" class="btn_cart_action btn_plus text-white">
+                                            <i class="fa fa-plus"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <!--Card Header End-->
+
+                                <!--Collapse Start-->
+                                <div id="collapseTwo" class="collapse" data-bs-parent="#accordionExample">
+                                    <div class="card-body p-0">
+                                        <div class="row p-0">
+                                            <div class="col-4 p-0">
+                                                <div class="cart-inside-group">
+                                                    <h4 class="text-left mb-2">Level Spice</h4>
+                                                    <div class="cart-group-products"><input type="checkbox"
+                                                            class="checkBox" id="level1"><label for="level1"
+                                                            class="ckeckBox_lvl">Level 1</label></div>
+                                                    <div class="cart-group-products"><input type="checkbox"
+                                                            class="checkBox" id="level2"><label for="level2"
+                                                            class="ckeckBox_lvl">Level 2</label></div>
+                                                    <div class="cart-group-products"><input type="checkbox"
+                                                            class="checkBox" id="level3"><label for="level3"
+                                                            class="ckeckBox_lvl">Level 3</label></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-4 p-0">
+                                                <div class="cart-inside-group">
+                                                    <h4 class="text-left mb-2">Level Spice</h4>
+                                                    <div class="cart-group-products"><input type="checkbox"
+                                                            class="checkBox" id="level4"><label for="level4"
+                                                            class="ckeckBox_lvl">Level 1</label></div>
+                                                    <div class="cart-group-products"><input type="checkbox"
+                                                            class="checkBox" id="level5"><label for="level5"
+                                                            class="ckeckBox_lvl">Level 2</label></div>
+                                                    <div class="cart-group-products"><input type="checkbox"
+                                                            class="checkBox" id="level6"><label for="level6"
+                                                            class="ckeckBox_lvl">Level 3</label></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-4 p-0">
+                                                <div class="cart-inside-group">
+                                                    <h4 class="text-left mb-2">Level Spice</h4>
+                                                    <div class="cart-group-products"><input type="checkbox"
+                                                            class="checkBox" id="level7"><label for="level7"
+                                                            class="ckeckBox_lvl">Level 1</label></div>
+                                                    <div class="cart-group-products"><input type="checkbox"
+                                                            class="checkBox" id="level8"><label for="level8"
+                                                            class="ckeckBox_lvl">Level 2</label></div>
+                                                    <div class="cart-group-products"><input type="checkbox"
+                                                            class="checkBox" id="level9"><label for="level9"
+                                                            class="ckeckBox_lvl">Level 3</label></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Collapse End-->
+                            </div>
+                            <!--Card End-->
+
+                            <!--Card Start-->
+                            <div class="card cart-main-card">
+                                <!--Card Header Start-->
+                                <div class="card-header cart-item-header">
+                                    <div class="cart-item-name">
+                                        <p>Chicken Curry</p>
+                                    </div>
+                                    <div class="cart-actions">
+                                        <button data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                            class="btn_cart_action cart-collapse-btn">
+                                            <i class="fa fa-angle-up"></i>
+                                        </button>
+                                        <button type="button" class="btn_cart_action btn_minus text-white">
+                                            <i class="fa fa-minus"></i>
+                                        </button>
+                                        <button type="button" class="btn_cart_action btn_qty text-white">
+                                            2
+                                        </button>
+                                        <button type="button" class="btn_cart_action btn_plus text-white">
+                                            <i class="fa fa-plus"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <!--Card Header End-->
+
+                                <!--Collapse Start-->
+                                <div id="collapseThree" class="collapse" data-bs-parent="#accordionExample">
+                                    <div class="card-body p-0">
+                                        <div class="row p-0">
+                                            <div class="col-4 p-0">
+                                                <div class="cart-inside-group">
+                                                    <h4 class="text-left mb-2">Level Spice</h4>
+                                                    <div class="cart-group-products"><input type="checkbox"
+                                                            class="checkBox" id="level10"><label for="level10"
+                                                            class="ckeckBox_lvl">Level 1</label></div>
+                                                    <div class="cart-group-products"><input type="checkbox"
+                                                            class="checkBox" id="level11"><label for="level11"
+                                                            class="ckeckBox_lvl">Level 2</label></div>
+                                                    <div class="cart-group-products"><input type="checkbox"
+                                                            class="checkBox" id="level12"><label for="level12"
+                                                            class="ckeckBox_lvl">Level 3</label></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-4 p-0">
+                                                <div class="cart-inside-group">
+                                                    <h4 class="text-left mb-2">Level Spice</h4>
+                                                    <div class="cart-group-products"><input type="checkbox"
+                                                            class="checkBox" id="level13"><label for="level13"
+                                                            class="ckeckBox_lvl">Level 1</label></div>
+                                                    <div class="cart-group-products"><input type="checkbox"
+                                                            class="checkBox" id="level14"><label for="level14"
+                                                            class="ckeckBox_lvl">Level 2</label></div>
+                                                    <div class="cart-group-products"><input type="checkbox"
+                                                            class="checkBox" id="level15"><label for="level15"
+                                                            class="ckeckBox_lvl">Level 3</label></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-4 p-0">
+                                                <div class="cart-inside-group">
+                                                    <h4 class="text-left mb-2">Level Spice</h4>
+                                                    <div class="cart-group-products"><input type="checkbox"
+                                                            class="checkBox" id="level16"><label for="level16"
+                                                            class="ckeckBox_lvl">Level 1</label></div>
+                                                    <div class="cart-group-products"><input type="checkbox"
+                                                            class="checkBox" id="level17"><label for="level17"
+                                                            class="ckeckBox_lvl">Level 2</label></div>
+                                                    <div class="cart-group-products"><input type="checkbox"
+                                                            class="checkBox" id="level18"><label for="level18"
+                                                            class="ckeckBox_lvl">Level 3</label></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Collapse End-->
+                            </div>
+                            <!--Card End-->
                         </div>
-                      </div>
+                        <!--Accordion End-->
                     </div>
-                  </div>
-                </div>
-                <!--Collapse End-->
-              </div>
-              <!--Card End-->
 
-              <!--Card Start-->
-              <div class="card cart-main-card">
-                <!--Card Header Start-->
-                <div class="card-header cart-item-header">
-                  <div class="cart-item-name">
-                    <p>Chicken Curry</p>
-                  </div>
-                  <div class="cart-actions">
-                    <button data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-                      class="btn_cart_action cart-collapse-btn">
-                      <i class="fa fa-angle-up"></i>
-                    </button>
-                    <button type="button" class="btn_cart_action btn_minus text-white">
-                      <i class="fa fa-minus"></i>
-                    </button>
-                    <button type="button" class="btn_cart_action btn_qty text-white">
-                      2
-                    </button>
-                    <button type="button" class="btn_cart_action btn_plus text-white">
-                      <i class="fa fa-plus"></i>
-                    </button>
-                  </div>
-                </div>
-                <!--Card Header End-->
-
-                <!--Collapse Start-->
-                <div id="collapseTwo" class="collapse" data-bs-parent="#accordionExample">
-                  <div class="card-body p-0">
-                    <div class="row p-0">
-                      <div class="col-4 p-0">
-                        <div class="cart-inside-group">
-                          <h4 class="text-left mb-2">Level Spice</h4>
-                          <div class="cart-group-products"><input type="checkbox" class="checkBox" id="level1"><label
-                              for="level1" class="ckeckBox_lvl">Level 1</label></div>
-                          <div class="cart-group-products"><input type="checkbox" class="checkBox" id="level2"><label
-                              for="level2" class="ckeckBox_lvl">Level 2</label></div>
-                          <div class="cart-group-products"><input type="checkbox" class="checkBox" id="level3"><label
-                              for="level3" class="ckeckBox_lvl">Level 3</label></div>
-                        </div>
-                      </div>
-
-                      <div class="col-4 p-0">
-                        <div class="cart-inside-group">
-                          <h4 class="text-left mb-2">Level Spice</h4>
-                          <div class="cart-group-products"><input type="checkbox" class="checkBox" id="level4"><label
-                              for="level4" class="ckeckBox_lvl">Level 1</label></div>
-                          <div class="cart-group-products"><input type="checkbox" class="checkBox" id="level5"><label
-                              for="level5" class="ckeckBox_lvl">Level 2</label></div>
-                          <div class="cart-group-products"><input type="checkbox" class="checkBox" id="level6"><label
-                              for="level6" class="ckeckBox_lvl">Level 3</label></div>
-                        </div>
-                      </div>
-
-                      <div class="col-4 p-0">
-                        <div class="cart-inside-group">
-                          <h4 class="text-left mb-2">Level Spice</h4>
-                          <div class="cart-group-products"><input type="checkbox" class="checkBox" id="level7"><label
-                              for="level7" class="ckeckBox_lvl">Level 1</label></div>
-                          <div class="cart-group-products"><input type="checkbox" class="checkBox" id="level8"><label
-                              for="level8" class="ckeckBox_lvl">Level 2</label></div>
-                          <div class="cart-group-products"><input type="checkbox" class="checkBox" id="level9"><label
-                              for="level9" class="ckeckBox_lvl">Level 3</label></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!--Collapse End-->
-              </div>
-              <!--Card End-->
-
-              <!--Card Start-->
-              <div class="card cart-main-card">
-                <!--Card Header Start-->
-                <div class="card-header cart-item-header">
-                  <div class="cart-item-name">
-                    <p>Chicken Curry</p>
-                  </div>
-                  <div class="cart-actions">
-                    <button data-bs-toggle="collapse" data-bs-target="#collapseThree"
-                      class="btn_cart_action cart-collapse-btn">
-                      <i class="fa fa-angle-up"></i>
-                    </button>
-                    <button type="button" class="btn_cart_action btn_minus text-white">
-                      <i class="fa fa-minus"></i>
-                    </button>
-                    <button type="button" class="btn_cart_action btn_qty text-white">
-                      2
-                    </button>
-                    <button type="button" class="btn_cart_action btn_plus text-white">
-                      <i class="fa fa-plus"></i>
-                    </button>
-                  </div>
-                </div>
-                <!--Card Header End-->
-
-                <!--Collapse Start-->
-                <div id="collapseThree" class="collapse" data-bs-parent="#accordionExample">
-                  <div class="card-body p-0">
-                    <div class="row p-0">
-                      <div class="col-4 p-0">
-                        <div class="cart-inside-group">
-                          <h4 class="text-left mb-2">Level Spice</h4>
-                          <div class="cart-group-products"><input type="checkbox" class="checkBox" id="level10"><label
-                              for="level10" class="ckeckBox_lvl">Level 1</label></div>
-                          <div class="cart-group-products"><input type="checkbox" class="checkBox" id="level11"><label
-                              for="level11" class="ckeckBox_lvl">Level 2</label></div>
-                          <div class="cart-group-products"><input type="checkbox" class="checkBox" id="level12"><label
-                              for="level12" class="ckeckBox_lvl">Level 3</label></div>
-                        </div>
-                      </div>
-
-                      <div class="col-4 p-0">
-                        <div class="cart-inside-group">
-                          <h4 class="text-left mb-2">Level Spice</h4>
-                          <div class="cart-group-products"><input type="checkbox" class="checkBox" id="level13"><label
-                              for="level13" class="ckeckBox_lvl">Level 1</label></div>
-                          <div class="cart-group-products"><input type="checkbox" class="checkBox" id="level14"><label
-                              for="level14" class="ckeckBox_lvl">Level 2</label></div>
-                          <div class="cart-group-products"><input type="checkbox" class="checkBox" id="level15"><label
-                              for="level15" class="ckeckBox_lvl">Level 3</label></div>
-                        </div>
-                      </div>
-
-                      <div class="col-4 p-0">
-                        <div class="cart-inside-group">
-                          <h4 class="text-left mb-2">Level Spice</h4>
-                          <div class="cart-group-products"><input type="checkbox" class="checkBox" id="level16"><label
-                              for="level16" class="ckeckBox_lvl">Level 1</label></div>
-                          <div class="cart-group-products"><input type="checkbox" class="checkBox" id="level17"><label
-                              for="level17" class="ckeckBox_lvl">Level 2</label></div>
-                          <div class="cart-group-products"><input type="checkbox" class="checkBox" id="level18"><label
-                              for="level18" class="ckeckBox_lvl">Level 3</label></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!--Collapse End-->
-              </div>
-              <!--Card End-->
-            </div>
-            <!--Accordion End-->
-                      </div>
-                
                     <div class="inside-area">
                         <div class="dropdown dropup cart-delivery-option">
                             <button class="button-inside" data-bs-toggle="dropdown">Inside</button>
@@ -652,15 +680,15 @@
                                 <a class="dropdown-item" href="#">Take out Portal</a>
                             </div>
                         </div>
-                
+
                         <p class="cart-total">Total : <span class="">100.00</span></p>
-                
+
                         <a class="button-note cart-note"> <img src="assets/images/pos-icon/note.svg" alt="">
                         </a>
-                
+
                     </div>
-                
-                
+
+
                 </div>
                 <!--Default End-->
 
@@ -710,7 +738,8 @@
 
                     <div class="saleItemActions">
                         <div class="button-actions btn_select_table">
-                            <a href="table.html"> <img class="pos-icon" src="assets/images/pos-icon/Select Table.svg" alt="">
+                            <a href="table.html"> <img class="pos-icon" src="assets/images/pos-icon/Select Table.svg"
+                                    alt="">
                                 Select Table </a>
                         </div>
 
@@ -720,7 +749,8 @@
                         </div>
 
                         <div class="button-actions btn_order">
-                            <a href="index.html"> <img class="pos-icon" src="assets/images/pos-icon/Save order.svg" alt="">
+                            <a href="index.html"> <img class="pos-icon" src="assets/images/pos-icon/Save order.svg"
+                                    alt="">
                                 Save Order
                             </a>
                         </div>
@@ -730,7 +760,8 @@
                             </a>
                         </div>
                         <div class="button-actions btn_active_order">
-                            <a href="order.html"> <img class="pos-icon" src="assets/images/pos-icon/active order.svg" alt="">
+                            <a href="order.html"> <img class="pos-icon" src="assets/images/pos-icon/active order.svg"
+                                    alt="">
                                 Active Order
                             </a>
                         </div>
