@@ -1047,7 +1047,7 @@ input[type="checkbox"]:checked:after {
   padding: 4rem 0.5rem;
   text-align: center;
   border-radius: 0.313rem;
-  margin: 1.313rem;
+  margin-bottom: .05rem;
 }
 
 .top-pay-card-left > .card-body {
